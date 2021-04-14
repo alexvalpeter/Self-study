@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    color: hsl(214, 17%, 51%);
+    font-size: 13px;
+}
+
+.preview-container {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    width: 750px;
+    height: 300px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .1);
+}
+
+.article-thumbnail {
+    border-radius: 8px;
+}
+
+img {
+    display: inline-block;
+}
+
+.article-thumbnail {
+    height: 100%;
+}
+
+.article-preview-text {
+    display: inline-block;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: 5%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(217, 19%, 35%);
+}
+
+
+.article-blurb {
+    margin: 5% 0;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+.author-avatar {
+    border-radius: 100%;
+    width: 46px;
+}
+
+.author-name {
+    position: relative;
+    display: inline;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    top: -30px;
+    padding-left: 3%;
+}
+
+.article-date {
+    display: inline-block;
+    position: relative;
+    left: -116px;
+    top: -10px;
+}
+
+.share-icon {
+    position: relative;
+    float: right;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 8px 8px 9px 8px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    text-align: center;
+    transition: all .2s ease-in;
+}
+
+.share-icon svg {
+    fill: hsl(214, 17%, 51%);
+}
+
+.share-icon:hover {
+    cursor: pointer;
+    background-color: hsl(217, 19%, 35%);
+    transition: all .2s ease-in;
+}
+
+
+.share-icon svg:hover {
+    fill: #fff;
+}
+
+.share-icon svg {
+    fill: hsl(214, 17%, 51%);
+    z-index: 11;
+}
+
+.share-icon.active {
+    background-color: hsl(214, 17%, 51%);
+    z-index: 10;
+}
+
+.share-icon svg.active {
+    fill: #fff;
+}
+
+.share-icons-container img:hover {
+    cursor: pointer;
+}
+
+.share-menu {
+    visibility: hidden;
+    position: absolute;
+    bottom: 95px;
+    right: -72px;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    color: rgba(255, 255, 255, .5);
+    font-weight: 300;
+    letter-spacing: .4rem;
+    border-radius: 10px;
+    padding: 6px 20px;
+    text-align: center;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.share-menu:after {
+    content: ''; 
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -8px;
+    background-color: hsl(217, 19%, 35%);
+    transform: rotate(45deg);
+}
+
+.share-menu p {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.share-menu img {
+    display: inline-block;
+    margin: 8px;
+}
+
+.share-menu.active {
+    visibility: visible;
+    display: inline-block;
+    opacity: 1;
+}
+
+.share-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 20px;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 2%;
+    font-size: 11px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+@media only screen and (max-width: 750px){
+
+    .preview-container {
+        width: 320px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .article-thumbnail {
+        width: 320px;
+        height: auto;
+    }
+
+    .article-preview-text {
+        display: block;
+        border-radius: 0 0 8px 8px;
+        width: 100%;
+        height: 55%;
+        bottom: 0;
+        right: auto;
+        padding: 8%;
+    }
+
+    .article-blurb {
+        margin-bottom: 10%;
+    }
+
+    .article-title {
+        font-size: 1rem;
+    }
+
+    .author-avatar {
+        width: 38px;
+    }
+
+    .author-name {
+        top: -24px;
+    }
+
+    .article-date {
+        top: -5px;
+    }
+
+    .share-icon {
+        top: -40px;
+    }
+
+    .share-menu {
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .share-icons-container {
+        margin-top: 10px;
+        margin-right: 70px;
+        left: -20px;
+    }
+
+}
