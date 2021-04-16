@@ -4,22 +4,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background: hsl(0, 0%, 95%);
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
     font-size: .9em;
-    line-height: 1.7;
-    background: hsl(0, 0%, 95%);
+    line-height: 1.7; 
 }
 
 .container {
     position: relative;
     top: 50%;
-    margin-left: 50%;
+    left: 50%;
     height: 55%;
     width: 60%;
     transform: translate(-50%, -50%);
@@ -60,25 +62,45 @@ h1 {
 
 button {
     display: block;
-    position: absolute;
+    position: relative;
+    top: 4em;
     bottom: 5em;
     background: hsl(0, 0%, 95%);
+    box-sizing: border-box;
     border: none;
     border-radius: 2em;
     padding: 1em 2em;
     font-family: inherit;
+    transition: all ease-in-out 150ms;
 }
 
-.sedans button {
+
+button a {
+    text-decoration: none;
+}
+
+.sedans button a {
     color: hsl(31, 77%, 52%);
 }
 
-.suv button {
+.suv button a {
     color: hsl(184, 100%, 22%);
 }
 
-.luxury button {
+.luxury button a {
     color: hsl(179, 100%, 13%)
+}
+
+button:hover {
+    box-sizing: border-box;
+    border: solid 2px white;
+    background-color: transparent;
+    left: -1px;
+    color: #fff;
+}
+
+button:hover a{
+    color: #fff;
 }
 
 .attribution { 
@@ -92,5 +114,4 @@ button {
 
 .attribution a { 
     color: #fff;
-
 }
