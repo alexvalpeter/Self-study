@@ -27,6 +27,14 @@ body {
     min-height: 100%;
 }
 
+/* Accessible by screen readers but not visible */
+.sr-only:not(:focus):not(:active) {
+    clip-path: inset(50%);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .container {
     position: relative;
     top: 50%;
@@ -47,7 +55,7 @@ body {
     margin-bottom: 2.2em;;
 }
 
-h1 {
+h2 {
     font-family: 'Big Shoulders Display', sans-serif;
     text-transform: uppercase;
     font-size: 3em;
