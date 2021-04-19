@@ -69,47 +69,39 @@ h1 {
     border-radius: 0 .6em .6em 0;
 }
 
-
-button {
-    display: block;
+.container a {
+    display: inline-block;
     position: relative;
     margin-top: 3em;
     background: hsl(0, 0%, 95%);
-    box-sizing: border-box;
-    border: none;
     border-radius: 2em;
     padding: 1em 2em;
     font-family: inherit;
     transition: all ease-in-out 150ms;
-}
-
-button a {
     text-decoration: none;
 }
 
-.sedans button a {
+
+.sedans a {
     color: hsl(31, 77%, 52%);
 }
 
-.suv button a {
+.suv a {
     color: hsl(184, 100%, 22%);
 }
 
-.luxury button a {
+.luxury a {
     color: hsl(179, 100%, 13%)
 }
 
-button:hover {
-    box-sizing: border-box;
+a:hover {
+    color: #fff;
     border: solid 2px white;
     background-color: transparent;
     left: -1px;
     color: #fff;
 }
 
-button:hover a{
-    color: #fff;
-}
 
 .attribution { 
     display: block;
