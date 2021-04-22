@@ -23,8 +23,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
 }
 
 h1 {
@@ -39,8 +37,6 @@ h1 {
     position: relative;
     width: 40%;
     display: block;
-    /*left: 50%;
-    transform: translateX(-50%);*/
     background-color: #fff;
     border-radius: .7em;
     box-shadow: 0 0 3em rgba(0, 0, 0, .1);
@@ -61,10 +57,10 @@ hr {
 
 
 .btn {
-    height: 1.3em;
+    visibility: hidden;
+    height: 1.2em;
     position: absolute;
     right: 4%;
-    transition: all 400ms;
 }
 
 .btn:hover {
@@ -73,12 +69,36 @@ hr {
     transition: all 400ms;
 }
 
-.btn-minus {
-    display: none;
+.answer-text {
+    font-size: .9em;
+    display: block;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    max-height: 0;
+}
+
+.expanded .answer-text{
+    height: auto;
+    max-height: 500px;
+    opacity: 1;
+    padding: 1em 0;
+    transition: all 500ms ease;
 }
 
 
-.answer-text {
-    font-size: .9em;
-    display: none;
+.btn-plus {
+    visibility: visible;
+}
+
+.btn-minus {
+    visibility: hidden;
+}
+
+.expanded .btn-plus {
+    visibility: hidden;
+}
+
+.expanded .btn-minus {
+    visibility: visible;
 }
