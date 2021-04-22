@@ -18,16 +18,17 @@ body {
 }
 
 .page-wrap {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 4%;
 }
 
 h1 {
+    display: inline-block;
     position: relative;
-    margin-top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
     margin-bottom: 4%;
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 3em;
@@ -36,6 +37,8 @@ h1 {
 #questions-container {
     position: relative;
     width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     background-color: #fff;
     border-radius: .7em;
@@ -55,9 +58,7 @@ hr {
     font-size: 1.2em;
 }
 
-
 .btn {
-    visibility: hidden;
     height: 1.2em;
     position: absolute;
     right: 4%;
@@ -76,9 +77,10 @@ hr {
     padding: 0;
     opacity: 0;
     max-height: 0;
+    transition: max-height 7s ease;
 }
 
-.expanded .answer-text{
+.expanded .answer-text {
     height: auto;
     max-height: 500px;
     opacity: 1;
