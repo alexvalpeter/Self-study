@@ -16,7 +16,7 @@ body {
     background: linear-gradient(hsl(273, 75%, 66%),  hsl(240, 73%, 65%));
     font-size: 1em;
     font-weight: 400;
-    color: hsl(240, 17%, 12%);
+    color: hsl(238, 29%, 16%);
 }
 
 #page-wrap {
@@ -39,6 +39,7 @@ body {
     max-height: 700px;
     margin-top: 10%;
     border-radius: 2.5em;
+    box-shadow: 0 2em 3em rgba(0, 0, 0, .1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,9 +50,11 @@ body {
     width: 55%;
     position: relative;
     display: inline-block;
+    background: url(img/illustration-woman-online-desktop.svg) -300% 50%/95% no-repeat,
+                url(img/bg-pattern-desktop.svg) 120% 65%/190% no-repeat;
 }
 
-.illustration-wrap {
+/*.illustration-wrap {
     position: relative;
     height: 100%;
     width: 100%;
@@ -73,7 +76,7 @@ body {
     left: -17%;
     display: inline;
     z-index: 2;
-}
+}*/
 
 .illustration-box {
     position: absolute;
@@ -88,7 +91,7 @@ body {
     position: relative;
     height: 100%;
     width: 44%;
-    padding: 6% 6% 6% 0;
+    padding: 8% 10% 6% 0;
 }
 
 h1 {
@@ -98,9 +101,63 @@ h1 {
 }
 
 .accordion-menu-container {
-    height: 100%;
+    height: 80%;
     width: 100%;
+    padding-right: 15px;
 }
+
+.question {
+    padding: 1.2em 0;
+}
+
+.question-heading {
+    position: relative;
+}
+
+.question-heading:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.expanded .question-heading {
+    font-weight: 700;
+}
+
+.arrow-icon {
+    height: .55em;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: transform 300ms ease;
+}
+
+.expanded .arrow-icon {
+    transform: rotate(180deg);
+    transition: transform 300ms ease;
+}
+
+.answer-text {
+    padding: 0;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: hsl(240, 6%, 50%);
+    max-height: 0;
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+.expanded .answer-text {
+    padding-top: 1.2em;
+    max-height: 100px;
+    opacity: 1;
+    transition: all 400ms ease;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: hsl(240, 5%, 91%);
+}    
 
 .attribution { 
     font-size: 11px; text-align: center; 
