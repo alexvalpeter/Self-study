@@ -19,7 +19,7 @@ This is my coded solution to the Article Preview Challenge from Frontend Mentor 
 ### Screenshots 
 
 #### Desktop
-![Desktop](/Screenshots/article-preview-desktop.png)
+![Desktop](./Screenshots/article-preview-desktop.png)
 
 - article-preview-active.png
 - article-preview-mobile.png
