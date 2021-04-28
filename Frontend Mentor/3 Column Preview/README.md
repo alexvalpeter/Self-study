@@ -1,6 +1,7 @@
 # Frontend Mentor - 3 Column Preview Challenge
 
-This is my coded solution to the 3 Column Preview Challenge from Frontend Mentor (https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+This is my coded solution to the 3 Column Preview Challenge from Frontend Mentor
+https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
 
 
 ### The Challenge
@@ -26,4 +27,4 @@ This is my coded solution to the 3 Column Preview Challenge from Frontend Mentor
 ![Active States](./Screenshots/3-column-active.png)
 
 #### Mobile
-![Mobile](./Screenshots/3-column-mobile-1.png) ![Mobile](./Screenshots/3-column-mobile-2.png)
+![Mobile](./Screenshots/3-column-mobile.png)
