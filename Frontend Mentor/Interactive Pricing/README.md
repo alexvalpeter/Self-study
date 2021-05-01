@@ -13,6 +13,7 @@ This is my coded solution to the Interactive Pricing Component Challenge from Fr
 ### Built With
 - Semantic HTML5 Markup
 - CSS3
+- Mobile-first workflow
 
 ### Screenshots
 
