@@ -12,59 +12,65 @@
 </head>
 
 <body>
-  <header>
-    <h1>Simple, traffic-based pricing</h1>
-    <div class="cta">
-      Sign-up for our 30-day trial. No credit card required.
-    </div>
-  </header>
+  <div class="content-wrap">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="sub-heading">
+        Sign-up for our 30-day trial. 
+        <br> 
+        No credit card required.
+      </p>
+    </header>
 
-  <section class="main-card">
+    <section class="main-card">
 
-    <div class="price-explorer">
-      <div class="price-data-label">Pageviews</div>
-      <div class="price">$ </div><div class="price-data-label">/month</div>
+      <div class="price-explorer">
+        <div class="price-data-label">Pageviews</div>
+        <div class="price">$ </div><div class="price-data-label">/month</div>
 
-      <div class="slider-container">
-        <input type="range" list="pageviews" value="2" min="0" max="4" step="1">
-        <datalist id="pageviews">
-          <option value="10K"></option>
-          <option value="50K"></option>
-          <option value="100K"></option>
-          <option value="500K"></option>
-          <option value="1M"></option>
-        </datalist>
+        <div class="slider-container">
+          <input type="range" list="pageviews" value="2" min="0" max="4" step="1">
+          <datalist id="pageviews">
+            <option value="10K"></option>
+            <option value="50K"></option>
+            <option value="100K"></option>
+            <option value="500K"></option>
+            <option value="1M"></option>
+          </datalist>
 
-        
+          
+        </div>
+
+        <p class="monthly-label">Monthly Billing</p>
+
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+
+        <p class="yearly-label">Yearly Billing</p>
+        <div class="discount">-25%</div>
+      </div>  
+
+      <div class="features">
+        <ul>
+          <li><p>Unlimited websites</p></li>
+          <li><p>100% data ownership</p></li>
+          <li><p>Email reports</p></li>
+        </ul>
+
+        <a href="#">Start my trial</a>
       </div>
 
-      <p class="monthly-label">Monthly Billing</p>
-
-      <label class="toggle">
-        <input type="checkbox">
-        <span class="slider"></span>
-      </label>
-
-      <p class="yearly-label">Yearly Billing</p>
-      <div class="discount">25% discount</div>
-    </div>  
-
-    <div class="features">
-      <ul>
-        <li>Unlimited websites</li>
-        <li>100% data ownership</li>
-        <li>Email reports</li>
-      </ul>
-
-      <a href="#">Start my trial</a>
-    </div>
-
-  </section>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Alexandria Peterson</a>.
+    </section>
   </div>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/alexvalpeter">Alexandria Peterson</a>
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
