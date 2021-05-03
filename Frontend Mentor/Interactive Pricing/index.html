@@ -25,31 +25,34 @@
     <section class="main-card">
 
       <div class="price-explorer">
-        <div class="price-data-label">Pageviews</div>
-        <div class="price">$ </div><div class="price-data-label">/month</div>
+        <div class="pageviews">100K Pageviews</div>
+
+        <div class="price-container">
+          <div class="price">$16.00</div>
+          <div class="time-period"> / month</div>
+        </div>
 
         <div class="slider-container">
-          <input type="range" list="pageviews" value="2" min="0" max="4" step="1">
-          <datalist id="pageviews">
+          <input class="pageview-slider" type="range" list="pageview-options" value="2" min="0" max="4" step="1">
+          <datalist id="pageview-options">
             <option value="10K"></option>
             <option value="50K"></option>
             <option value="100K"></option>
             <option value="500K"></option>
             <option value="1M"></option>
           </datalist>
-
-          
         </div>
 
-        <p class="monthly-label">Monthly Billing</p>
+        <div class="billing">
+          <p class="monthly-label">Monthly Billing</p>
 
-        <label class="toggle">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+          <label class="toggle">
+            <input type="checkbox">
+            <span class="switch"></span>
+          </label>
 
-        <p class="yearly-label">Yearly Billing</p>
-        <div class="discount">-25%</div>
+          <p class="yearly-label">Yearly Billing</p>
+        </div>
       </div>  
 
       <div class="features">

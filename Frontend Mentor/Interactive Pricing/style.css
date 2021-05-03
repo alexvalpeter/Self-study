@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
 * {
     margin: 0;
@@ -16,7 +16,7 @@ body {
     letter-spacing: .02em;
     background: hsl(230, 100%, 99%);
     color: hsl(225, 20%, 60%);
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 .content-wrap {
@@ -37,7 +37,7 @@ header {
     padding: 10% 0;
     transform: translateX(-50%);
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 h1 {
@@ -51,28 +51,163 @@ p {
 }
 
 .sub-heading {
-    font-size: .85em;
-    line-height: 1.8em;
+    font-size: .8em;
+    line-height: 1.6em;
 }
 
 .main-card {
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 65%;
     display: grid;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: "explorer" "features";
     background: #fff;
     box-shadow: 0 3em 3em rgba(0, 0, 0, .1);
     border-radius: .6em;
 }
 
 .price-explorer {
-    padding: 8%;
-    border-bottom: solid 1px rgba(0, 0, 0, .1);
+    grid-area: explorer;
+    padding: 10%;
+    border-bottom: solid 1px hsla(225, 20%, 60%, .2);
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+        "pageviews"
+        "slider"
+        "price"
+        "billing";
+    justify-items: center;    
+}
+
+.pageviews {
+    text-transform: uppercase;
+    font-size: .7em;
+    letter-spacing: .2em;
+    font-weight: 800;
+    text-align: center;
+    grid-area: pageviews;
+}
+
+
+.price-container {
+    grid-area: price;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    display: inline-block;
+    font-size: 1.9em;
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+    line-height: 1.9em;
+    margin-right: .3em;
+}
+
+.time-period {
+    display: inline-block;
+    font-size: .9em;
+    line-height: 1.9em;
+}
+
+.slider-container {
+    grid-area: slider;
+    width: 100%;
+}
+
+.pageview-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 7px;
+    background: hsl(224, 65%, 95%);
+    border-radius: 2em;
+}
+
+.pageview-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3em;
+    width: 3em;
+    background: hsl(174, 86%, 45%) url(img/icon-slider.svg) center center/auto no-repeat;
+    border-radius: 50%;
+    margin-top: -1em;
+    box-shadow: 0 1em 2em hsl(174, 86%, 45%);
+}    
+
+.pageview-slider::-moz-range-thumb {
+    height: 3.5em;
+    width: 3.5em;
+    background: hsl(174, 86%, 45%) url(img/icon-slider.svg) center center/auto no-repeat;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 1em 2em hsla(174, 86%, 45%, .5);
+}
+
+.billing {
+    grid-area: billing;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: end;
+}
+
+.monthly-label {
+    display: inline-block;
+}
+
+.yearly-label {
+    display: inline-block;
+}
+
+.yearly-label::after {
+    content: "-25%";
+    color: hsl(15, 100%, 70%);
+    background: hsl(14, 92%, 95%);
+    font-size: .8em;
+    font-weight: 600;
+    padding: .3em .7em;
+    border-radius: 3em;
+    position: absolute;
+    margin-left: .4em;
 }
 
 .features {
-    padding: 8%;
+    grid-area: features;
+    padding: 7%;
+    text-align: center;
 }
+
+ul {
+    list-style-image: url(img/icon-check.svg);
+    list-style-position: inside;
+    margin-bottom: 2em;
+}
+
+li {
+    margin-bottom: .3em;
+    
+}
+
+li p {
+    display: inline-block;
+    padding-left: .4em;
+}
+
+.features a {
+    background-color: hsl(227, 35%, 25%);
+    color: hsla(224, 65%, 95%, .8);
+    padding: 1.1em 4em;
+    border-radius: 3em;
+    font-size: .7em;
+    font-weight: 600;
+}
+
 
 a {
     text-decoration: none;
