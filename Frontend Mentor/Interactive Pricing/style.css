@@ -126,6 +126,7 @@ p {
     height: 7px;
     background: hsl(224, 65%, 95%);
     border-radius: 2em;
+    cursor: pointer;
 }
 
 .pageview-slider::-webkit-slider-thumb {
@@ -137,6 +138,7 @@ p {
     border-radius: 50%;
     margin-top: -1em;
     box-shadow: 0 1em 2em hsl(174, 86%, 45%);
+    cursor: pointer;
 }    
 
 .pageview-slider::-moz-range-thumb {
@@ -146,22 +148,24 @@ p {
     border-radius: 50%;
     border: none;
     box-shadow: 0 1em 2em hsla(174, 86%, 45%, .5);
+    cursor: pointer;
+}
+
+.pageview-slider:hover {
+    cursor: pointer;
 }
 
 .billing {
     grid-area: billing;
     width: 100%;
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-self: end;
 }
 
-.monthly-label {
-    display: inline-block;
-}
-
-.yearly-label {
+.monthly-label, .yearly-label {
     display: inline-block;
 }
 
@@ -175,6 +179,47 @@ p {
     border-radius: 3em;
     position: absolute;
     margin-left: .4em;
+}
+
+.switch {
+    height: 2em;
+    width: 4em;
+}
+
+.toggle {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 2em;
+    width: 4em;
+    border-radius: 3em;
+    background: hsl(223, 50%, 87%);
+    transition: all 200ms ease;
+    margin: 0 .8em;
+}
+
+.toggle::before {
+    content: '';
+    height: 1.3em;
+    width: 1.3em;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: .35em;
+    left: .35em;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.toggle:checked {
+    background: hsla(174, 86%, 45%, .5);
+    transition: all 200ms ease;
+}
+
+.toggle:checked::before {
+    left: 2.35em; 
+    transition: all 200ms ease;
 }
 
 .features {
