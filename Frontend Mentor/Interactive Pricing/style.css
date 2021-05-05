@@ -59,6 +59,7 @@ p {
 .main-card {
     position: relative;
     width: 100%;
+    min-width: 320px;
     height: 65%;
     display: grid;
     grid-template-rows: 55% 45%;
@@ -227,6 +228,9 @@ p {
     padding: 7%;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 ul {
@@ -252,6 +256,8 @@ li p {
     border-radius: 3em;
     font-size: .7em;
     font-weight: 600;
+    position: relative;
+    top: -1em;
 }
 
 
@@ -270,7 +276,6 @@ footer {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .attribution { 
@@ -281,6 +286,7 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
 
 @media only screen and (min-width: 376px){
 
@@ -310,6 +316,7 @@ footer {
     .main-card {
         width: 40%;
         height: 60%;
+        min-width: 525px;
         left: 50%;
         transform: translateX(-50%);
         grid-template-rows: 65% 35%;
@@ -363,8 +370,7 @@ footer {
     }
 
     .features {
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: row;
     }
 
     ul {
