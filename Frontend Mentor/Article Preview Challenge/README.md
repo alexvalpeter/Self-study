@@ -27,3 +27,6 @@ This is my coded solution to the Article Preview Challenge from Frontend Mentor 
 
 #### Mobile
 ![Mobile](./Screenshots/article-preview-mobile.png)
+
+### Deployed
+https://article-preview-challenge-ejsogdmz2.vercel.app/

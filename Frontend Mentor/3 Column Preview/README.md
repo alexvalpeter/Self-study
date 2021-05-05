@@ -13,7 +13,7 @@ https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2
 ### Built With
 - Semantic HTML5 Markup
 - CSS3
-- Vanila JavaScript
+- Vanilla JavaScript
 - Flexbox
 - CSS Grid
 
@@ -28,3 +28,6 @@ https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2
 
 #### Mobile
 ![Mobile](./Screenshots/3-column-mobile.png)
+
+### Deployed
+https://3-column-preview-hfasl7p9p-alexvalpeter.vercel.app/

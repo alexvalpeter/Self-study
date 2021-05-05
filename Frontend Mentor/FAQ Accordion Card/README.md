@@ -27,3 +27,6 @@ This is my coded solution to the FAQ Accordion Card Challenge from Frontend Ment
 
 #### Mobile
 ![Mobile](./Screenshots/faq-accordion-mobile.png)
+
+#### Deployed
+https://faq-accordion-card-m0hc1ewhn-alexvalpeter.vercel.app/
