@@ -32,12 +32,13 @@ header {
     display: inline-block;
     position: relative;
     margin-top: 15%;
+    margin-bottom: 8%;
     left: 50%;
     height: 22%;
     padding: 10% 0;
     transform: translateX(-50%);
     text-align: center;
-    margin-bottom: 8%;
+    
 }
 
 h1 {
@@ -185,11 +186,6 @@ p {
     margin-left: .4em;
 }
 
-.switch {
-    height: 2em;
-    width: 4em;
-}
-
 .toggle {
     position: relative;
     -webkit-appearance: none;
@@ -230,6 +226,7 @@ p {
     grid-area: features;
     padding: 7%;
     text-align: center;
+    display: flex;
 }
 
 ul {
@@ -259,6 +256,7 @@ li p {
 
 
 a {
+    display: inline;
     text-decoration: none;
     color: hsl(227, 35%, 25%);
 }
@@ -282,4 +280,103 @@ footer {
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 376px){
+
+    .content-wrap {
+        background: url(img/bg-pattern.svg) top left/contain no-repeat;
+    }
+
+    header {
+        margin-top: 0;
+        margin-bottom: 4%;
+        padding: 3% 0 0 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .sub-heading {
+        font-size: .9em;
+
+    }
+
+    .sub-heading br {
+        display: none;
+    }
+
+    .main-card {
+        width: 40%;
+        height: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        grid-template-rows: 65% 35%;
+    }
+
+    .price-explorer {
+        padding: 8%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "pageviews price"
+            "slider slider"
+            "billing billing";
+        align-items: center;
+    }
+
+    .pageviews-container {
+        font-size: 1em;
+        justify-self: start;
+        position: relative;
+        top: -.5em;
+    }
+
+    .price-container {
+       position: relative;
+       justify-content: flex-end;
+       align-self: center;
+       top: -.5em;
+    }
+
+    .price {
+        font-size: 2.5em;
+    }
+
+    .monthly-label, .yearly-label {
+        font-size: .8em;
+    }
+
+
+    .yearly-label::after {
+        content: "25% Discount";
+        margin-left: .6em;
+    }
+
+    .toggle {
+        margin: 0 2em;
+    }
+
+    .pageview-slider {
+        align-self: end;
+    }
+
+    .features {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
 }
