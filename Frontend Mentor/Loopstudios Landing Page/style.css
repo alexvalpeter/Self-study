@@ -30,16 +30,37 @@ header {
     justify-content: space-between;
 }
 
-header nav {
-    display: none;
-    position: absolute;
-    background: #000;
+.logo img {
+    height: 1.4em;
+}
+
+.logo, #hamburger-menu-icon {
+    z-index: 3;
+}
+
+#header-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    padding: 4%;
+    background: #000;
+    padding-left: 6%;
     text-transform: uppercase;
-    /*height: 0;
-    width: 0;*/
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 200ms ease;
+}
+
+header ul {
+    position: relative;
+    top: 40%;
+    transform: translateY(-25%);
+}
+
+header li {
+    font-size: 1.8em;
+    margin-bottom: 1em;
 }
 
 .hero-message {
@@ -60,6 +81,32 @@ li {
 a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+}
+
+header input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 1.5em;
+    width: 2em;
+    background: url(img/icon-hamburger.svg) center center/auto no-repeat;
+    cursor: pointer;
+}
+
+#hamburger-menu-icon:checked {
+    background: url(img/icon-close.svg) center center/auto no-repeat;  
+}
+
+#hamburger-menu-icon:checked ~ #header-navigation {
+    transform: none;
+    transition: transform 200ms ease;
+}
+
+footer {
+    background: #000;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-size: .9em;
 }
 
 .attribution { 
