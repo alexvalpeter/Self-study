@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
     color: #fff;
     text-align: center;
-
 }
 
 #hero {
@@ -28,7 +27,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .logo img {
@@ -104,10 +102,13 @@ header input {
     transition: transform 200ms ease;
 }
 
+section {
+    padding: 6%;
+}
+
 .leader {
     width: 100vw;
     height: 100vh;
-    padding: 6%;
     text-align: center;
 }
 
@@ -131,6 +132,89 @@ p {
     line-height: 1.6em;
     padding: 0 10%;
 }
+
+.our-creations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "creations-heading" 
+        "thumbnails" 
+        "see-all";
+    margin-bottom: 20%;       
+}
+
+.our-creations h2 {
+    grid-area: creations-heading;
+}
+
+.see-all {
+    grid-area: see-all;
+    justify-self: center;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+    font-size: .8em;
+    letter-spacing: .5em;
+    padding: .8em 2.5em;
+    border: solid 1px #000;
+}
+
+.thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap: 1.5em;
+    grid-area: thumbnails;
+    padding: 8% 0 10% 0;
+}
+
+.thumbnail {
+    position: relative;
+    height: 5em;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.thumbnail .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 6% 6%;
+}
+
+.deep-earth {
+    background: url(img/mobile/image-deep-earth.jpg) center center/cover no-repeat;
+}
+
+.night-arcade {
+    background: url(img/mobile/image-night-arcade.jpg) center center/cover no-repeat;
+}
+
+.soccer-team {
+    background: url(img/mobile/image-soccer-team.jpg) center center/cover no-repeat;
+}
+
+.grid {
+    background: url(img/mobile/image-grid.jpg) center center/cover no-repeat;
+}
+
+.from-above {
+    background: url(img/mobile/image-from-above.jpg) center center/cover no-repeat;
+}
+
+.pocket-borealis {
+    background: url(img/mobile/image-pocket-borealis.jpg) center center/cover no-repeat;
+}
+
+.curiosity {
+    background: url(img/mobile/image-curiosity.jpg) center center/cover no-repeat;
+}
+
+.fisheye {
+    background: url(img/mobile/image-fisheye.jpg) center center/cover no-repeat;
+}
+
 
 footer {
     background: #000;
