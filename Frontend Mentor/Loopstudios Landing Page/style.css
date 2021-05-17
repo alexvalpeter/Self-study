@@ -109,15 +109,20 @@ section {
 }
 
 .leader {
+    position: relative;
     width: 100vw;
     height: 100vh;
     text-align: center;
 }
 
-.leader img {
+.interactive-image-mobile {
     width: 100%;
     margin-top: 20%;
     margin-bottom: 15%;
+}
+
+.interactive-image-desktop {
+    display: none;
 }
 
 h2 {
@@ -277,10 +282,13 @@ footer li {
         font-size: 2.8em;
     }
 
+    .interactive-image-mobile {
+        margin-top: 10%;
+    }
+
     h1 {
         font-size: 4.2em;
         display: inline-block;
-        white-space: pre-line;
 
     }
 
@@ -288,9 +296,6 @@ footer li {
         font-size: 2.8em;
     }
 
-    .leader img {
-        margin-top: 10%;
-    }
 
     p, footer {
         font-size: 1.1em;
@@ -301,7 +306,7 @@ footer li {
     
 @media only screen and (min-width: 1025px) {
     #hero {
-        background: rgba(0, 0, 0, .5), url(img/desktop/image-hero.jpg) center center/cover no-repeat;
+        background: url(img/desktop/image-hero.jpg) center center/cover no-repeat;
         height: 80vh;
         padding: 3% 10%;
     }
@@ -341,6 +346,45 @@ footer li {
         margin-left: 3em;
         font-size: 1em;
     }
+
+    section {
+        padding: 10%;
+    }
+
+    .interactive-image-mobile {
+        display: none;
+    }
+
+    .interactive-image-desktop {
+        display: block;
+        width: 65%;
+    }
+
+    .leader-content-wrap {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .leader-text {
+        position: absolute;
+        right: 0;
+        background: #fff;
+        padding: 8% 0 0 8%;
+        width: 48%;
+        text-align: left;
+    }
+
+    .leader-text h2 {
+        font-size: 3.5em;
+        margin-bottom: 8%;
+    }
+
+    p {
+        padding: 0;
+    }
+
+
 
 
 }    
