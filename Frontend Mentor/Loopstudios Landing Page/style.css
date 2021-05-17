@@ -20,6 +20,7 @@ body {
     width: 100vw;
     padding: 6%;
     overflow: hidden;
+    text-align: left;
 }
 
 
@@ -52,7 +53,6 @@ header {
     z-index: 2;
     transform: translateX(100%);
     transition: transform 200ms ease;
-    
 }
 
 header ul {
@@ -72,10 +72,8 @@ h1 {
     transform: translateY(-50%);
     font-size: 2.7em;
     text-transform: uppercase;
-    width: 100%;
     border:solid 2px #fff;
-    padding: 7% 7% 6% 7%;
-    text-align: left;
+    padding: 7%;
 }
 
 li {
@@ -98,7 +96,7 @@ header input {
 }
 
 #hamburger-menu-icon:checked {
-    background: url(img/icon-close.svg) center center/auto no-repeat;  
+    background: url(img/icon-close.svg) center center/cover no-repeat;  
 }
 
 #hamburger-menu-icon:checked ~ #header-navigation {
@@ -265,7 +263,7 @@ footer li {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
     .logo img {
         height: 2.2em;
     }
@@ -275,10 +273,16 @@ footer li {
         width: 3em;
     }
 
-    h1 {
-        font-size: 4.2em;
+    header li {
+        font-size: 2.8em;
     }
 
+    h1 {
+        font-size: 4.2em;
+        display: inline-block;
+        white-space: pre-line;
+
+    }
 
     h2 {
         font-size: 2.8em;
@@ -291,7 +295,52 @@ footer li {
     p, footer {
         font-size: 1.1em;
     }
+}    
 
 
     
-}
+@media only screen and (min-width: 1025px) {
+    #hero {
+        background: rgba(0, 0, 0, .5), url(img/desktop/image-hero.jpg) center center/cover no-repeat;
+        height: 80vh;
+        padding: 3% 10%;
+    }
+
+    h1 {
+        top: 50%;
+        font-size: 5.2em;
+        padding: 3% 8% 3% 3%;
+    }
+
+    header input {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #header-navigation {
+        position: initial;
+        height: auto;
+        width: auto;
+        background: none;
+        text-transform: none;
+        font-family: 'Alata', sans-serif;
+        transform: none;
+    }
+
+    header ul {
+        transform: none;
+        position: initial;
+    }
+
+    header li {
+        display: inline;
+        margin-left: 3em;
+        font-size: 1em;
+    }
+
+
+}    
