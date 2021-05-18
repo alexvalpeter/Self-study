@@ -225,6 +225,15 @@ p {
 
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo"
+        "nav"
+        "social"
+        "copyright"
+        "attribution";
     padding: 12%;
     background: #000;
     font-family: 'Alata', sans-serif;
@@ -233,11 +242,13 @@ footer {
 }
 
 footer .logo {
+    grid-area: logo;
     margin-bottom: 2em;
 }
 
 footer ul {
     margin-bottom: 3em;
+    grid-area: nav;
 }
 
 footer li {
@@ -246,6 +257,7 @@ footer li {
 
 .social-icons {
     position: relative;
+    grid-area: social;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
@@ -256,10 +268,13 @@ footer li {
 }
 
 .copyright {
+    grid-area: copyright;
     color: hsl(0, 0%, 55%);
+    margin-bottom: .5em;
 }
 
 .attribution { 
+    grid-area: attribution;
     font-size: .5em; text-align: center; 
 }
 
@@ -341,7 +356,7 @@ footer li {
         position: initial;
     }
 
-    header li {
+    header li, footer li {
         display: inline;
         margin-left: 3em;
         font-size: 1em;
@@ -375,14 +390,137 @@ footer li {
         text-align: left;
     }
 
-    .leader-text h2 {
+    h2 {
         font-size: 3.5em;
+    }
+
+    .leader-text h2 {
         margin-bottom: 8%;
     }
 
     p {
         padding: 0;
     }
+
+    .our-creations {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "creations-heading see-all"
+            "thumbnails thumbnails";
+        margin: 0;
+    }
+
+    .our-creations h2 {
+        justify-self: start;
+    }
+
+    .see-all {
+        justify-self: end;
+        align-self: start;
+        font-size: 1em;
+    }
+
+    .thumbnail {
+        height: 22em;
+    }
+
+    .thumbnail::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 150ms ease;
+    }
+
+    .thumbnail:hover {
+        color: #000;
+        cursor: pointer;
+    }
+
+    .thumbnail:hover::before {
+        background: rgba(255, 255, 255, .7);
+        transition: all 150ms ease;
+    }
+
+    .thumbnail .title {
+        font-size: 1.6em;
+        padding: 0 0 9% 9%;
+        font-weight: bold;
+    }
+
+    .deep-earth {
+        background: url(img/desktop/image-deep-earth.jpg) center center/cover no-repeat;
+    }
+    
+    .night-arcade {
+        background: url(img/desktop/image-night-arcade.jpg) center center/cover no-repeat;
+    }
+    
+    .soccer-team {
+        background: url(img/desktop/image-soccer-team.jpg) center center/cover no-repeat;
+    }
+    
+    .grid {
+        background: url(img/desktop/image-grid.jpg) center center/cover no-repeat;
+    }
+    
+    .from-above {
+        background: url(img/desktop/image-from-above.jpg) center center/cover no-repeat;
+    }
+    
+    .pocket-borealis {
+        background: url(img/desktop/image-pocket-borealis.jpg) center center/cover no-repeat;
+    }
+    
+    .curiosity {
+        background: url(img/desktop/image-curiosity.jpg) center center/cover no-repeat;
+    }
+    
+    .fisheye {
+        background: url(img/desktop/image-fisheye.jpg) center center/cover no-repeat;
+    }
+
+    footer {
+        padding: 3% 10% 1% 10%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo social"
+            "nav copyright"
+            "attribution attribution";
+    }
+
+    footer .logo, footer ul {
+        justify-self: start;
+    }
+
+    footer ul {
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    footer .logo img {
+        height: 1.6em;
+    }
+
+    footer li {
+        margin-left: 0;
+        margin-right: 3em;
+    }
+
+    .social-icons, .copyright {
+        justify-self: end;
+    }
+
+    .social-icons {
+        left: initial;
+        width: 30%;
+        transform: none;
+        justify-content: space-between;
+    }
+
 
 
 
