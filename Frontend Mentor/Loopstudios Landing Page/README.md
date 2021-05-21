@@ -22,10 +22,10 @@ https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw
 ### Screenshots 
 
 #### Desktop
-![Desktop](./Screenshots/Loopstudios-desktop.png)
+![Desktop](./Screenshots/Loopstudios-desktop.jpg)
 
 #### Active Hover States
-![Active States](./Screenshots/Loopstudios-active.png)
+![Active States](./Screenshots/Loopstudios-active.jpg)
 
 #### Mobile
 ![Mobile](./Screenshots/Loopstudios-mobile1.png)
@@ -35,4 +35,4 @@ https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw
 ![Tablet](./Screenshots/Loopstudios-tablet.png)
 
 ### Deployed
-
+https://loopstudios-6eed48iib-alexvalpeter.vercel.app
