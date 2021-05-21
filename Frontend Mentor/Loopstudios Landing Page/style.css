@@ -143,6 +143,7 @@ p {
 }
 
 .our-creations {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -159,6 +160,7 @@ p {
 
 .see-all {
     grid-area: see-all;
+    align-self: center;
     justify-self: center;
     color: #000;
     text-transform: uppercase;
@@ -317,8 +319,6 @@ footer li {
         font-size: 1.1em;
     }
 }    
-
-
     
 @media only screen and (min-width: 1300px) {
     #hero {
@@ -440,7 +440,7 @@ footer li {
 
     .see-all {
         justify-self: end;
-        align-self: start;
+        align-self: center;
         font-size: 1em;
     }
 
