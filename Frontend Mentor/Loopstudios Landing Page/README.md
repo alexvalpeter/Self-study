@@ -22,13 +22,17 @@ https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw
 ### Screenshots 
 
 #### Desktop
-![Desktop](./Screenshots/)
+![Desktop](./Screenshots/Loopstudios-desktop.png)
 
 #### Active Hover States
-![Active States](./Screenshots/)
+![Active States](./Screenshots/Loopstudios-active.png)
 
 #### Mobile
-![Mobile](./Screenshots/)
+![Mobile](./Screenshots/Loopstudios-mobile1.png)
+![Mobile](./Screenshots/Loopstudios-mobile2.png)
+
+#### Tablet 
+![Tablet](./Screenshots/Loopstudios-tablet.png)
 
 ### Deployed
 
