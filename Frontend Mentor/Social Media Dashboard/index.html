@@ -11,107 +11,123 @@
 
 </head>
 <body>
-  <div id="content-wrap">
-    <h1>Social Media Dashboard</h1>
-    <div class="total-followers-count">Total Followers: 23,004</div>
-    <div class="dark-mode">
-      <div class="toggle-label">Dark Mode</div>
-      <input type="checkbox" class="color-mode-toggle">
-    </div>
+  <div class="page-wrap">
+    <div id="content-wrap">
+      <header>
+      <h1>Social Media Dashboard</h1>
+        <div class="total-followers-count">Total Followers: 23,004</div>
 
-    <div class="general-overview">
+        <hr>
 
-      <div class="card big-card facebook">
+        <div class="dark-mode-option">
+          <div class="toggle-label">Dark Mode</div>
+          <input type="checkbox" class="color-mode-toggle">
+        </div>
+      </header>
+
+      <div class="general-overview">
+
         <!-- Facebook -->
-        <div class="social-username facebook-handle">@nathanf</div>
-        <div class="number-followers">1987</div>
-        <div class="stat-label">Followers</div>
-        <div class="stat-change positive-change">12 Today</div>
-      </div>
+        <div class="card big-card facebook">
+          <div class="social-username facebook-handle">@nathanf</div>
+          <div class="stat facebook-followers">1987</div>
+          <div class="stat-label">Followers</div>
+          <div class="stat-change positive-change">12 Today</div>
+        </div>
 
-      <div class="card big-card twitter">
         <!-- Twitter -->
-        <div class="social-username twitter-handle">@nathanf</div>
-        <div class="number-followers">1044</div>
-        <div class="stat-label">Followers</div>
-        <div class="stat-change positive-change">99 Today</div>
-      </div>
+        <div class="card big-card twitter">
+          <div class="social-username twitter-handle">@nathanf</div>
+          <div class="stat twitter-followers">1044</div>
+          <div class="stat-label">Followers</div>
+          <div class="stat-change positive-change">99 Today</div>
+        </div>
 
-      <div class="card big-card twitter">
         <!-- Instagram -->
-        <div class="social-username instagram-handle">@realnathanf</div>
-        <div class="number-followers">11k</div>
-        <div class="stat-label">Followers</div>
-        <div class="stat-change positive-change">1099 Today</div>
-      </div>
+        <div class="card big-card instagram">
+          <div class="social-username instagram-handle">@realnathanf</div>
+          <div class="stat instagram-followers">11k</div>
+          <div class="stat-label">Followers</div>
+          <div class="stat-change positive-change">1099 Today</div>
+        </div>
 
-      <div class="card big-card twitter">
+
         <!-- YouTube -->
-        <div class="social-username youtube-handle">Nathan F.</div>
-        <div class="number-followers">8239</div>
-        <div class="stat-label">Subscribers</div>
-        <div class="stat-change negative-change">144 Today</div>
+        <div class="card big-card youtube">
+          <div class="social-username youtube-handle">Nathan F.</div>
+          <div class="stat youtube-subscribers">8239</div>
+          <div class="stat-label">Subscribers</div>
+          <div class="stat-change negative-change">144 Today</div>
+        </div>
       </div>
+
+
+      <div class="overview-today">
+        <h2>Overview - Today</h2>
+
+        <!-- Facebook -->
+
+        <div class="card small-card facebook">
+          <div class="stat-label">Page Views</div>
+          <div class="stat facebook-pageviews">87</div>
+          <div class="stat-change facebook-pageviews-change positive-change">3%</div>
+        </div>
+
+        <div class="card small-card facebook">
+          <div class="stat-label">Likes</div>
+          <div ckass="stat facebook-likes">52</div>
+          <div class="stat-change facebook-likes-change negative-change">2%</div>
+        </div>
+
+        <!-- Instagram -->
+
+        <div class="card small-card instagram"> 
+          <div class="stat-label">Likes</div>
+          <div class="stat instagram-likes">5462</div>
+          <div class="stat-change instagram-likes-change positive-change">2257%</div>
+        </div>
+
+        <div class="card small-card instagram">
+          <div class="stat-label">Profile Views</div>
+          <div class="stat instagram-views">52k</div>
+          <div class="stat-change instagram-views-change positive-change">1375%</div>
+        </div>
+
+        <!-- Twitter -->
+
+        <div class="card small-card twitter">
+          <div class="stat-label">Retweets</div>
+          <div class="stat retweets">117</div>
+          <div class="stat-change retweets-change positive-change">303%</div>
+        </div>
+
+        <div class="card small-card twitter">
+          <div class="stat-label">Likes</div>
+          <div class="stat twitter-likes">507</div>
+          <div class="stat-change twitter-likes-change positive-change">553%</div>
+        </div>
+
+        <!-- YouTube -->
+
+        <div class="card small-card youtube">
+          <div class="stat-label">Likes</div>
+          <div class="stat youtube-likes">107</div>
+          <div class="stat-change youtube-likes-change negative-change">19%</div>
+        </div>
+
+        <div class="card small-card youtube">
+          <div class="stat-label">Total Views</div>
+          <div class="stat youtube-views">1407</div>
+          <div class="stat-change youtube-views-change negative-change">12%</div>
+        </div>
+
+      </div>
+    </div>  
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/alexvalpeter">Alexandria Peterson</a>.
     </div>
-
-
-    <div class="overview-today">
-      <h2>Overview - Today</h2>
-
-      <div class="card small-card">
-        <div class="stat-label">Page Views</div>
-        87
-        <div class="stat-change positive-change">3%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Likes</div>
-        52
-        <div class="stat-change negative-change">2%</div>
-      </div>
-
-      <div class="card small-card"> 
-        <div class="stat-label">Likes</div>
-        5462
-        <div class="stat-change positive-change">2257%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Profile Views</div>
-        52k
-        <div class="stat-change positive-change">1375%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Retweets</div>
-        117
-        <div class="stat-change positive-change">303%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Likes</div>
-        507
-        <div class="stat-change positive-change">553%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Likes</div>
-        107
-        <div class="stat-change negative-change">19%</div>
-      </div>
-
-      <div class="card small-card">
-        <div class="stat-label">Total Views</div>
-        1407
-        <div class="stat-change negative-change">12%</div>
-      </div>
-
-    </div>
-  </div>  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 
   <script src="app.js"></script>
