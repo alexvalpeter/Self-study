@@ -95,12 +95,20 @@ hr {
     flex-direction: column;
     align-items: center;
     padding: 10% 0;
-    background-size: 100% 4px;
-    background-repeat: no-repeat;
+    
+}
+
+.big-card .icon-username-container {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.big-card .social-icon {
+    margin-right: .5em;
 }
 
 .big-card.facebook {
-    background: hsl(208, 92%, 53%);
+    border-top: solid 4px hsl(208, 92%, 53%);
 }
 
 .big-card.twitter {
@@ -108,6 +116,8 @@ hr {
 }
 
 .big-card.instagram {
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
     background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     
 }
