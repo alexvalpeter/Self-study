@@ -92,6 +92,73 @@ hr {
 .big-card {
     margin-bottom: 1.4em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+}
+
+.big-card.facebook {
+    background: hsl(208, 92%, 53%);
+}
+
+.big-card.twitter {
+    border-top: solid 4px hsl(203, 89%, 53%)
+}
+
+.big-card.instagram {
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    
+}
+
+.big-card.youtube {
+    border-top: solid 4px hsl(348, 97%, 39%);
+}
+
+.big-card .stat {
+    color: hsl(230, 17%, 14%);
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.big-card .stat-label {
+    color: hsl(228, 12%, 44%);
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 400;
+    letter-spacing: .5em;
+    margin-bottom: 2em;
+}
+
+.stat-change {
+    position: relative;
+    font-size: .8em;
+    font-weight: 700;
+}
+
+.positive-change {
+    color: hsl(163, 72%, 41%);
+}
+
+.positive-change::before {
+    position: absolute;
+    content: url(img/icon-up.svg);
+    margin-right: .2em;
+    top: -15%;
+    left: -20%;
+}
+
+.negative-change {
+    color: hsl(356, 69%, 56%);
+}
+
+.negative-change::before {
+    position: absolute;
+    content: url(img/icon-down.svg);
+    margin-right: .2em;
+    top: -15%;
+    left: -20%;
 }
 
 .attribution { 
