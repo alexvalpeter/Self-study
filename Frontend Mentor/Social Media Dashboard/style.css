@@ -25,7 +25,6 @@ body::before {
     background: hsl(225, 100%, 98%);
     border-radius: 0 0 1em 1em;
     z-index: -1;
-    
 }
 
 .page-wrap {
@@ -75,6 +74,7 @@ hr {
     background: hsl(230, 22%, 74%);
     border-radius: 3em;
     cursor: pointer;
+    transition: all 200ms ease;
 }
 
 .dark-mode-option input::before {
@@ -91,9 +91,15 @@ hr {
     transition: all 200ms ease;
 }
 
+.dark-mode-option input:checked {
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    transition: all 200ms ease;
+}
+
 .dark-mode-option input:checked::before {
     margin-left: 2.7em;
     transition: all 200ms ease;
+    background: hsl(228, 28%, 20%);
 }
 
 .general-overview {
@@ -243,4 +249,26 @@ h2 {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
+}
+
+/* --- Dark Mode --- */
+
+body.dark {
+    background: hsl(230, 17%, 14%);
+}
+
+body.dark::before {
+    background-color: hsl(232, 19%, 15%);
+}
+
+h1.dark, h2.dark, .stat.dark {
+    color: #fff;
+}
+
+.total-followers-count.dark, .toggle-label.dark, .social-username.dark, .stat-label.dark, .attribution.dark  {
+    color: hsl(228, 34%, 66%);
+}
+
+.card.dark {
+    background-color: hsl(228, 28%, 20%);
 }
