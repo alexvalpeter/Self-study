@@ -28,6 +28,7 @@ body::before {
 }
 
 .page-wrap {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -271,4 +272,68 @@ h1.dark, h2.dark, .stat.dark {
 
 .card.dark {
     background-color: hsl(228, 28%, 20%);
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 768px) {
+
+    .general-overview, .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .big-card {
+        padding: 12% 0;
+    }
+
+    .small-card {
+        grid-row-gap: 1.8em;
+        padding: 10%;
+    }
+}
+
+/* -- Desktop --*/
+@media screen and (min-width: 1201px) {
+    
+    body {
+        padding: 4% 12% 0 12%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .total-followers-count, .toggle-label, .big-card .social-username, .small-card .stat-label {
+        font-size: 1em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+
+    .dark-mode-option {
+        width: auto;
+        justify-content: end;
+    }
+
+    .toggle-label {
+        margin-right: .6em;
+    }
+
+    .general-overview, .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+    .small-card .stat {
+        font-size: 2.4em;
+    }
+
+
 }
