@@ -244,7 +244,7 @@ h2 {
 
 .attribution { 
     font-size: 11px; text-align: center; 
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
 
 .attribution a { 
@@ -295,7 +295,7 @@ h1.dark, h2.dark, .stat.dark {
 @media screen and (min-width: 1201px) {
     
     body {
-        padding: 4% 12% 0 12%;
+        padding: 3% 12% 0 12%;
     }
 
     hr {
@@ -303,18 +303,18 @@ h1.dark, h2.dark, .stat.dark {
     }
 
     h1 {
-        font-size: 2.2em;
+        font-size: 2.6em;
     }
 
-    .total-followers-count, .toggle-label, .big-card .social-username, .small-card .stat-label {
-        font-size: 1em;
+    .total-followers-count, .toggle-label {
+        font-size: 1.2em;
     }
 
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
 
     .dark-mode-option {
@@ -328,6 +328,14 @@ h1.dark, h2.dark, .stat.dark {
 
     .general-overview, .card-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .big-card .stat {
+        font-size: 4.5em;
+    }
+
+    .big-card .stat-label, .big-card .social-username, .small-card .stat-label, .stat-change {
+        font-size: 1em;
     }
 
     
