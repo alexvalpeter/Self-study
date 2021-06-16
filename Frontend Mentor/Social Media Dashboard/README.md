@@ -1,4 +1,4 @@
-# Frontend Mentor - 
+# Frontend Mentor - Social Media Dashboard with Theme Swticher Challenge
 
 This is my coded solution to the Social Media Dashboard with Theme Switcher from Frontend Mentor
 https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H
@@ -27,11 +27,11 @@ https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switc
 ![Desktop](./Screenshots/social-dashboard-dark.png)
 
 #### Mobile
-![Mobile](./Screenshots/social-dashboard-mobile-light.png)
-![Mobile](./Screenshots/social-dahsboard-mobile-dark.png)
+![Mobile](./Screenshots/social-dashboard-mobile-light.png) ![Mobile](./Screenshots/social-dashboard-mobile-dark.png)
 
 #### Tablet 
 ![Tablet](./Screenshots/social-dashboard-tablet-light.png)
 ![Tablet](./Screenshots/social-dashboard-tablet-dark.png)
 
 ### Deployed
+https://social-media-dashboard-m1wg7ov5e-alexvalpeter.vercel.app/
