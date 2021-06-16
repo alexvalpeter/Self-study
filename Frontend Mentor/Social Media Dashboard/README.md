@@ -17,6 +17,7 @@ https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switc
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 
 ### Screenshots 
@@ -25,17 +26,12 @@ https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switc
 ![Desktop](./Screenshots/social-dashboard-light.png)
 ![Desktop](./Screenshots/social-dashboard-dark.png)
 
-#### Active Hover States
-![Active States](./Screenshots/social-dashboard-light-active.png)
-![Active States](/Screenshots/social-dashboard-dark-active.png)
-
 #### Mobile
-![Mobile](./Screenshots/social-dashboard-light.png)
-![Mobile](./Screenshots/social-dahsboard-dark.png)
+![Mobile](./Screenshots/social-dashboard-mobile-light.png)
+![Mobile](./Screenshots/social-dahsboard-mobile-dark.png)
 
 #### Tablet 
-![Tablet](./Screenshots/social-dashboard-light.png)
-![Tablet](./Screenshots/social-dashboard-dark.png)
+![Tablet](./Screenshots/social-dashboard-tablet-light.png)
+![Tablet](./Screenshots/social-dashboard-tablet-dark.png)
 
 ### Deployed
-https://loopstudios-6eed48iib-alexvalpeter.vercel.app
