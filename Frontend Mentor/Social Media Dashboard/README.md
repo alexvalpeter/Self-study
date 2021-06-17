@@ -1,4 +1,4 @@
-# Frontend Mentor - Social Media Dashboard with Theme Swticher Challenge
+# Frontend Mentor - Social Media Dashboard with Theme Switcher Challenge
 
 This is my coded solution to the Social Media Dashboard with Theme Switcher from Frontend Mentor
 https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H
