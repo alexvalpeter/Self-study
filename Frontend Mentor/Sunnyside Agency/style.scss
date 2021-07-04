@@ -1,15 +1,113 @@
-/* Primary Colors */
-/* Footer */
-$dark-cyan: hsl(168, 34%, 41%); 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
 /* Graphic design section/footer text */
 $dark-cyan-desat: hsl(167, 40%, 24%);
-/* Photography section text */
+/* Section text */
 $dark-blue: hsl(198, 62%, 26%);
+$sans-serif-font-stack: 'Barlow', sans-serif;
+$serif-font-stack: 'Fraunces', serif;
 
 /* Neutral Colors */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: $sans-serif-font-stack;
+}
+
+
+.hero {
+    position: relative;
+    color: #fff;
+    height: 70%;
+    background: url(img/mobile/image-header.jpg) center center/cover no-repeat;
+    padding: 10% 8%;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hamburger-icon {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            height: 1.6em;
+            width: 2em;
+            background: url(img/icon-hamburger.svg) center center/cover;
+            opacity: 60%;
+            cursor: pointer;
+        }
+
+    }
+ 
+    nav {
+        position: absolute;
+        top: 22%;
+        background: #fff;
+        height: 17em;
+        width: 84%;
+        padding-bottom: 1em;
+
+        &::before {
+            position: absolute;
+            top: -27px;
+            right: 0px;
+            content: '';
+            height: 0;
+            width: 0;
+            border-right: solid #fff 14px;
+            border-bottom: solid #fff 14px;
+            border-left: solid transparent 14px;
+            border-top: solid transparent 14px;
+            
+        }
+
+        ul {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            list-style: none;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: hsl(232, 10%, 55%);
+        }
+
+        .contact {
+            margin-top: .8em;
+
+            a {
+                color: hsl(212, 27%, 19%);
+                font-family: $serif-font-stack;
+                text-transform: uppercase;
+                padding: 1em 1.8em;
+                background: hsl(51, 100%, 49%);
+                border-radius: 3em;
+            }
+        }
+
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.grid-image {
+    width: 100%;
 }
