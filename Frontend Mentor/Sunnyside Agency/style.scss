@@ -33,26 +33,31 @@ html, body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
 
-        .hamburger-icon {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            height: 1.6em;
-            width: 2em;
-            background: url(img/icon-hamburger.svg) center center/cover;
-            opacity: 60%;
-            cursor: pointer;
+    .hamburger-icon {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 1.6em;
+        width: 2em;
+        background: url(img/icon-hamburger.svg) center center/cover;
+        opacity: 60%;
+        cursor: pointer;
+
+        &:checked ~ .main-menu {
+            transform: none;
         }
-
     }
  
     nav {
         position: absolute;
         top: 22%;
+        transform: translateX(200%);
         background: #fff;
         height: 17em;
         width: 84%;
         padding-bottom: 1em;
+        transition: transform 200ms ease;
 
         &::before {
             position: absolute;
@@ -65,7 +70,6 @@ html, body {
             border-bottom: solid #fff 14px;
             border-left: solid transparent 14px;
             border-top: solid transparent 14px;
-            
         }
 
         ul {

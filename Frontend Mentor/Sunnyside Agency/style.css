@@ -26,7 +26,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
 }
-.hero header .hamburger-icon {
+.hero .hamburger-icon {
   -webkit-appearance: none;
   -moz-appearance: none;
   height: 1.6em;
@@ -35,13 +35,18 @@ html, body {
   opacity: 60%;
   cursor: pointer;
 }
+.hero .hamburger-icon:checked ~ .main-menu {
+  transform: none;
+}
 .hero nav {
   position: absolute;
   top: 22%;
+  transform: translateX(200%);
   background: #fff;
   height: 17em;
   width: 84%;
   padding-bottom: 1em;
+  transition: transform 200ms ease;
 }
 .hero nav::before {
   position: absolute;
@@ -91,5 +96,3 @@ h1 {
 .grid-image {
   width: 100%;
 }
-
-/*# sourceMappingURL=style.css.map */
