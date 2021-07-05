@@ -4,8 +4,12 @@
 $dark-cyan-desat: hsl(167, 40%, 24%);
 /* Section text */
 $dark-blue: hsl(198, 62%, 26%);
+$very-dark-blue: hsl(212, 27%, 19%);
+
 $sans-serif-font-stack: 'Barlow', sans-serif;
 $serif-font-stack: 'Fraunces', serif;
+
+$side-padding: 8%;
 
 /* Neutral Colors */
 
@@ -26,7 +30,7 @@ html, body {
     color: #fff;
     height: 80%;
     background: url(img/mobile/image-header.jpg) center center/cover no-repeat;
-    padding: 10% 8%;
+    padding: 10% $side-padding;
     overflow: hidden;
 
     header {
@@ -57,7 +61,9 @@ html, body {
         background: #fff;
         width: 84%;
         height: 17em;
+        z-index: 10;
         padding-bottom: 1em;
+        font-family: $sans-serif-font-stack;
         transition: transform 200ms ease;
 
         &::before {
@@ -128,6 +134,60 @@ a {
 
 .brand-showcase {
     display: grid;
+
+}
+
+.blurb-card {
+    font-family: $serif-font-stack;
+    padding: 15% $side-padding;
+    text-align: center;
+
+    h2 {
+        color: $very-dark-blue;
+        font-size: 2em;
+        margin-bottom: .8em;
+    }
+
+    .blurb {
+        font-family: $sans-serif-font-stack;
+        line-height: 1.5;
+        color: hsl(232, 10%, 55%);
+        margin-bottom: 1.2em;
+    }
+
+    a {
+        text-transform: uppercase;
+        color: $very-dark-blue;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: -7%;
+            width: 114%;
+            height: 10px;
+            border-radius: 1em;
+            z-index: -1;
+            opacity: .3;
+
+        }
+
+    }
+
+    &.transform {
+        a::after {
+            background: hsl(51, 100%, 49%);
+        }
+    }
+
+    &.stand-out {
+        a::after {
+            background: hsl(7, 99%, 70%);
+        }
+    }
+
+
 }
 
 

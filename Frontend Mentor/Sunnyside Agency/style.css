@@ -46,7 +46,9 @@ html, body {
   background: #fff;
   width: 84%;
   height: 17em;
+  z-index: 10;
   padding-bottom: 1em;
+  font-family: "Barlow", sans-serif;
   transition: transform 200ms ease;
 }
 .hero nav::before {
@@ -107,6 +109,45 @@ a {
 
 .brand-showcase {
   display: grid;
+}
+
+.blurb-card {
+  font-family: "Fraunces", serif;
+  padding: 15% 8%;
+  text-align: center;
+}
+.blurb-card h2 {
+  color: #23303e;
+  font-size: 2em;
+  margin-bottom: 0.8em;
+}
+.blurb-card .blurb {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: #818498;
+  margin-bottom: 1.2em;
+}
+.blurb-card a {
+  text-transform: uppercase;
+  color: #23303e;
+  position: relative;
+}
+.blurb-card a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -7%;
+  width: 114%;
+  height: 10px;
+  border-radius: 1em;
+  z-index: -1;
+  opacity: 0.3;
+}
+.blurb-card.transform a::after {
+  background: #fad400;
+}
+.blurb-card.stand-out a::after {
+  background: #fe7867;
 }
 
 .grid-image {
