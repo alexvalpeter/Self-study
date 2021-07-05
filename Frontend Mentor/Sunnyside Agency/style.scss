@@ -24,7 +24,7 @@ html, body {
 .hero {
     position: relative;
     color: #fff;
-    height: 70%;
+    height: 80%;
     background: url(img/mobile/image-header.jpg) center center/cover no-repeat;
     padding: 10% 8%;
     overflow: hidden;
@@ -106,18 +106,33 @@ html, body {
         }
 
     }
+
+    h1 {
+        font-family: $serif-font-stack;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3em;
+        margin: 1.2em 0 1em 0;
+    }
+
+    .arrow-icon {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: $serif-font-stack;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 3em;
+.brand-showcase {
+    display: grid;
 }
+
+
+
+
 
 .grid-image {
     width: 100%;
