@@ -109,11 +109,22 @@ a {
 
 .brand-showcase {
   display: grid;
+  grid-template-areas: "transform-img" "transform" "stand-out-img" "stand-out";
+}
+.brand-showcase .grid-image {
+  width: 100%;
+}
+.brand-showcase .grid-image.transform {
+  grid-area: transform-img;
+}
+.brand-showcase .grid-image.stand-out {
+  grid-area: stand-out-img;
 }
 
 .blurb-card {
+  width: 100%;
   font-family: "Fraunces", serif;
-  padding: 15% 8%;
+  padding: 16% 8%;
   text-align: center;
 }
 .blurb-card h2 {
@@ -123,7 +134,7 @@ a {
 }
 .blurb-card .blurb {
   font-family: "Barlow", sans-serif;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #818498;
   margin-bottom: 1.2em;
 }
@@ -143,13 +154,54 @@ a {
   z-index: -1;
   opacity: 0.3;
 }
+.blurb-card.transform {
+  grid-area: transform;
+}
 .blurb-card.transform a::after {
   background: #fad400;
+}
+.blurb-card.stand-out {
+  grid-area: stand-out;
 }
 .blurb-card.stand-out a::after {
   background: #fe7867;
 }
 
-.grid-image {
+.services {
+  display: grid;
+  grid-template-areas: "graphic-design" "photography";
+}
+
+.service-card {
   width: 100%;
+  position: relative;
+  text-align: center;
+}
+.service-card .service-text {
+  position: absolute;
+  z-index: 2;
+  bottom: 12%;
+  padding: 0 8%;
+  line-height: 1.6;
+}
+.service-card .service-text .service {
+  font-family: "Fraunces", serif;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+.service-card .service-text .service-info {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9em;
+}
+.service-card img {
+  display: block;
+  width: 100%;
+}
+.service-card.graphic-design {
+  color: #25564b;
+  grid-area: graphic-design;
+}
+.service-card.photography {
+  color: #19536b;
+  grid-area: photography;
 }
