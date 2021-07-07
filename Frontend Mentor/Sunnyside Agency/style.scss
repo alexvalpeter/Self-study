@@ -261,6 +261,50 @@ a {
     }
 }
 
+.client-testimonials {
+    width: 100%;
+    padding: 15% $side-padding 2%;
+    text-align: center;
+
+    h3 {
+        color: hsl(210, 4%, 67%);
+        font-size: 1em;
+        text-transform: uppercase;
+        font-family: $serif-font-stack;
+        letter-spacing: .2em;
+        margin-bottom: 3.5em;
+    }
+
+    .testimonial {
+        color: $very-dark-blue;
+        font-family: $sans-serif-font-stack;
+        margin-bottom: 4em;
+
+        .client-avatar {
+            border-radius: 50%;
+            height: 5em;
+            margin-bottom: 1.6em;
+        }
+
+        .testimonial-text {
+            font-size: 1em;
+            line-height: 1.4;
+            margin-bottom: 1.8em;
+        }
+
+        .client-name {
+            font-family: $serif-font-stack;
+            font-size: 1.3em;
+            margin-bottom: .4em;
+        }
+
+        .client-occupation {
+            color: hsl(210, 4%, 67%);
+            font-size: .9em;
+        }
+    }
+}
+
 
 
 

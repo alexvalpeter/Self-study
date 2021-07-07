@@ -205,3 +205,41 @@ a {
   color: #19536b;
   grid-area: photography;
 }
+
+.client-testimonials {
+  width: 100%;
+  padding: 15% 8% 2%;
+  text-align: center;
+}
+.client-testimonials h3 {
+  color: #a7abae;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.2em;
+  margin-bottom: 3.5em;
+}
+.client-testimonials .testimonial {
+  color: #23303e;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 4em;
+}
+.client-testimonials .testimonial .client-avatar {
+  border-radius: 50%;
+  height: 5em;
+  margin-bottom: 1.6em;
+}
+.client-testimonials .testimonial .testimonial-text {
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 1.8em;
+}
+.client-testimonials .testimonial .client-name {
+  font-family: "Fraunces", serif;
+  font-size: 1.3em;
+  margin-bottom: 0.4em;
+}
+.client-testimonials .testimonial .client-occupation {
+  color: #a7abae;
+  font-size: 0.9em;
+}
