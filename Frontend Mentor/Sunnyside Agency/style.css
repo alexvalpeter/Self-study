@@ -208,8 +208,18 @@ a {
 
 .client-testimonials {
   width: 100%;
-  padding: 15% 8% 2%;
+  padding: 5em 8% 3em;
   text-align: center;
+}
+.client-testimonials .testimonials-container {
+  max-width: 100%;
+  display: flex;
+  /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 1.5em;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
 }
 .client-testimonials h3 {
   color: #a7abae;
@@ -220,9 +230,10 @@ a {
   margin-bottom: 3.5em;
 }
 .client-testimonials .testimonial {
+  max-width: 375px;
   color: #23303e;
   font-family: "Barlow", sans-serif;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .client-testimonials .testimonial .client-avatar {
   border-radius: 50%;

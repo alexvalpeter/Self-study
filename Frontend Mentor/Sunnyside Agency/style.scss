@@ -263,8 +263,19 @@ a {
 
 .client-testimonials {
     width: 100%;
-    padding: 15% $side-padding 2%;
+    padding: 5em $side-padding 3em;
     text-align: center;
+
+    .testimonials-container {
+        max-width: 100%;
+        display: flex;
+        /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-gap: 1.5em;*/
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
 
     h3 {
         color: hsl(210, 4%, 67%);
@@ -276,9 +287,10 @@ a {
     }
 
     .testimonial {
+        max-width: 375px;
         color: $very-dark-blue;
         font-family: $sans-serif-font-stack;
-        margin-bottom: 4em;
+        margin-bottom: 2em;
 
         .client-avatar {
             border-radius: 50%;
