@@ -45,7 +45,7 @@ html, body {
   transform: translateX(100vw);
   background: #fff;
   width: 84%;
-  height: 17em;
+  height: 50%;
   z-index: 10;
   padding-bottom: 1em;
   font-family: "Barlow", sans-serif;
@@ -306,7 +306,26 @@ footer .attribution {
   font-size: 0.7em;
   position: absolute;
   bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 footer .attribution a {
   color: #25564b;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 85%;
+    background: url(img/desktop/image-header.jpg) center center/cover no-repeat;
+  }
+  .hero .hamburger-icon {
+    height: 2em;
+    width: 2.5em;
+  }
+  .hero nav {
+    font-size: 1.4em;
+  }
+  .hero header img {
+    height: 2.2em;
+  }
 }

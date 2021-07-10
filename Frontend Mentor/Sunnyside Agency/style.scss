@@ -60,7 +60,7 @@ html, body {
         transform: translateX(100vw);
         background: #fff;
         width: 84%;
-        height: 17em;
+        height: 50%;
         z-index: 10;
         padding-bottom: 1em;
         font-family: $sans-serif-font-stack;
@@ -375,12 +375,42 @@ footer {
         font-size: .7em;
         position: absolute;
         bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
 
         a {
             color: hsl(167, 40%, 24%);
         }
 
     }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        height: 85%;
+        background: url(img/desktop/image-header.jpg) center center/cover no-repeat;
+
+        .hamburger-icon {
+            height: 2em;
+            width: 2.5em;
+        }
+        
+        nav {
+            font-size: 1.4em;
+        }
+    
+        header {
+            img {
+                height: 2.2em;
+            } 
+    
+        }    
+    }
+
+    
+
 
 
 }
