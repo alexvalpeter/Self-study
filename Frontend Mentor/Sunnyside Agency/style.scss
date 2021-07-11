@@ -119,6 +119,7 @@ html, body {
         text-transform: uppercase;
         text-align: center;
         font-size: 3em;
+        letter-spacing: .2em;
         margin: 1.2em 0 1em 0;
     }
 
@@ -403,11 +404,20 @@ footer {
         
         nav {
             font-size: 1.4em;
+
+            ul {
+                transform: none;
+            }
         }
     
         header img {
             height: 2.2em;
         }    
+
+        h1 {
+            font-size: 4em;
+            margin: 2em 0 1.6em 0;
+        }
 
     }
 
@@ -460,13 +470,63 @@ footer {
         width: 40%;
     }
 
+}
 
 
-    
+@media screen and (min-width: 1200px) {
+
+    .hero {
+        padding: 3%;
+
+        .hamburger-icon {
+            display: none;
+        }
+
+        nav {
+            display: inline-block;
+            transform: none;
+            background: none;
+            position: relative;
+            top: initial;
+            width: auto;
+            height: auto;
+            padding: 0;
+            transition: none;
+
+            &::before {
+                display: none;
+            }
 
 
+            ul {
+                display: inline-block;
+            }
+
+            li {
+                display: inline;
+                margin-left: 2em;
+            }
+
+            a {
+                color: #fff;
+                font-size: .8em;
+            }
+
+            .contact a {
+                background: #fff;
+                transition: all 200ms ease;
+
+                &:hover {
+                    background: hsl(51, 100%, 49%);
+                    transition: all 200ms ease;
+                }
+            }
+
+        }
+    }
 
 }
+    
 
 
 

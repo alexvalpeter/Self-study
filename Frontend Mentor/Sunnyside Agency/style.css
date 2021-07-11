@@ -95,6 +95,7 @@ html, body {
   text-transform: uppercase;
   text-align: center;
   font-size: 3em;
+  letter-spacing: 0.2em;
   margin: 1.2em 0 1em 0;
 }
 .hero .arrow-icon {
@@ -328,8 +329,15 @@ footer .attribution a {
   .hero nav {
     font-size: 1.4em;
   }
+  .hero nav ul {
+    transform: none;
+  }
   .hero header img {
     height: 2.2em;
+  }
+  .hero h1 {
+    font-size: 4em;
+    margin: 2em 0 1.6em 0;
   }
 
   .brand-showcase {
@@ -369,5 +377,46 @@ footer .attribution a {
 
   footer .social-nav {
     width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 3%;
+  }
+  .hero .hamburger-icon {
+    display: none;
+  }
+  .hero nav {
+    display: inline-block;
+    transform: none;
+    background: none;
+    position: relative;
+    top: initial;
+    width: auto;
+    height: auto;
+    padding: 0;
+    transition: none;
+  }
+  .hero nav::before {
+    display: none;
+  }
+  .hero nav ul {
+    display: inline-block;
+  }
+  .hero nav li {
+    display: inline;
+    margin-left: 2em;
+  }
+  .hero nav a {
+    color: #fff;
+    font-size: 0.8em;
+  }
+  .hero nav .contact a {
+    background: #fff;
+    transition: all 200ms ease;
+  }
+  .hero nav .contact a:hover {
+    background: #fad400;
+    transition: all 200ms ease;
   }
 }
