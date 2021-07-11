@@ -79,13 +79,12 @@
 
   <div class="services">
     <div class="service-card graphic-design">
-      <img srcset="img/mobile/image-graphic-design.jpg 750w,
-                   img/desktop/image-graphic-design.jpg 720w"
-           sizes="(max-width: 767px) 750px,
-                  720px"
-           src="img/mobile/image-graphic-design.jpg" 
-           alt="Graphic Design">
-
+      <picture>
+        <source media="(max-width: 1199px)" srcset="img/mobile/image-graphic-design.jpg">
+        <source media="(min-width: 1200px)" srcset="img/desktop/image-graphic-design.jpg">
+        <img src="img/desktop/image-graphic-design.jpg" alt="Graphic Design">
+      </picture>
+      
       <div class="service-text">
         <div class="service">Graphic Design</div>
         <div class="service-info">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</div>
@@ -93,13 +92,12 @@
     </div>  
 
     <div class="service-card photography">
-      <img srcset="img/mobile/image-photography.jpg 750w,
-                   img/desktop/image-photography.jpg 720w"
-           sizes="(max-width: 767px) 750px,
-                  720px"
-           src="img/mobile/image-photography.jpg" 
-           alt="Photography">
-
+      <picture>
+        <source media="(max-width: 1199px)" srcset="img/mobile/image-photography.jpg">
+        <source media="(min-width: 1200px)" srcset="img/desktop/image-photography.jpg">
+        <img src="img/desktop/image-photography.jpg" alt="Photography">
+      </picture>
+     
       <div class="service-text">
         <div class="service">Photography</div>
         <div class="service-info">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</div>

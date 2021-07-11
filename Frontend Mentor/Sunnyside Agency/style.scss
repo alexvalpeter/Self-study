@@ -118,9 +118,9 @@ html, body {
         font-family: $serif-font-stack;
         text-transform: uppercase;
         text-align: center;
-        font-size: 3em;
+        font-size: 2.4em;
         letter-spacing: .2em;
-        margin: 1.2em 0 1em 0;
+        margin: 2em 0 1.2em 0;
     }
 
     .arrow-icon {
@@ -414,10 +414,12 @@ footer {
             height: 2.2em;
         }    
 
+        
         h1 {
             font-size: 4em;
-            margin: 2em 0 1.6em 0;
+            margin: 1.4em 0 1.2em 0;
         }
+
 
     }
 
@@ -438,7 +440,7 @@ footer {
             padding: 8% $mobile-side-padding;
 
             h2 {
-                font: 1em;
+                font-size: 2em;
                 margin-bottom: .6em;
             }
 
@@ -476,6 +478,7 @@ footer {
 @media screen and (min-width: 1200px) {
 
     .hero {
+        height: 100vh;
         padding: 3%;
 
         .hamburger-icon {
@@ -523,6 +526,36 @@ footer {
             }
 
         }
+
+
+        h1 {
+            margin: 3em 0 1.6em 0;
+        }
+    }
+
+    .brand-showcase {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+            "transform transform-img"
+            "stand-out-img stand-out";
+
+        .blurb-card {
+            padding: 20% 19%;
+
+            h2 {
+                font-size: 3.5em;
+            }
+
+            .blurb {
+                font-size: 1.4em;
+                margin-bottom: 3em;
+            }
+
+            a {
+                font-size: 1.4em;
+            }
+        }    
     }
 
 }
