@@ -9,7 +9,8 @@ $very-dark-blue: hsl(212, 27%, 19%);
 $sans-serif-font-stack: 'Barlow', sans-serif;
 $serif-font-stack: 'Fraunces', serif;
 
-$side-padding: 8%;
+$mobile-side-padding: 8%;
+$desktop-side-padding: 20%;
 
 /* Neutral Colors */
 
@@ -30,7 +31,7 @@ html, body {
     color: #fff;
     height: 80%;
     background: url(img/mobile/image-header.jpg) center center/cover no-repeat;
-    padding: 10% $side-padding;
+    padding: 10% $mobile-side-padding;
     overflow: hidden;
 
     header {
@@ -159,7 +160,7 @@ a {
 .blurb-card {
     width: 100%;
     font-family: $serif-font-stack;
-    padding: 16% $side-padding;
+    padding: 16% $mobile-side-padding;
     text-align: center;
 
     h2 {
@@ -230,7 +231,7 @@ a {
         position: absolute;
         z-index: 2;
         bottom: 12%;
-        padding: 0 $side-padding;
+        padding: 0 $mobile-side-padding;
         line-height: 1.6;
 
         .service {
@@ -263,7 +264,7 @@ a {
 
 .client-testimonials {
     width: 100%;
-    padding: 5em $side-padding 3em;
+    padding: 5em $mobile-side-padding 3em;
     text-align: center;
 
     .testimonials-container {
@@ -334,7 +335,7 @@ footer {
     position: relative;
     background: #9bdbcb;
     color:  hsl(168, 34%, 41%);
-    padding: 4em $side-padding;
+    padding: 4em $mobile-side-padding;
     font-family: $sans-serif-font-stack;
 
     .logo {
@@ -408,6 +409,38 @@ footer {
             height: 2.2em;
         }    
 
+    }
+
+
+    .brand-showcase {
+        grid-template-areas: 
+            "transform transform transform-img"
+            "stand-out-img stand-out stand-out";
+        grid-template-columns: 33.33% 33.33% 33.33%;   
+        
+        .grid-image {
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .blurb-card {
+            text-align: left;
+            padding: 8% $mobile-side-padding;
+
+            h2 {
+                font: 1em;
+                margin-bottom: .6em;
+            }
+
+            .blurb {
+                font-size: .8em;
+            }
+
+            a {
+                font-size: .8em;
+            }
+            
+        }
     }
 
 

@@ -331,4 +331,27 @@ footer .attribution a {
   .hero header img {
     height: 2.2em;
   }
+
+  .brand-showcase {
+    grid-template-areas: "transform transform transform-img" "stand-out-img stand-out stand-out";
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .brand-showcase .grid-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .brand-showcase .blurb-card {
+    text-align: left;
+    padding: 8% 8%;
+  }
+  .brand-showcase .blurb-card h2 {
+    font: 1em;
+    margin-bottom: 0.6em;
+  }
+  .brand-showcase .blurb-card .blurb {
+    font-size: 0.8em;
+  }
+  .brand-showcase .blurb-card a {
+    font-size: 0.8em;
+  }
 }
