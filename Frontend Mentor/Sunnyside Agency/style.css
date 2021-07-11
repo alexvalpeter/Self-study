@@ -349,9 +349,25 @@ footer .attribution a {
     margin-bottom: 0.6em;
   }
   .brand-showcase .blurb-card .blurb {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   .brand-showcase .blurb-card a {
-    font-size: 0.8em;
+    font-size: 0.9em;
+  }
+
+  .services {
+    grid-template-areas: "graphic-design photography";
+  }
+
+  .footer-image-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer ul {
+    margin-bottom: 3em;
+  }
+
+  footer .social-nav {
+    width: 40%;
   }
 }

@@ -433,14 +433,31 @@ footer {
             }
 
             .blurb {
-                font-size: .8em;
+                font-size: .9em;
             }
 
             a {
-                font-size: .8em;
+                font-size: .9em;
             }
             
         }
+    }
+
+    .services {
+        grid-template-areas: 
+            "graphic-design photography";
+    }
+
+    .footer-image-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer ul {
+        margin-bottom: 3em;
+    }
+
+    footer .social-nav {
+        width: 40%;
     }
 
 
