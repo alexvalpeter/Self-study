@@ -263,6 +263,7 @@ a {
 }
 .footer-image-grid img {
   width: 100%;
+  display: block;
 }
 
 footer {
@@ -308,6 +309,8 @@ footer .attribution {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  white-space: nowrap;
 }
 footer .attribution a {
   color: #25564b;

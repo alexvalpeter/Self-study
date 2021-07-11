@@ -38,8 +38,15 @@
 
 
   <div class="brand-showcase">
+    <img class="grid-image transform" 
+         srcset="img/mobile/image-transform.jpg 750w,
+                 img/desktop/image-transform.jpg 720w"
+         sizes="(max-width: 767px) 750px,
+                720px"
+         src="img/desktop/image-transform.jpg"
+         alt="Transform your brand">                   
+    
 
-    <img class="grid-image transform" src="img/mobile/image-transform.jpg" alt="Transform your brand">
 
     <div class="blurb-card transform">
       <h2>Transform your brand</h2>    
@@ -50,7 +57,13 @@
       <a class="learn-more" href="#">Learn more</a>
     </div>
 
-    <img class="grid-image stand-out" src="img/mobile/image-stand-out.jpg" alt="Stand out">
+    <img class="grid-image stand-out" 
+         srcset="img/mobile/image-stand-out.jpg 750w,
+                 img/desktop/image-stand-out.jpg 720w"
+         sizes="(max-width: 767px) 750px,
+                720px"
+         src="img/mobile/image-stand-out.jpg" 
+         alt="Stand out">
 
     <div class="blurb-card stand-out">
       <h2>Stand out to the right audience</h2>
@@ -63,9 +76,16 @@
     
   </div>
 
+
   <div class="services">
     <div class="service-card graphic-design">
-      <img src="img/mobile/image-graphic-design.jpg" alt="Graphic Design">
+      <img srcset="img/mobile/image-graphic-design.jpg 750w,
+                   img/desktop/image-graphic-design.jpg 720w"
+           sizes="(max-width: 767px) 750px,
+                  720px"
+           src="img/mobile/image-graphic-design.jpg" 
+           alt="Graphic Design">
+
       <div class="service-text">
         <div class="service">Graphic Design</div>
         <div class="service-info">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</div>
@@ -73,13 +93,20 @@
     </div>  
 
     <div class="service-card photography">
-      <img src="img/mobile/image-photography.jpg" alt="Photography">
+      <img srcset="img/mobile/image-photography.jpg 750w,
+                   img/desktop/image-photography.jpg 720w"
+           sizes="(max-width: 767px) 750px,
+                  720px"
+           src="img/mobile/image-photography.jpg" 
+           alt="Photography">
+
       <div class="service-text">
         <div class="service">Photography</div>
         <div class="service-info">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</div>
       </div>
     </div>
   </div>
+
 
   <section class="client-testimonials">
     <h3>Client testimonials</h3>
@@ -109,10 +136,29 @@
   </section>
 
   <div class="footer-image-grid">
-    <img src="img/mobile/image-gallery-milkbottles.jpg" alt="Footer image">
-    <img src="img/mobile/image-gallery-orange.jpg" alt="Footer image">
-    <img src="img/mobile/image-gallery-cone.jpg" alt="Footer image">
-    <img src="img/mobile/image-gallery-sugar-cubes.jpg" alt="Footer image">
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/mobile/image-gallery-milkbottles.jpg">
+      <source media="(min-width: 768px)" srcset="img/desktop/image-gallery-milkbottles.jpg">
+      <img src="img/desktop/image-gallery-milkbottles.jpg" alt="Footer image">
+    </picture>
+
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/mobile/image-gallery-orange.jpg">
+      <source media="(min-width: 768px)" srcset="img/desktop/image-gallery-orange.jpg">
+      <img src="img/desktop/image-gallery-orange.jpg" alt="Footer image">
+    </picture>
+
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/mobile/image-gallery-cone.jpg">
+      <source media="(min-width: 768px)" srcset="img/desktop/image-gallery-cone.jpg">
+      <img src="img/desktop/image-gallery-cone.jpg" alt="Footer image">
+    </picture>
+
+    <picture>
+      <source media="(max-width: 767px)" srcset="img/mobile/image-gallery-sugar-cubes.jpg">
+      <source media="(min-width: 768px)" srcset="img/desktop/image-gallery-sugar-cubes.jpg">
+      <img src="img/desktop/image-gallery-sugarcubes.jpg" alt="Footer image">
+    </picture>
   </div>
 
   <footer>

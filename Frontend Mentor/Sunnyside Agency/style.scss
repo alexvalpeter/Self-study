@@ -326,6 +326,7 @@ a {
 
     img {
         width: 100%;
+        display: block;
     };
 }
 
@@ -377,6 +378,8 @@ footer {
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
+        text-align: center;
+        white-space: nowrap;
 
         a {
             color: hsl(167, 40%, 24%);
@@ -401,13 +404,13 @@ footer {
             font-size: 1.4em;
         }
     
-        header {
-            img {
-                height: 2.2em;
-            } 
-    
+        header img {
+            height: 2.2em;
         }    
+
     }
+
+
 
     
 
