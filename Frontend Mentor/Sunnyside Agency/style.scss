@@ -404,10 +404,6 @@ footer {
         
         nav {
             font-size: 1.4em;
-
-            ul {
-                transform: none;
-            }
         }
     
         header img {
@@ -503,6 +499,7 @@ footer {
 
             ul {
                 display: inline-block;
+                transform: none;
             }
 
             li {
@@ -569,6 +566,44 @@ footer {
             .service-info {
                 font-size: 1.2em;
             }
+    }
+
+    .client-testimonials {
+        padding: 12% 0;
+
+        .testimonials-container {
+            gap: 1.8em;
+        }
+
+        h3 {
+            font-size: 1.6em;
+        }
+
+        .testimonial {
+            font-size: 1.3em;
+            max-width: 420px;
+            
+            .testimonial-text {
+                margin-bottom: 4em;
+            }
+        }
+    }
+
+    footer ul {
+        width: 30%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 6em;
+
+        li {
+            font-size: 1.4em;
+        }
+
+    }
+
+    footer .social-nav {
+        width: 15%;
     }
 
 }

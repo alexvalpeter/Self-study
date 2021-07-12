@@ -329,9 +329,6 @@ footer .attribution a {
   .hero nav {
     font-size: 1.4em;
   }
-  .hero nav ul {
-    transform: none;
-  }
   .hero header img {
     height: 2.2em;
   }
@@ -403,6 +400,7 @@ footer .attribution a {
   }
   .hero nav ul {
     display: inline-block;
+    transform: none;
   }
   .hero nav li {
     display: inline;
@@ -451,5 +449,37 @@ footer .attribution a {
   }
   .service-card .service-text .service-info {
     font-size: 1.2em;
+  }
+
+  .client-testimonials {
+    padding: 12% 0;
+  }
+  .client-testimonials .testimonials-container {
+    gap: 1.8em;
+  }
+  .client-testimonials h3 {
+    font-size: 1.6em;
+  }
+  .client-testimonials .testimonial {
+    font-size: 1.3em;
+    max-width: 420px;
+  }
+  .client-testimonials .testimonial .testimonial-text {
+    margin-bottom: 4em;
+  }
+
+  footer ul {
+    width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 6em;
+  }
+  footer ul li {
+    font-size: 1.4em;
+  }
+
+  footer .social-nav {
+    width: 15%;
   }
 }
