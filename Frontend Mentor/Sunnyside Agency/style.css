@@ -478,6 +478,9 @@ footer .attribution a {
   footer ul li {
     font-size: 1.4em;
   }
+  footer ul a:hover {
+    color: #fff;
+  }
 
   footer .social-nav {
     width: 15%;
