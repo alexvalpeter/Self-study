@@ -10,20 +10,27 @@ This is my coded solution to the Sunnyside Agency Landing Page (https://www.fron
 
 
 ### Built With
-- Semantic HTML5 Markup
-- CSS3
+- Semantic HTML Markup
+- CSS (SASS)
 - Mobile-first workflow
+- Responsive design
 - Flexbox
 - CSS Grid
+
 
 ### Screenshots
 
 #### Desktop
-![Desktop](./Screenshots/sunnyside.png)
-![Desktop Alt](./Screenshots/pricing-desktop-alt.png)
+![Desktop](./Screenshots/desktop.png)
+
+#### Tablet
+![Desktop Alt](./Screenshots/tablet.png)
 
 #### Mobile
-![Mobile](./Screenshots/sunnyside-mobile.png)
+![Mobile](./Screenshots/mobile.png)
+
+##### Navigation
+![Mobile Nav](./Screenshots/mobile-nav.png) ![Tablet Nav](./Screenshots/tablet-nav.png)
 
 
 ### Deployed
