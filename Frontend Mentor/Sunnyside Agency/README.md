@@ -11,7 +11,7 @@ This is my coded solution to the Sunnyside Agency Landing Page (https://www.fron
 
 ### Built With
 - Semantic HTML Markup
-- CSS (SASS)
+- CSS (SCSS)
 - Mobile-first workflow
 - Responsive design
 - Flexbox
