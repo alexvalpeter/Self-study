@@ -2,43 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Frontend Mentor | Tip Calculator App</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <img id="logo" src="img/logo.svg" alt="SPLITTER Logo">
+  </header>
 
-  Bill
+  <main>
+    <form id="tip-calculator">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+      <div class="options-input">
+        <label for="bill-total">Bill</label>
+        <input id="bill-total" type="number" min=".01" placeholder="0" required>
 
-  Number of People
+        <div>Select Tip %</div>
+        <button class="tip-percentage">5%</button>
+        <button class="tip-percentage">10%</button>
+        <button class="tip-percentage">15%</button>
+        <button class="tip-percentage">25%</button>
+        <button class="tip-percentage">50%</button>
+        <input class="customTip" type="text" placeholder="Custom">
 
-  Tip Amount
-  / person
+        <label>Number of People</label>
+        <input id="num-people" type="number" min="1" step="1" placeholder="0" required>
+      </div>
 
-  Total
-  / person
+      <div class="calculations">
+        <div total-label>
+          Tip Amount
+          <span>/ person</span>
+        </div>
 
-  Reset
+        <div total-label>
+          Total
+          <span>/ person</span>
+        </div>
+        
+        <input type="reset">
+      </div>
+    </form>
+
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
