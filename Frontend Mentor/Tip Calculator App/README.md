@@ -12,7 +12,7 @@ This is my coded solution to the Tip Calculator App Challenge (https://www.front
 
 ### Built With
 - Semantic HTML Markup
-- CSS (SASS)
+- CSS (SCSS)
 - Mobile-first workflow
 - Responsive design
 - Flexbox
