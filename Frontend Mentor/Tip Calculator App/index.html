@@ -22,15 +22,18 @@
         <label for="bill-total">Bill</label>
         <input id="bill-total" type="number" min=".01" placeholder="0" required>
 
-        <div>Select Tip %</div>
-        <button class="tip-percentage">5%</button>
-        <button class="tip-percentage">10%</button>
-        <button class="tip-percentage">15%</button>
-        <button class="tip-percentage">25%</button>
-        <button class="tip-percentage">50%</button>
-        <input class="customTip" type="text" placeholder="Custom">
+        <label>Select Tip %</label>
 
-        <label>Number of People</label>
+        <div class="tip-values">
+          <button class="tip-percentage">5%</button>
+          <button class="tip-percentage">10%</button>
+          <button class="tip-percentage">15%</button>
+          <button class="tip-percentage">25%</button>
+          <button class="tip-percentage">50%</button>
+          <input class="customTip" type="number" placeholder="Custom">
+        </div>
+
+        <label for="num-people">Number of People</label>
         <input id="num-people" type="number" min="1" step="1" placeholder="0" required>
       </div>
 
@@ -44,7 +47,7 @@
           Total
           <span>/ person</span>
         </div>
-        
+
         <input type="reset">
       </div>
     </form>

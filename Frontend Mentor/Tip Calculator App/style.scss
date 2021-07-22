@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
+
+$font-stack: 'Space Mono', monospace;
+$main-dark-color: hsl(183, 100%, 15%);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +15,111 @@ html, body {
 }
 
 body {
-    background-color: hsl(185, 41%, 84%)
+    background-color: hsl(185, 41%, 84%);
+    min-height: 100%;
+    font-family: $font-stack;
+    font-weight: 500;
 }
+
+header {
+    width: 100%;
+
+    #logo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2.5em 0;
+    }
+}
+
+main {
+    background: #fff;
+    width: 100%;
+    border-radius: 1.5em 1.5em 0 0;
+    padding: 8%;
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 100%;
+    padding: .5em .6em;
+    text-align: right;
+    background: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: $main-dark-color;
+
+    &::placeholder {
+        color: hsl(184, 14%, 56%);
+        opacity: .7;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $main-dark-color;
+}
+
+    &:focus {
+        outline: none;
+
+        &::placeholder {
+            color: transparent;
+      }
+  }
+}
+
+#bill-total {
+    background: url(img/icon-dollar.svg) left 5% center no-repeat, hsl(189, 41%, 97%);
+}
+
+
+
+
+.tip-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .8em;
+}
+
+button {
+    background: $main-dark-color;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: .2em .5em;
+    font-size: 1.5em;
+    font-family: $font-stack;
+    font-weight: 700;
+}
+
+.customTip {
+    width: auto;
+    color: $main-dark-color;
+
+    &::placeholder {
+        color: #000;
+    }
+}
+.customTip::placeholder {
+    color: #000;
+}
+
 
 .attribution { 
     font-size: 11px; text-align: center; 
