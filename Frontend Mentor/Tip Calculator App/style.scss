@@ -2,6 +2,7 @@
 
 $font-stack: 'Space Mono', monospace;
 $main-dark-color: hsl(183, 100%, 15%);
+$accent-color: hsl(172, 67%, 45%);
 
 
 * {
@@ -36,12 +37,13 @@ main {
     background: #fff;
     width: 100%;
     border-radius: 1.5em 1.5em 0 0;
-    padding: 8%;
+    padding: 8% 8% 25% 8%;
 }
 
 label {
+    display: inline-block;
     color: hsl(186, 14%, 43%);
-    margin-bottom: 5em;
+    margin-bottom: .3em;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -64,6 +66,7 @@ input[type=number] {
     font-weight: 700;
     font-size: 1.2em;
     color: $main-dark-color;
+    margin-bottom: 1.5em;
 
     &::placeholder {
         color: hsl(184, 14%, 56%);
@@ -87,6 +90,10 @@ input[type=number] {
     background: url(img/icon-dollar.svg) left 5% center no-repeat, hsl(189, 41%, 97%);
 }
 
+#num-people {
+    background: url(img/icon-person.svg) left 5% center no-repeat, hsl(189, 41%, 97%);
+}
+
 
 
 
@@ -95,6 +102,7 @@ input[type=number] {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: .8em;
+    margin-bottom: 1.5em;
 }
 
 button {
@@ -108,21 +116,54 @@ button {
     font-weight: 700;
 }
 
-.customTip {
-    width: auto;
+#customTip {
+    width: 100%;
     color: $main-dark-color;
+    margin-bottom: 0;
 
     &::placeholder {
-        color: #000;
+        color: hsl(183, 100%, 15%);
     }
 }
-.customTip::placeholder {
-    color: #000;
+
+.calculations {
+    margin-top: .2em;
+    background: $main-dark-color;
+    border-radius: .8em;
+    padding: 2em 1.4em 1.4em 1.4em;
+    color: #fff;
+
+    span {
+        opacity: .6;
+        font-size: .8em;
+        font-weight: 700;
+    }
 }
 
+input[type=reset] {
+    width: 100%;
+    background: $accent-color;
+    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $main-dark-color;
+    font-family: $font-stack;
+    font-size: 1.5em;
+    padding: .3em 0;
+}
+
+
+footer {
+    position: relative;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    position: absolute;
+    bottom: 10px;
+    font-size: .6em;
+    text-align: center;
 
     a { 
         color: hsl(228, 45%, 44%); 
