@@ -132,10 +132,27 @@ button {
     border-radius: .8em;
     padding: 2em 1.4em 1.4em 1.4em;
     color: #fff;
+     
+    .totals-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        margin-bottom: 2em;
+        row-gap: 1em;
+    }
+
 
     span {
         opacity: .6;
         font-size: .8em;
+        font-weight: 700;
+    }
+
+    .result {
+        justify-self: end;
+        color: $accent-color;
+        font-size: 2em;
         font-weight: 700;
     }
 }
@@ -161,12 +178,14 @@ footer {
 .attribution { 
     font-size: 11px; text-align: center; 
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 10px;
     font-size: .6em;
     text-align: center;
 
     a { 
-        color: hsl(228, 45%, 44%); 
+        color: $main-dark-color; 
     }
 
 }

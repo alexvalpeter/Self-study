@@ -119,9 +119,23 @@ button {
   padding: 2em 1.4em 1.4em 1.4em;
   color: #fff;
 }
+.calculations .totals-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 2em;
+  row-gap: 1em;
+}
 .calculations span {
   opacity: 0.6;
   font-size: 0.8em;
+  font-weight: 700;
+}
+.calculations .result {
+  justify-self: end;
+  color: #26c0ab;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -146,10 +160,12 @@ footer {
   font-size: 11px;
   text-align: center;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 10px;
   font-size: 0.6em;
   text-align: center;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #00494d;
 }
