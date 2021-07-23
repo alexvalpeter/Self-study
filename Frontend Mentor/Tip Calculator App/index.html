@@ -20,7 +20,7 @@
 
       <div class="options-input">
         <label for="bill-total">Bill</label>
-        <input id="bill-total" type="number" min=".01" placeholder="0" required>
+        <input id="bill-total" type="number" min=".01" placeholder="0" step=".01" required>
 
         <label>Select Tip %</label>
 
@@ -30,7 +30,7 @@
           <button class="tip-percentage">15%</button>
           <button class="tip-percentage">25%</button>
           <button class="tip-percentage">50%</button>
-          <input id="customTip" type="number" placeholder="Custom">
+          <input id="custom-tip" type="number" placeholder="Custom" min="0">
         </div>
 
         <label for="num-people">Number of People</label>
@@ -65,5 +65,7 @@
       Coded by <a href="https://github.com/alexvalpeter">Alexandria Peterson</a>.
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

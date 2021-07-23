@@ -71,19 +71,22 @@ input[type=number] {
     &::placeholder {
         color: hsl(184, 14%, 56%);
         opacity: .7;
-}
+    }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $main-dark-color;
-}
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $main-dark-color;
+    }
 
     &:focus {
         outline: none;
 
         &::placeholder {
             color: transparent;
-      }
-  }
+        }
+    }  
+
+    
+
 }
 
 #bill-total {
@@ -116,7 +119,7 @@ button {
     font-weight: 700;
 }
 
-#customTip {
+#custom-tip {
     width: 100%;
     color: $main-dark-color;
     margin-bottom: 0;
@@ -124,6 +127,14 @@ button {
     &::placeholder {
         color: hsl(183, 100%, 15%);
     }
+
+    &:focus {
+        outline: none;
+
+        &::placeholder {
+            color: transparent;
+        }
+    }  
 }
 
 .calculations {
