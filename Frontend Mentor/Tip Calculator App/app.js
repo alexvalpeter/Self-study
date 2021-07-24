@@ -19,7 +19,7 @@ const totalPerPerson = document.querySelector(".total-per-person");
 billTotalInput.addEventListener("change", function(){
     billTotal = billTotalInput.value;
     if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
-        updateTipTotal();
+        updateTotals();
     } 
 });
 
@@ -42,7 +42,7 @@ tipPercentageBtns.forEach(function(element){
         }
 
         if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
-            updateTipTotal();
+            updateTotals();
         }    
     })
     
@@ -52,14 +52,14 @@ customTipInput.addEventListener("change", function(){
     // Convert percentage value into decimal value
     tipPercentage = customTipInput.value/100;
     if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
-        updateTipTotal();
+        updateTotals();
     } 
 });
 
 numPeopleInput.addEventListener("change", function(){
     numPeople = numPeopleInput.value;
     if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
-        updateTipTotal();
+        updateTotals();
     } 
 });
 
@@ -78,7 +78,7 @@ function calculateTotal () {
 
 }
 
-function updateTipTotal () {
+function updateTotals () {
     calculateTip();
     var splitTip = tip / numPeople;
     console.log(tip + " " + numPeople);
