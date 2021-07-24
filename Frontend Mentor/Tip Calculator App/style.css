@@ -103,6 +103,11 @@ button {
   font-weight: 700;
 }
 
+button.selected {
+  background: #26c0ab;
+  color: #00494d;
+}
+
 #custom-tip {
   width: 100%;
   color: #00494d;

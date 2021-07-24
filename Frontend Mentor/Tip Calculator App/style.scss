@@ -119,6 +119,11 @@ button {
     font-weight: 700;
 }
 
+button.selected {
+    background: $accent-color;
+    color: $main-dark-color;
+}
+
 #custom-tip {
     width: 100%;
     color: $main-dark-color;
