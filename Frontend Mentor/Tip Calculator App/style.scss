@@ -40,10 +40,23 @@ main {
     padding: 8% 8% 25% 8%;
 }
 
+.options-input {
+    position: relative;
+}
+
 label {
     display: inline-block;
     color: hsl(186, 14%, 43%);
     margin-bottom: .3em;
+}
+
+.input-error {
+    display: none;
+    position: relative;
+    float: right;
+    top: 5px;
+    color: red;
+    font-size: .8em;
 }
 
 /* Chrome, Safari, Edge, Opera */

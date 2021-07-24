@@ -34,6 +34,7 @@
         </div>
 
         <label for="num-people">Number of People</label>
+        <p class="input-error">Cannot be zero*</p>
         <input id="num-people" type="number" min="1" step="1" placeholder="1" required>
       </div>
 
@@ -53,7 +54,7 @@
           <div class="result total-per-person">$0.00</div>
         </div>
 
-        <input type="reset">
+        <input type="reset" id="reset">
       </div>
     </form>
 

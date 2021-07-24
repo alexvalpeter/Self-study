@@ -3,6 +3,7 @@ const billTotalInput = document.querySelector("#bill-total");
 const tipPercentageBtns = document.querySelectorAll(".tip-percentage");
 const customTipInput = document.querySelector("#custom-tip");
 const numPeopleInput = document.querySelector("#num-people");
+const resetBtn = document.querySelector("#reset");
 
 // Calculation values
 var billTotal = 0;
@@ -18,7 +19,7 @@ const totalPerPerson = document.querySelector(".total-per-person");
 // Event Listeners
 billTotalInput.addEventListener("change", function(){
     billTotal = billTotalInput.value;
-    if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
+    if (billTotal != 0 && numPeople != 0) {
         updateTotals();
     } 
 });
@@ -41,7 +42,7 @@ tipPercentageBtns.forEach(function(element){
             tipPercentage = 0;
         }
 
-        if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
+        if (billTotal != 0  && numPeople != 0) {
             updateTotals();
         }    
     })
@@ -51,17 +52,28 @@ tipPercentageBtns.forEach(function(element){
 customTipInput.addEventListener("change", function(){
     // Convert percentage value into decimal value
     tipPercentage = customTipInput.value/100;
-    if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
+    if (billTotal != 0  && numPeople != 0) {
         updateTotals();
     } 
 });
 
 numPeopleInput.addEventListener("change", function(){
-    numPeople = numPeopleInput.value;
-    if (billTotal != 0 && tipPercentage != 0 && numPeople != 0) {
-        updateTotals();
-    } 
+    if (numPeopleInput.value == 0){
+        document.querySelector(".input-error").style.display = "block";
+    } else {
+        document.querySelector(".input-error").style.display = "none";
+        numPeople = numPeopleInput.value;
+        if (billTotal != 0 && numPeople != 0) {
+            updateTotals();
+        } 
+    }    
 });
+
+resetBtn.addEventListener("click", function(){
+    tipPercentageBtns.forEach(element => element.classList.remove("selected"));
+});
+
+
 
 function parsePercentage(percentString){
     // Remove % sign at end
@@ -72,10 +84,6 @@ function parsePercentage(percentString){
 
 function calculateTip () {
     tip = billTotal * tipPercentage;
-}
-
-function calculateTotal () {
-
 }
 
 function updateTotals () {
