@@ -246,7 +246,11 @@ footer {
 @media screen and (min-width: 1024px){
     
     header {
-        height: 20%;
+        height: 18em;
+
+        #logo {
+            margin-top: 8em;
+        }
 
    
     }
@@ -262,7 +266,10 @@ footer {
         border-radius: 1.5em;
     }
 
-
+    label {
+        font-size: .8em;
+        margin-bottom: .5em;
+    }
 
     #tip-calculator {
         height: 100%;
@@ -278,8 +285,10 @@ footer {
     }
 
     .calculations {
-        display: block;
+        display: flex;
         height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .tip-values {
@@ -287,9 +296,15 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
 
-    #reset {
-        position: relative;
+    footer {
+        position: absolute;
         bottom: 0;
+        width: 100%;
+
+    }
+
+    .attribution {
+        width: 100%;
     }
 }
     
