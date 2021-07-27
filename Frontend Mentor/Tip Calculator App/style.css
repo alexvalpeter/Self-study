@@ -137,6 +137,7 @@ button.selected {
 }
 
 .calculations {
+  position: relative;
   margin-top: 0.2em;
   background: #00494d;
   border-radius: 0.8em;
@@ -192,4 +193,68 @@ footer {
 }
 .attribution a {
   color: #00494d;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  header #logo {
+    margin: 4em 0;
+  }
+
+  main {
+    padding: 10%;
+  }
+
+  .options-input, .calculations {
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 20%;
+  }
+
+  main {
+    position: relative;
+    width: 50%;
+    height: 26em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+    border-radius: 1.5em;
+  }
+
+  #tip-calculator {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .options-input, .calculations {
+    height: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  .calculations {
+    display: block;
+    height: 100%;
+  }
+
+  .tip-values {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #reset {
+    position: relative;
+    bottom: 0;
+  }
 }
