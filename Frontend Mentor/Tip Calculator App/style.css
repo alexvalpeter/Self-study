@@ -165,6 +165,7 @@ button.selected {
 }
 
 input[type=reset] {
+  opacity: 0.3;
   width: 100%;
   background: #26c0ab;
   border: none;

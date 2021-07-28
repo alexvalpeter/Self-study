@@ -22,6 +22,7 @@ billTotalInput.addEventListener("change", function(){
     if (billTotal != 0 && numPeople != 0) {
         updateTotals();
     } 
+    resetBtn.style.opacity = "1";
 });
 
 tipPercentageBtns.forEach(function(element){
@@ -45,7 +46,9 @@ tipPercentageBtns.forEach(function(element){
         if (billTotal != 0  && numPeople != 0) {
             updateTotals();
         }    
+        resetBtn.style.opacity = "1";
     })
+    
     
 });
 
@@ -55,6 +58,7 @@ customTipInput.addEventListener("change", function(){
     if (billTotal != 0  && numPeople != 0) {
         updateTotals();
     } 
+    resetBtn.style.opacity = "1";
 });
 
 numPeopleInput.addEventListener("change", function(){
@@ -67,10 +71,13 @@ numPeopleInput.addEventListener("change", function(){
             updateTotals();
         } 
     }    
+    resetBtn.style.opacity = "1";
 });
 
 resetBtn.addEventListener("click", function(){
+    resetUI();
     tipPercentageBtns.forEach(element => element.classList.remove("selected"));
+    resetBtn.style.opacity = ".3";
 });
 
 
@@ -90,9 +97,18 @@ function updateTotals () {
     calculateTip();
     var splitTip = tip / numPeople;
     console.log(tip + " " + numPeople);
-    tipPerPerson.innerHTML = splitTip.toFixed(2);
+    tipPerPerson.innerHTML = "$" + splitTip.toFixed(2);
     var splitBill = billTotal / numPeople;
-    totalPerPerson.innerHTML = (splitTip + splitBill).toFixed(2);
+    totalPerPerson.innerHTML = "$" + (splitTip + splitBill).toFixed(2);
+}
+
+function resetUI(){
+    billTotal = 0;
+    tipPercentage = 0;
+    tip = 0;
+    numPeople = 0;
+    tipPerPerson.innerHTML = "$0.00";
+    totalPerPerson.innerHTML = "$0.00";
 }
 
 

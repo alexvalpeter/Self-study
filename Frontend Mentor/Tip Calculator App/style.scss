@@ -96,10 +96,7 @@ input[type=number] {
         &::placeholder {
             color: transparent;
         }
-    }  
-
-    
-
+    }    
 }
 
 #bill-total {
@@ -109,9 +106,6 @@ input[type=number] {
 #num-people {
     background: url(img/icon-person.svg) left 5% center no-repeat, hsl(189, 41%, 97%);
 }
-
-
-
 
 .tip-values {
     display: grid;
@@ -188,6 +182,7 @@ button.selected {
 }
 
 input[type=reset] {
+    opacity: .3;
     width: 100%;
     background: $accent-color;
     border: none;
@@ -217,7 +212,6 @@ footer {
     a { 
         color: $main-dark-color; 
     }
-
 }
 
 @media screen and (min-width: 768px){
