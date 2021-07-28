@@ -114,6 +114,7 @@ button {
   font-size: 1.5em;
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  cursor: pointer;
 }
 
 button.selected {
@@ -176,6 +177,7 @@ input[type=reset] {
   font-family: "Space Mono", monospace;
   font-size: 1.5em;
   padding: 0.3em 0;
+  cursor: pointer;
 }
 
 footer {
@@ -202,11 +204,15 @@ footer {
     overflow: hidden;
   }
 
+  header {
+    height: 20%;
+  }
   header #logo {
-    margin: 4em 0;
+    margin: 12% 0;
   }
 
   main {
+    height: 80%;
     padding: 10%;
   }
 
@@ -217,6 +223,18 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    height: 30%;
+  }
+  header #logo {
+    margin: 16% 0;
+  }
+
+  main {
+    height: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
   header {
     height: 18em;
   }

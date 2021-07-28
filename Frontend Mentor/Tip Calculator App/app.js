@@ -53,6 +53,7 @@ tipPercentageBtns.forEach(function(element){
 });
 
 customTipInput.addEventListener("change", function(){
+    deselectAllBtns();
     // Convert percentage value into decimal value
     tipPercentage = customTipInput.value/100;
     if (billTotal != 0  && numPeople != 0) {
@@ -76,7 +77,6 @@ numPeopleInput.addEventListener("change", function(){
 
 resetBtn.addEventListener("click", function(){
     resetUI();
-    tipPercentageBtns.forEach(element => element.classList.remove("selected"));
     resetBtn.style.opacity = ".3";
 });
 
@@ -109,6 +109,11 @@ function resetUI(){
     numPeople = 0;
     tipPerPerson.innerHTML = "$0.00";
     totalPerPerson.innerHTML = "$0.00";
+    deselectAllBtns();
+}
+
+function deselectAllBtns() {
+    tipPercentageBtns.forEach(element => element.classList.remove("selected"));
 }
 
 
