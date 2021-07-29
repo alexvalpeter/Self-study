@@ -24,6 +24,7 @@ This is my coded solution to the Tip Calculator App Challenge (https://www.front
 
 #### Desktop
 ![Desktop](./Screenshots/desktop.png)
+![Desktop Active](./Screenshots/desktop-active.png)
 
 #### Tablet
 ![Desktop Alt](./Screenshots/tablet.png)
