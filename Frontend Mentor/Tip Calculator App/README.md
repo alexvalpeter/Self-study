@@ -35,3 +35,4 @@ This is my coded solution to the Tip Calculator App Challenge (https://www.front
 
 ### Deployed
 
+https://tip-calculator-ojyn6zt4c-alexvalpeter.vercel.app/
