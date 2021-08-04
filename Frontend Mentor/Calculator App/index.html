@@ -5,43 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="stylesheet" type="text.css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Calculator App</title>
 </head>
-<body>
+<body class="theme-1">
   
   <header>
-    <div class="logo">calc</div>
-    <input class="theme-selector" list="themes" type="range" min="1" max="3" value="1" step="1">
+    <div class="logo theme-1">calc</div>
+    <div class="toggle-label">THEME</div>
+    <div class="toggle-options">1 2 3</div>
+    <input class="theme-toggle" list="themes" type="range" min="1" max="3" value="1" step="1">
     <datalist id="themes">
-      <option value="1" label="1"></option>
-      <option value="2" label="2"></option>
-      <option value="3" label="3"></option>
+      <option value="1"></option>
+      <option value="2"></option>
+      <option value="3"></option>
     </datalist>
   </header>
 
   <main>
-    <div id="displayBox">0</div>
-    <div id="key-container">
-      <div class="key primary-color">7</div>
-      <div class="key primary-color">8</div>
-      <div class="key primary-color">9</div>
-      <div class="key secondary-color">DEL</div>
-      <div class="key primary-color">4</div>
-      <div class="key primary-color">5</div>
-      <div class="key primary-color">6</div>
-      <div class="key primary-color">+</div>
-      <div class="key primary-color">1</div>
-      <div class="key primary-color">2</div>
-      <div class="key primary-color">3</div>
-      <div class="key primary-color">-</div>
-      <div class="key primary-color">.</div>
-      <div class="key primary-color">0</div>
-      <div class="key primary-color">/</div>
-      <div class="key primary-color">x</div>
-      <div class="key secondary-color reset">RESET</div>
-      <div class="key equals accent-color">=</div>
+    <div id="display-box theme-1">0</div>
+    <div id="keys-container">
+      <button class="key primary-color">7</button>
+      <button class="key primary-color">8</button>
+      <button class="key primary-color">9</button>
+      <button class="key secondary-color">DEL</button>
+      <button class="key primary-color">4</button>
+      <button class="key primary-color">5</button>
+      <button class="key primary-color">6</button>
+      <button class="key primary-color">+</button>
+      <button class="key primary-color">1</button>
+      <button class="key primary-color">2</button>
+      <button class="key primary-color">3</button>
+      <button class="key primary-color">-</button>
+      <button class="key primary-color">.</button>
+      <button class="key primary-color">0</button>
+      <button class="key primary-color">/</button>
+      <button class="key primary-color">x</button>
+      <button class="key secondary-color reset">RESET</button>
+      <button class="key equals accent-color">=</button>
     </div>
   </main>
 
