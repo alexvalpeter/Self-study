@@ -45,6 +45,7 @@ header {
 
 #display-box {
   width: 100%;
+  display: block;
 }
 #display-box.theme-1 {
   background-color: #182034;
@@ -54,6 +55,32 @@ header {
 }
 #display-box.theme-3 {
   background-color: #1d0934;
+}
+
+#keys-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+#keys-container.theme-1 {
+  background-color: #232c43;
+}
+#keys-container.theme-2 {
+  background-color: #d1cccc;
+}
+#keys-container.theme-3 {
+  background-color: #1d0934;
+}
+#keys-container button {
+  font-family: "Spartan", sans-serif;
+  font-size: 2em;
+}
+#keys-container .reset {
+  grid-column: 1/span 2;
+}
+#keys-container .equals {
+  grid-column: 3/span 2;
 }
 
 .attribution {
