@@ -46,6 +46,7 @@ header {
 #display-box {
   width: 100%;
   display: block;
+  text-align: right;
 }
 #display-box.theme-1 {
   background-color: #182034;
@@ -58,10 +59,10 @@ header {
 }
 
 #keys-container {
-  width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
+  padding: 3%;
 }
 #keys-container.theme-1 {
   background-color: #232c43;
@@ -74,13 +75,47 @@ header {
 }
 #keys-container button {
   font-family: "Spartan", sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
+  border: none;
+}
+#keys-container button.theme-1 {
+  background-color: #eae3dc;
+}
+#keys-container button.theme-2 {
+  background-color: #e5e4e1;
+}
+#keys-container button.theme-3 {
+  background-color: #341c4f;
 }
 #keys-container .reset {
   grid-column: 1/span 2;
 }
+#keys-container .reset, #keys-container .del {
+  color: #fff;
+  font-size: 1em;
+}
+#keys-container .reset.theme-1, #keys-container .del.theme-1 {
+  background-color: #637097;
+}
+#keys-container .reset.theme-2, #keys-container .del.theme-2 {
+  background-color: #377f86;
+}
+#keys-container .reset.theme-3, #keys-container .del.theme-3 {
+  background-color: #58077d;
+}
 #keys-container .equals {
+  color: #fff;
+  font-size: 1em;
   grid-column: 3/span 2;
+}
+#keys-container .equals.theme-1 {
+  background-color: #d03f2f;
+}
+#keys-container .equals.theme-2 {
+  background-color: #ca5502;
+}
+#keys-container .equals.theme-3 {
+  background-color: #bc15f4;
 }
 
 .attribution {
