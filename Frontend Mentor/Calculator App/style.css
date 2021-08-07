@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -13,6 +13,9 @@ body {
   font-family: "Spartan", sans-serif;
   color: #fff;
   padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 body.theme-1 {
   background-color: #3a4764;
@@ -43,8 +46,15 @@ header {
   color: #ffe53d;
 }
 
+main {
+  width: 100%;
+}
+
 #display-box {
   width: 100%;
+  height: 5em;
+  border-radius: 10px;
+  margin-bottom: 1.4em;
   display: block;
   text-align: right;
 }
@@ -58,68 +68,102 @@ header {
   background-color: #1d0934;
 }
 
-#keys-container {
+.keys-container {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: auto;
+  z-index: 0;
+}
+
+#keypad {
+  position: relative;
+  width: 100%;
   display: grid;
+  border-radius: 10px;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  padding: 3%;
+  padding: 6% 6% 7% 6%;
+  gap: 1em;
 }
-#keys-container.theme-1 {
+#keypad.theme-1 {
   background-color: #232c43;
 }
-#keys-container.theme-2 {
+#keypad.theme-2 {
   background-color: #d1cccc;
 }
-#keys-container.theme-3 {
+#keypad.theme-3 {
   background-color: #1d0934;
 }
-#keys-container button {
+#keypad button {
+  position: relative;
   font-family: "Spartan", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   border: none;
+  border-radius: 5px;
+  padding: 0.7em 0;
 }
-#keys-container button.theme-1 {
+#keypad button.theme-1 {
   background-color: #eae3dc;
 }
-#keys-container button.theme-2 {
+#keypad button.theme-1::after {
+  background-color: #b4a597;
+}
+#keypad button.theme-2 {
   background-color: #e5e4e1;
 }
-#keys-container button.theme-3 {
+#keypad button.theme-2::after {
+  background-color: #a69d91;
+}
+#keypad button.theme-3 {
   background-color: #341c4f;
 }
-#keys-container .reset {
+#keypad button.theme-3::after {
+  background-color: #871c9c;
+}
+#keypad button::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 5px;
+  left: 0;
+}
+#keypad .reset {
   grid-column: 1/span 2;
 }
-#keys-container .reset, #keys-container .del {
+#keypad .reset, #keypad .del {
   color: #fff;
   font-size: 1em;
 }
-#keys-container .reset.theme-1, #keys-container .del.theme-1 {
+#keypad .reset.theme-1, #keypad .del.theme-1 {
   background-color: #637097;
 }
-#keys-container .reset.theme-2, #keys-container .del.theme-2 {
+#keypad .reset.theme-2, #keypad .del.theme-2 {
   background-color: #377f86;
 }
-#keys-container .reset.theme-3, #keys-container .del.theme-3 {
+#keypad .reset.theme-3, #keypad .del.theme-3 {
   background-color: #58077d;
 }
-#keys-container .equals {
+#keypad .equals {
   color: #fff;
   font-size: 1em;
   grid-column: 3/span 2;
 }
-#keys-container .equals.theme-1 {
+#keypad .equals.theme-1 {
   background-color: #d03f2f;
 }
-#keys-container .equals.theme-2 {
+#keypad .equals.theme-2 {
   background-color: #ca5502;
 }
-#keys-container .equals.theme-3 {
+#keypad .equals.theme-3 {
   background-color: #bc15f4;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.5em;
   text-align: center;
 }
 
