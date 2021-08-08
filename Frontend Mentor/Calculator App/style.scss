@@ -45,6 +45,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    input[type=range] {
+        -webkit-appearance: none; 
+        width: 20%;
+        height: 26px;
+        padding: 0 5px;
+        background: hsl(223, 31%, 20%);
+        border-radius: 5em;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }  
+        
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background-color: hsl(6, 63%, 50%);
+        }
+
+        &::-moz-range-track {
+            width: 20%;
+        }
+
+        &::-moz-range-thumb {
+            background-color: hsl(6, 63%, 50%);
+            border: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+        }
+
+    }
 }
 
 .logo {
@@ -89,12 +124,12 @@ main {
     position: relative;
     width: 100%;
     display: block;
-    height: auto;
     z-index: 0;
 }
 
 #keypad {
     position: relative;
+    height: 60vh;
     width: 100%;
     display: grid;
     border-radius: 10px;
