@@ -7,7 +7,7 @@ $theme-2-secondary-color: hsl(185, 42%, 37%);
 $theme-2-accent-color: hsl(25, 98%, 40%);
 
 $theme-3-secondary-color: hsl(281, 89%, 26%);
-$theme-3-accent-color: hsl(285, 91%, 52%);
+$theme-3-accent-color: hsl(176, 100%, 44%);
 
 $font-stack: 'Spartan', sans-serif;
 
@@ -45,10 +45,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: .7em;
+
+    .logo {
+        font-size: 3em;
+    
+        &.theme-1 {
+            color: #fff;
+        }
+        &.theme-2 {
+            color: hsl(60, 10%, 19%);
+        }
+        &.theme-3 {
+            color: hsl(52, 100%, 62%);
+        }
+    }
+
+
+    .toggle-options-label {
+        display: inline;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+   .toggle-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+    
 
     input[type=range] {
+        display: inline;
         -webkit-appearance: none; 
-        width: 20%;
+        width: 50%;
         height: 26px;
         padding: 0 5px;
         background: hsl(223, 31%, 20%);
@@ -64,7 +95,7 @@ header {
             height: 16px;
             width: 16px;
             border-radius: 50%;
-            background-color: hsl(6, 63%, 50%);
+            background-color: $theme-1-accent-color;
         }
 
         &::-moz-range-track {
@@ -72,7 +103,7 @@ header {
         }
 
         &::-moz-range-thumb {
-            background-color: hsl(6, 63%, 50%);
+            background-color: $theme-1-accent-color;
             border: none;
             height: 16px;
             width: 16px;
@@ -82,19 +113,7 @@ header {
     }
 }
 
-.logo {
-    font-size: 2em;
 
-    &.theme-1 {
-        color: #fff;
-    }
-    &.theme-2 {
-        color: hsl(60, 10%, 19%);
-    }
-    &.theme-3 {
-        color: hsl(52, 100%, 62%);
-    }
-}
 
 main {
     width: 100%;
@@ -161,23 +180,22 @@ main {
         padding: .7em 0 .6em 0;
 
         &.theme-1 {
+            color: hsl(221, 14%, 31%);
             background-color: hsl(30, 25%, 89%);
             box-shadow: 0 5px hsl(28, 16%, 65%);
         }   
 
         &.theme-2 {
+            color: hsl(60, 10%, 19%);
             background-color: hsl(45, 7%, 89%);
             box-shadow: 0 5px hsl(35, 11%, 61%);
         } 
 
         &.theme-3 {
+            color: hsl(52, 100%, 62%);
             background-color: hsl(268, 47%, 21%);
             box-shadow: 0 5px hsl(290, 70%, 36%);
         }
-
-
-
-
     }
 
     .reset {
@@ -185,37 +203,43 @@ main {
     }
 
     .reset, .del {
-        color: #fff;
+        
         font-size: 1em;
 
         &.theme-1 {
+            color: #fff;
             background-color: $theme-1-secondary-color;
             box-shadow: 0 5px hsl(224, 28%, 35%);
         }   
         &.theme-2 {
+            color: #fff;
             background-color: $theme-2-secondary-color;
             box-shadow: 0 5px hsl(185, 58%, 25%);
         } 
         &.theme-3 {
+            color: #fff;
             background-color: $theme-3-secondary-color;
             box-shadow: 0 5px hsl(285, 91%, 52%);
         }
     }
 
     .equals {
-        color: #fff;
+        
         font-size: 1em;
         grid-column: 3 / span 2;
 
         &.theme-1 {
+            color: #fff;
             background-color: $theme-1-accent-color;
             box-shadow: 0 5px hsl(6, 70%, 34%);
         }   
         &.theme-2 {
+            color: #fff;
             background-color: $theme-2-accent-color;
             box-shadow: 0 5px hsl(25, 99%, 27%);
         } 
         &.theme-3 {
+           color: hsl(198, 20%, 13%);
             background-color: $theme-3-accent-color;
             box-shadow: 0 5px hsl(177, 92%, 70%);
         }

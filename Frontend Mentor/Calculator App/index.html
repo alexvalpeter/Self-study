@@ -14,14 +14,26 @@
   <div id="content-container">
     <header>
       <div class="logo theme-1">calc</div>
-      <div class="toggle-label">THEME</div>
-      <div class="toggle-options">1 2 3</div>
-      <input class="theme-toggle" list="themes" type="range" min="1" max="3" value="1" step="1">
-      <datalist id="themes">
-        <option value="1"></option>
-        <option value="2"></option>
-        <option value="3"></option>
-      </datalist>
+
+      <div class="theme-selector">
+        <div class="toggle-label">THEME</div>
+
+        <div class="toggle-container">
+          <div class="toggle-options-label">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <input class="theme-toggle" id="theme-toggle" list="themes" type="range" min="1" max="3" value="1" step="1">
+        </div>
+
+        <datalist id="themes">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </datalist>
+      </div>
+
     </header>
     <main>
       <div id="display-box" class="theme-1">0</div>

@@ -31,10 +31,35 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.7em;
+}
+header .logo {
+  font-size: 3em;
+}
+header .logo.theme-1 {
+  color: #fff;
+}
+header .logo.theme-2 {
+  color: #35352c;
+}
+header .logo.theme-3 {
+  color: #ffe53d;
+}
+header .toggle-options-label {
+  display: inline;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header .toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header input[type=range] {
+  display: inline;
   -webkit-appearance: none;
-  width: 20%;
+  width: 50%;
   height: 26px;
   padding: 0 5px;
   background: #232c43;
@@ -60,19 +85,6 @@ header input[type=range]::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-}
-
-.logo {
-  font-size: 2em;
-}
-.logo.theme-1 {
-  color: #fff;
-}
-.logo.theme-2 {
-  color: #35352c;
-}
-.logo.theme-3 {
-  color: #ffe53d;
 }
 
 main {
@@ -135,14 +147,17 @@ main {
   padding: 0.7em 0 0.6em 0;
 }
 #keypad button.theme-1 {
+  color: #444b5a;
   background-color: #eae3dc;
   box-shadow: 0 5px #b4a597;
 }
 #keypad button.theme-2 {
+  color: #35352c;
   background-color: #e5e4e1;
   box-shadow: 0 5px #a69d91;
 }
 #keypad button.theme-3 {
+  color: #ffe53d;
   background-color: #341c4f;
   box-shadow: 0 5px #871c9c;
 }
@@ -150,36 +165,40 @@ main {
   grid-column: 1/span 2;
 }
 #keypad .reset, #keypad .del {
-  color: #fff;
   font-size: 1em;
 }
 #keypad .reset.theme-1, #keypad .del.theme-1 {
+  color: #fff;
   background-color: #637097;
   box-shadow: 0 5px #404e72;
 }
 #keypad .reset.theme-2, #keypad .del.theme-2 {
+  color: #fff;
   background-color: #377f86;
   box-shadow: 0 5px #1b5f65;
 }
 #keypad .reset.theme-3, #keypad .del.theme-3 {
+  color: #fff;
   background-color: #58077d;
   box-shadow: 0 5px #bc15f4;
 }
 #keypad .equals {
-  color: #fff;
   font-size: 1em;
   grid-column: 3/span 2;
 }
 #keypad .equals.theme-1 {
+  color: #fff;
   background-color: #d03f2f;
   box-shadow: 0 5px #93261a;
 }
 #keypad .equals.theme-2 {
+  color: #fff;
   background-color: #ca5502;
   box-shadow: 0 5px #893901;
 }
 #keypad .equals.theme-3 {
-  background-color: #bc15f4;
+  color: #1b2428;
+  background-color: #00e0d1;
   box-shadow: 0 5px #6cf9f2;
 }
 
