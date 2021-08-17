@@ -45,6 +45,13 @@ header .logo.theme-2 {
 header .logo.theme-3 {
   color: #ffe53d;
 }
+header .theme-selector {
+  display: flex;
+  align-items: flex-end;
+}
+header .toggle-label {
+  align-self: end;
+}
 header .toggle-options-label {
   display: inline;
   width: 40%;
