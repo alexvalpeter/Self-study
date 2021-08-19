@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 0.7em;
+  margin-bottom: 2em;
 }
 header .logo {
   font-size: 3em;
@@ -48,25 +49,29 @@ header .logo.theme-3 {
 header .theme-selector {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
 }
 header .toggle-label {
-  align-self: end;
+  margin-right: 1em;
+  margin-bottom: 0.2em;
 }
 header .toggle-options-label {
   display: inline;
-  width: 40%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.2em;
 }
 header .toggle-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 35%;
 }
 header input[type=range] {
   display: inline;
   -webkit-appearance: none;
-  width: 50%;
+  width: 100%;
   height: 26px;
   padding: 0 5px;
   background: #232c43;
