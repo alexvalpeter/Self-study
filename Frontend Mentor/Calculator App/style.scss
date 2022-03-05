@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    &.theme-1 {
+   /* &.theme-1 {
         background-color: hsl(222, 26%, 31%);
     }
     &.theme-2 {
@@ -37,6 +37,71 @@ body {
     }
     &.theme-3 {
         background-color: hsl(268, 75%, 9%);
+    }*/
+}
+
+
+/* Theming */
+body.theme-1 {
+    background-color: hsl(222, 26%, 31%);
+
+    .logo {
+        color: #fff;
+    }
+
+    .theme-toggle {
+        background: hsl(223, 31%, 20%);
+
+        &::-webkit-slider-thumb {
+            background-color: $theme-1-accent-color;
+        }    
+
+        &::-moz-range-thumb {
+            background-color: $theme-1-accent-color;
+        }
+
+    }
+}
+
+body.theme-2 {
+    background-color: hsl(0, 0%, 90%);
+
+    .logo {
+        color: hsl(60, 10%, 19%);
+    }
+
+    .theme-toggle {
+        background: hsl(0, 5%, 81%);
+
+        &::-webkit-slider-thumb {
+            background-color: $theme-2-accent-color;
+        }    
+
+        &::-moz-range-thumb {
+            background-color: $theme-2-accent-color;
+        }
+
+    }
+}
+
+body.theme-3 {
+    background-color: hsl(268, 75%, 9%);
+
+    .logo {
+        color: hsl(52, 100%, 62%);
+    }
+
+    .theme-toggle {
+        background: hsl(268, 71%, 12%);
+
+        &::-webkit-slider-thumb {
+            background-color: $theme-3-accent-color;
+        }    
+
+        &::-moz-range-thumb {
+            background-color: $theme-3-accent-color;
+        }
+
     }
 }
 
@@ -51,7 +116,7 @@ header {
     .logo {
         font-size: 3em;
     
-        &.theme-1 {
+        /*&.theme-1 {
             color: #fff;
         }
         &.theme-2 {
@@ -59,7 +124,7 @@ header {
         }
         &.theme-3 {
             color: hsl(52, 100%, 62%);
-        }
+        }*/
     }
 
 
@@ -97,7 +162,7 @@ header {
         width: 100%;
         height: 26px;
         padding: 0 5px;
-        background: hsl(223, 31%, 20%);
+        
         border-radius: 5em;
         cursor: pointer;
 
@@ -110,7 +175,6 @@ header {
             height: 16px;
             width: 16px;
             border-radius: 50%;
-            background-color: $theme-1-accent-color;
         }
 
         &::-moz-range-track {
@@ -118,7 +182,6 @@ header {
         }
 
         &::-moz-range-thumb {
-            background-color: $theme-1-accent-color;
             border: none;
             height: 16px;
             width: 16px;
@@ -254,16 +317,13 @@ main {
             box-shadow: 0 5px hsl(25, 99%, 27%);
         } 
         &.theme-3 {
-           color: hsl(198, 20%, 13%);
+            color: hsl(198, 20%, 13%);
             background-color: $theme-3-accent-color;
             box-shadow: 0 5px hsl(177, 92%, 70%);
         }
     }
 
 }
-
-
-
 
 
 .attribution { 
