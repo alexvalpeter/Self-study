@@ -36,7 +36,7 @@ body.theme-1 .logo {
 }
 
 body.theme-1 .theme-toggle {
-  background: #232c43;
+  background-color: #232c43;
 }
 
 body.theme-1 .theme-toggle::-webkit-slider-thumb {
@@ -51,6 +51,31 @@ body.theme-1 #display-box {
   background-color: #182034;
 }
 
+body.theme-1 #keypad {
+  background-color: #232c43;
+}
+
+body.theme-1 .key {
+  color: #444b5a;
+  background-color: #eae3dc;
+  -webkit-box-shadow: 0 5px #b4a597;
+          box-shadow: 0 5px #b4a597;
+}
+
+body.theme-1 .reset, body.theme-1 .del {
+  color: #fff;
+  background-color: #637097;
+  -webkit-box-shadow: 0 5px #404e72;
+          box-shadow: 0 5px #404e72;
+}
+
+body.theme-1 .equals {
+  color: #fff;
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0 5px #93261a;
+          box-shadow: 0 5px #93261a;
+}
+
 body.theme-2 {
   background-color: #e6e6e6;
 }
@@ -60,7 +85,7 @@ body.theme-2 .logo {
 }
 
 body.theme-2 .theme-toggle {
-  background: #d1cccc;
+  background-color: #d1cccc;
 }
 
 body.theme-2 .theme-toggle::-webkit-slider-thumb {
@@ -75,6 +100,31 @@ body.theme-2 #display-box {
   background-color: #ededed;
 }
 
+body.theme-2 #keypad {
+  background-color: #d1cccc;
+}
+
+body.theme-2 .key {
+  color: #35352c;
+  background-color: #e5e4e1;
+  -webkit-box-shadow: 0 5px #a69d91;
+          box-shadow: 0 5px #a69d91;
+}
+
+body.theme-2 .reset, body.theme-2 .del {
+  color: #fff;
+  background-color: #377f86;
+  -webkit-box-shadow: 0 5px #1b5f65;
+          box-shadow: 0 5px #1b5f65;
+}
+
+body.theme-2 .equals {
+  color: #fff;
+  background-color: #ca5502;
+  -webkit-box-shadow: 0 5px #893901;
+          box-shadow: 0 5px #893901;
+}
+
 body.theme-3 {
   background-color: #160628;
 }
@@ -84,7 +134,7 @@ body.theme-3 .logo {
 }
 
 body.theme-3 .theme-toggle {
-  background: #1d0934;
+  background-color: #1d0934;
 }
 
 body.theme-3 .theme-toggle::-webkit-slider-thumb {
@@ -97,6 +147,31 @@ body.theme-3 .theme-toggle::-moz-range-thumb {
 
 body.theme-3 #display-box {
   background-color: #1d0934;
+}
+
+body.theme-3 #keypad {
+  background-color: #1d0934;
+}
+
+body.theme-3 .key {
+  color: #ffe53d;
+  background-color: #341c4f;
+  -webkit-box-shadow: 0 5px #871c9c;
+          box-shadow: 0 5px #871c9c;
+}
+
+body.theme-3 .reset, body.theme-3 .del {
+  color: #fff;
+  background-color: #58077d;
+  -webkit-box-shadow: 0 5px #bc15f4;
+          box-shadow: 0 5px #bc15f4;
+}
+
+body.theme-3 .equals {
+  color: #1b2428;
+  background-color: #00e0d1;
+  -webkit-box-shadow: 0 5px #6cf9f2;
+          box-shadow: 0 5px #6cf9f2;
 }
 
 header {
@@ -263,31 +338,26 @@ main {
   font-family: "Spartan", sans-serif;
   font-size: 1.5em;
   border: none;
-  -webkit-box-shadow: 0 5px black;
-          box-shadow: 0 5px black;
+  /*box-shadow: 0 5px black;*/
   border-radius: 5px;
   padding: .7em 0 .6em 0;
-}
+  /*&.theme-1 {
+            color: hsl(221, 14%, 31%);
+            background-color: hsl(30, 25%, 89%);
+            box-shadow: 0 5px hsl(28, 16%, 65%);
+        }   
 
-#keypad button.theme-1 {
-  color: #444b5a;
-  background-color: #eae3dc;
-  -webkit-box-shadow: 0 5px #b4a597;
-          box-shadow: 0 5px #b4a597;
-}
+        &.theme-2 {
+            color: hsl(60, 10%, 19%);
+            background-color: hsl(45, 7%, 89%);
+            box-shadow: 0 5px hsl(35, 11%, 61%);
+        } 
 
-#keypad button.theme-2 {
-  color: #35352c;
-  background-color: #e5e4e1;
-  -webkit-box-shadow: 0 5px #a69d91;
-          box-shadow: 0 5px #a69d91;
-}
-
-#keypad button.theme-3 {
-  color: #ffe53d;
-  background-color: #341c4f;
-  -webkit-box-shadow: 0 5px #871c9c;
-          box-shadow: 0 5px #871c9c;
+        &.theme-3 {
+            color: hsl(52, 100%, 62%);
+            background-color: hsl(268, 47%, 21%);
+            box-shadow: 0 5px hsl(290, 70%, 36%);
+        }*/
 }
 
 #keypad .reset {
@@ -298,27 +368,21 @@ main {
 
 #keypad .reset, #keypad .del {
   font-size: 1em;
-}
-
-#keypad .reset.theme-1, #keypad .del.theme-1 {
-  color: #fff;
-  background-color: #637097;
-  -webkit-box-shadow: 0 5px #404e72;
-          box-shadow: 0 5px #404e72;
-}
-
-#keypad .reset.theme-2, #keypad .del.theme-2 {
-  color: #fff;
-  background-color: #377f86;
-  -webkit-box-shadow: 0 5px #1b5f65;
-          box-shadow: 0 5px #1b5f65;
-}
-
-#keypad .reset.theme-3, #keypad .del.theme-3 {
-  color: #fff;
-  background-color: #58077d;
-  -webkit-box-shadow: 0 5px #bc15f4;
-          box-shadow: 0 5px #bc15f4;
+  /*&.theme-1 {
+            color: #fff;
+            background-color: $theme-1-secondary-color;
+            box-shadow: 0 5px hsl(224, 28%, 35%);
+        }   
+        &.theme-2 {
+            color: #fff;
+            background-color: $theme-2-secondary-color;
+            box-shadow: 0 5px hsl(185, 58%, 25%);
+        } 
+        &.theme-3 {
+            color: #fff;
+            background-color: $theme-3-secondary-color;
+            box-shadow: 0 5px hsl(285, 91%, 52%);
+        }*/
 }
 
 #keypad .equals {
@@ -326,27 +390,21 @@ main {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
-}
-
-#keypad .equals.theme-1 {
-  color: #fff;
-  background-color: #d03f2f;
-  -webkit-box-shadow: 0 5px #93261a;
-          box-shadow: 0 5px #93261a;
-}
-
-#keypad .equals.theme-2 {
-  color: #fff;
-  background-color: #ca5502;
-  -webkit-box-shadow: 0 5px #893901;
-          box-shadow: 0 5px #893901;
-}
-
-#keypad .equals.theme-3 {
-  color: #1b2428;
-  background-color: #00e0d1;
-  -webkit-box-shadow: 0 5px #6cf9f2;
-          box-shadow: 0 5px #6cf9f2;
+  /*&.theme-1 {
+            color: #fff;
+            background-color: $theme-1-accent-color;
+            box-shadow: 0 5px hsl(6, 70%, 34%);
+        }   
+        &.theme-2 {
+            color: #fff;
+            background-color: $theme-2-accent-color;
+            box-shadow: 0 5px hsl(25, 99%, 27%);
+        } 
+        &.theme-3 {
+            color: hsl(198, 20%, 13%);
+            background-color: $theme-3-accent-color;
+            box-shadow: 0 5px hsl(177, 92%, 70%);
+        }*/
 }
 
 .attribution {
