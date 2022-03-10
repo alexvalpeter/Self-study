@@ -80,10 +80,9 @@ body.theme-1 {
 
 body.theme-2 {
     background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
 
-    .logo {
-        color: hsl(60, 10%, 19%);
-    }
+   
 
     .theme-toggle {
         background-color: hsl(0, 5%, 81%);
@@ -99,6 +98,7 @@ body.theme-2 {
 
     #display-box {
         background-color: hsl(0, 0%, 93%);
+        color: hsl(60, 10%, 19%);
     }
 
     #keypad {
@@ -106,7 +106,6 @@ body.theme-2 {
     }
 
     .key {
-        color: hsl(60, 10%, 19%);
         background-color: hsl(45, 7%, 89%);
         box-shadow: 0 5px hsl(35, 11%, 61%);
     }
@@ -126,10 +125,8 @@ body.theme-2 {
 
 body.theme-3 {
     background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
 
-    .logo {
-        color: hsl(52, 100%, 62%);
-    }
 
     .theme-toggle {
         background-color: hsl(268, 71%, 12%);
@@ -181,16 +178,6 @@ header {
 
     .logo {
         font-size: 3em;
-    
-        /*&.theme-1 {
-            color: #fff;
-        }
-        &.theme-2 {
-            color: hsl(60, 10%, 19%);
-        }
-        &.theme-3 {
-            color: hsl(52, 100%, 62%);
-        }*/
     }
 
 
@@ -272,15 +259,6 @@ main {
     padding: 7% 7% 5% 7%;
     font-size: 2.6em;
 
-    /*&.theme-1 {
-        background-color: hsl(224, 36%, 15%);
-    }   
-    &.theme-2 {
-        background-color: hsl(0, 0%, 93%);
-    } 
-    &.theme-3 {
-        background-color: hsl(268, 71%, 12%);
-    }*/
 }
 
 .keys-container {
@@ -319,27 +297,8 @@ main {
         font-family: $font-stack;
         font-size: 1.5em;
         border: none;
-        /*box-shadow: 0 5px black;*/
         border-radius: 5px;
         padding: .7em 0 .6em 0;
-
-        /*&.theme-1 {
-            color: hsl(221, 14%, 31%);
-            background-color: hsl(30, 25%, 89%);
-            box-shadow: 0 5px hsl(28, 16%, 65%);
-        }   
-
-        &.theme-2 {
-            color: hsl(60, 10%, 19%);
-            background-color: hsl(45, 7%, 89%);
-            box-shadow: 0 5px hsl(35, 11%, 61%);
-        } 
-
-        &.theme-3 {
-            color: hsl(52, 100%, 62%);
-            background-color: hsl(268, 47%, 21%);
-            box-shadow: 0 5px hsl(290, 70%, 36%);
-        }*/
     }
 
     .reset {
@@ -350,21 +309,6 @@ main {
         
         font-size: 1em;
 
-        /*&.theme-1 {
-            color: #fff;
-            background-color: $theme-1-secondary-color;
-            box-shadow: 0 5px hsl(224, 28%, 35%);
-        }   
-        &.theme-2 {
-            color: #fff;
-            background-color: $theme-2-secondary-color;
-            box-shadow: 0 5px hsl(185, 58%, 25%);
-        } 
-        &.theme-3 {
-            color: #fff;
-            background-color: $theme-3-secondary-color;
-            box-shadow: 0 5px hsl(285, 91%, 52%);
-        }*/
     }
 
     .equals {
@@ -372,21 +316,6 @@ main {
         font-size: 1em;
         grid-column: 3 / span 2;
 
-        /*&.theme-1 {
-            color: #fff;
-            background-color: $theme-1-accent-color;
-            box-shadow: 0 5px hsl(6, 70%, 34%);
-        }   
-        &.theme-2 {
-            color: #fff;
-            background-color: $theme-2-accent-color;
-            box-shadow: 0 5px hsl(25, 99%, 27%);
-        } 
-        &.theme-3 {
-            color: hsl(198, 20%, 13%);
-            background-color: $theme-3-accent-color;
-            box-shadow: 0 5px hsl(177, 92%, 70%);
-        }*/
     }
 
 }
