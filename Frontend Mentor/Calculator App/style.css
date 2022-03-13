@@ -76,6 +76,10 @@ body.theme-1 .equals {
           box-shadow: 0 5px #93261a;
 }
 
+body.theme-1 .attribution a {
+  color: #637097;
+}
+
 body.theme-2 {
   background-color: #e6e6e6;
   color: #35352c;
@@ -122,6 +126,10 @@ body.theme-2 .equals {
           box-shadow: 0 5px #893901;
 }
 
+body.theme-2 .attribution a {
+  color: #377f86;
+}
+
 body.theme-3 {
   background-color: #160628;
   color: #ffe53d;
@@ -166,6 +174,10 @@ body.theme-3 .equals {
   background-color: #00e0d1;
   -webkit-box-shadow: 0 5px #6cf9f2;
           box-shadow: 0 5px #6cf9f2;
+}
+
+body.theme-3 .attribution a {
+  color: #58077d;
 }
 
 header {
@@ -342,4 +354,5 @@ main {
 
 .attribution a {
   color: #3e52a3;
+  text-decoration: none;
 }

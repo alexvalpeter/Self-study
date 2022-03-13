@@ -76,13 +76,16 @@ body.theme-1 {
         background-color: $theme-1-accent-color;
         box-shadow: 0 5px hsl(6, 70%, 34%);
     }
+
+    .attribution a { 
+        color: $theme-1-secondary-color;
+    }
 }
 
 body.theme-2 {
     background-color: hsl(0, 0%, 90%);
     color: hsl(60, 10%, 19%);
 
-   
 
     .theme-toggle {
         background-color: hsl(0, 5%, 81%);
@@ -120,6 +123,10 @@ body.theme-2 {
         color: #fff;
         background-color: $theme-2-accent-color;
         box-shadow: 0 5px hsl(25, 99%, 27%);
+    }
+
+    .attribution a { 
+        color: $theme-2-secondary-color;
     }
 }
 
@@ -166,7 +173,13 @@ body.theme-3 {
         box-shadow: 0 5px hsl(177, 92%, 70%);
     }
 
+    .attribution a { 
+        color: $theme-3-secondary-color;
+    }
+
 }
+
+
 
 
 header {
@@ -327,4 +340,5 @@ main {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
 }
