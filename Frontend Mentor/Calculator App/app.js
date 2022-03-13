@@ -8,9 +8,10 @@ const themeToggle = document.querySelector("#theme-toggle");
  * @param {number} theme Number corresponding to user-chosen theme
  */
 function switchTheme(theme){
+    body.className = "theme-" + theme;
 
 }
 
-themeToggle.addEventListener("input", () => {
-    console.log(themeToggle.value);
+themeToggle.addEventListener("input", function(){ 
+    switchTheme(themeToggle.value);
 });
