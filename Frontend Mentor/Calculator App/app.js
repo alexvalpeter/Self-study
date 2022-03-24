@@ -3,6 +3,10 @@ const logo = document.querySelector(".logo");
 const themeToggle = document.querySelector("#theme-toggle");
 const display = document.querySelector("#display-box");
 let displayText = "";
+let operation = null;
+let firstOperand = null;
+let secondOperand = null;
+let receivedSecondOperand = false;
 
 /**
  * Changes visual theme and color scheme of page according to user input
@@ -13,7 +17,7 @@ function switchTheme(themeNumber){
     body.className = "theme-" + themeNumber;
 };
 
-themeToggle.addEventListener("input", function(){ 
+themeToggle.addEventListener("input", function() { 
     switchTheme(themeToggle.value);
 });
 
@@ -21,6 +25,9 @@ document.querySelectorAll(".num").forEach( (element) => {
     element.addEventListener("click", () => {
         if (displayText == "0"){
             displayText = element.innerHTML;
+        } else if (firstOperand !== null && receivedSecondOperand == false){
+            displayText = element.innerHTML;
+            receivedSecondOperand = true;
         } else {
             appendDigit(element.innerHTML);
         };
@@ -30,7 +37,7 @@ document.querySelectorAll(".num").forEach( (element) => {
 }); 
 
 document.querySelector(".reset").addEventListener("click", () => {
-    clearDisplay();
+    clear();
 });
 
 document.querySelector(".del").addEventListener("click", () => {
@@ -52,12 +59,71 @@ function delDigit (){
     } else {
         displayText = displayText.substring(0, displayText.length-1);
     };
-        
+
     updateDisplay();
 };
 
-function clearDisplay () {
+document.querySelectorAll(".operator").forEach( (element) => {
+    element.addEventListener("click", () => {
+        if (operation == null){ 
+            operation = element.innerHTML;
+
+            if (firstOperand == null){
+                firstOperand = displayText;
+            } else {
+                secondOperand = displayText;
+                compute();
+            }
+
+        };
+        
+        
+    });    
+});
+
+document.querySelector(".equals").addEventListener("click", () => {
+    
+    if (firstOperand !== null && operation !== null && receivedSecondOperand == true){
+        console.log("yee");
+        secondOperand = displayText;
+        console.log(firstOperand + "  " + operation + "  " + secondOperand);
+        compute();
+    };
+});
+
+
+function clear () {
     displayText = "0"
-    display.innerHTML = displayText;
+    updateDisplay();
+};
+
+function compute (){
+    firstOperand = parseFloat(firstOperand);
+    secondOperand = parseFloat(secondOperand);
+
+    switch (operation) {
+        case "+":
+            displayText = firstOperand + secondOperand;
+            console.log(displayText);
+            break;
+        case "-":
+            displayText = firstOperand - secondOperand;
+            break;
+        case "x":
+            displayText = firstOperand * secondOperand;
+            break;
+        case "/":  
+            displayText = firstOperand / secondOperand;  
+            break;
+        default:
+            return;        
+    };
+    
+    updateDisplay();
+
+    firstOperand = displayText;
+    secondOperand = null;
+    operation = null;
+    receivedSecondOperand = false;
 };
 
