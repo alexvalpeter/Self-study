@@ -70,7 +70,7 @@ document.querySelectorAll(".operator").forEach( (element) => {
 
             if (firstOperand == null){
                 firstOperand = displayText;
-            } else {
+            } else if (receivedSecondOperand == true) {
                 secondOperand = displayText;
                 compute();
             }
@@ -104,7 +104,6 @@ function compute (){
     switch (operation) {
         case "+":
             displayText = firstOperand + secondOperand;
-            console.log(displayText);
             break;
         case "-":
             displayText = firstOperand - secondOperand;
@@ -113,12 +112,22 @@ function compute (){
             displayText = firstOperand * secondOperand;
             break;
         case "/":  
-            displayText = firstOperand / secondOperand;  
+            if (secondOperand != 0){
+                displayText = firstOperand / secondOperand; 
+            } else {
+                displayText = "ERROR"
+                updateDisplay();
+                firstOperand = null;
+                secondOperand = null;
+                operation = null;
+                receivedSecondOperand = false;
+                return;
+            }     
             break;
         default:
             return;        
     };
-    
+
     updateDisplay();
 
     firstOperand = displayText;
