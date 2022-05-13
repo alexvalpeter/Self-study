@@ -37,7 +37,7 @@ document.querySelectorAll(".num").forEach( (element) => {
 }); 
 
 document.querySelector(".reset").addEventListener("click", () => {
-    clear();
+    resetCalcState();
 });
 
 document.querySelector(".del").addEventListener("click", () => {
@@ -70,32 +70,36 @@ document.querySelectorAll(".operator").forEach( (element) => {
 
             if (firstOperand == null){
                 firstOperand = displayText;
-            } else if (receivedSecondOperand == true) {
-                secondOperand = displayText;
-                compute();
-            }
+            } 
 
+        } else if (operation != null && receivedSecondOperand == true) {
+            secondOperand = displayText;
+            compute();
         };
-        
-        
     });    
 });
 
 document.querySelector(".equals").addEventListener("click", () => {
     
     if (firstOperand !== null && operation !== null && receivedSecondOperand == true){
-        console.log("yee");
         secondOperand = displayText;
         console.log(firstOperand + "  " + operation + "  " + secondOperand);
         compute();
     };
 });
 
-
-function clear () {
+function resetDisplay (){
     displayText = "0"
     updateDisplay();
-};
+}
+
+function resetCalcState (){
+    firstOperand = null;
+    secondOperand = null;
+    operation = null;
+    receivedSecondOperand = false; 
+}
+
 
 function compute (){
     firstOperand = parseFloat(firstOperand);
@@ -115,12 +119,10 @@ function compute (){
             if (secondOperand != 0){
                 displayText = firstOperand / secondOperand; 
             } else {
-                displayText = "ERROR"
+                displayText = "ERROR";
                 updateDisplay();
-                firstOperand = null;
-                secondOperand = null;
-                operation = null;
-                receivedSecondOperand = false;
+                displayText = "0";
+                resetCalcState();
                 return;
             }     
             break;
