@@ -38,6 +38,7 @@ document.querySelectorAll(".num").forEach( (element) => {
 
 document.querySelector(".reset").addEventListener("click", () => {
     resetCalcState();
+    resetDisplay();
 });
 
 document.querySelector(".del").addEventListener("click", () => {
