@@ -21,6 +21,8 @@ themeToggle.addEventListener("input", function() {
     switchTheme(themeToggle.value);
 });
 
+
+
 document.querySelectorAll(".num").forEach( (element) => {
     element.addEventListener("click", () => {
         if (displayText == "0"){
@@ -64,6 +66,9 @@ function delDigit (){
     updateDisplay();
 };
 
+/*
+* Event listeners for operator buttons
+*/
 document.querySelectorAll(".operator").forEach( (element) => {
     element.addEventListener("click", () => {
         if (operation == null){ 
@@ -89,11 +94,19 @@ document.querySelector(".equals").addEventListener("click", () => {
     };
 });
 
+
+/*
+* Returns calc display to default 0
+*/
 function resetDisplay (){
     displayText = "0"
     updateDisplay();
 }
 
+
+/*
+* Resets state of calculator by clearing inputs
+*/
 function resetCalcState (){
     firstOperand = null;
     secondOperand = null;
@@ -101,25 +114,30 @@ function resetCalcState (){
     receivedSecondOperand = false; 
 }
 
-
+/*
+* Main computattion function
+* Takes first and second stored operands and executes computation
+* according to stored operation chosen by user
+* Displays result on calc display
+*/
 function compute (){
     firstOperand = parseFloat(firstOperand);
     secondOperand = parseFloat(secondOperand);
 
     switch (operation) {
-        case "+":
+        case "+": // Addition
             displayText = firstOperand + secondOperand;
             break;
-        case "-":
+        case "-": // Subtraction
             displayText = firstOperand - secondOperand;
             break;
-        case "x":
+        case "x": // Multiplication
             displayText = firstOperand * secondOperand;
             break;
-        case "/":  
+        case "/":  // Division
             if (secondOperand != 0){
                 displayText = firstOperand / secondOperand; 
-            } else {
+            } else { // Divide by 0 errror, resets calculator
                 displayText = "ERROR";
                 updateDisplay();
                 displayText = "0";
