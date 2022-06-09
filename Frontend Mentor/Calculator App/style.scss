@@ -78,8 +78,8 @@ body.theme-1 {
     }
 
     .operator.selected {
-        background-color: $theme-1-secondary-color;
-        color: #fff;
+        background-color: #fff;
+        color: hsl(222, 26%, 31%);
     }
 
     .attribution a { 
@@ -130,6 +130,11 @@ body.theme-2 {
         box-shadow: 0 5px hsl(25, 99%, 27%);
     }
 
+    .operator.selected {
+        background-color: #fff;
+        color: hsl(35, 11%, 61%);
+    }
+
     .attribution a { 
         color: $theme-2-secondary-color;
     }
@@ -176,6 +181,11 @@ body.theme-3 {
         color: hsl(198, 20%, 13%);
         background-color: $theme-3-accent-color;
         box-shadow: 0 5px hsl(177, 92%, 70%);
+    }
+
+    .operator.selected {
+        background-color: hsl(285, 91%, 52%);
+        color: #fff;
     }
 
     .attribution a { 

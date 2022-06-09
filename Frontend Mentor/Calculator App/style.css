@@ -77,8 +77,8 @@ body.theme-1 .equals {
 }
 
 body.theme-1 .operator.selected {
-  background-color: #637097;
-  color: #fff;
+  background-color: #fff;
+  color: #3a4764;
 }
 
 body.theme-1 .attribution a {
@@ -131,6 +131,11 @@ body.theme-2 .equals {
           box-shadow: 0 5px #893901;
 }
 
+body.theme-2 .operator.selected {
+  background-color: #fff;
+  color: #a69d91;
+}
+
 body.theme-2 .attribution a {
   color: #377f86;
 }
@@ -179,6 +184,11 @@ body.theme-3 .equals {
   background-color: #00e0d1;
   -webkit-box-shadow: 0 5px #6cf9f2;
           box-shadow: 0 5px #6cf9f2;
+}
+
+body.theme-3 .operator.selected {
+  background-color: #bc15f4;
+  color: #fff;
 }
 
 body.theme-3 .attribution a {
