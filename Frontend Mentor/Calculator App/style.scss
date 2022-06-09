@@ -77,6 +77,11 @@ body.theme-1 {
         box-shadow: 0 5px hsl(6, 70%, 34%);
     }
 
+    .operator.selected {
+        background-color: $theme-1-secondary-color;
+        color: #fff;
+    }
+
     .attribution a { 
         color: $theme-1-secondary-color;
     }

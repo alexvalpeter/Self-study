@@ -76,6 +76,11 @@ body.theme-1 .equals {
           box-shadow: 0 5px #93261a;
 }
 
+body.theme-1 .operator.selected {
+  background-color: #637097;
+  color: #fff;
+}
+
 body.theme-1 .attribution a {
   color: #637097;
 }

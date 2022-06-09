@@ -1,5 +1,4 @@
 const body = document.querySelector("body");
-const logo = document.querySelector(".logo");
 const themeToggle = document.querySelector("#theme-toggle");
 const display = document.querySelector("#display-box");
 let displayText = "";
@@ -17,12 +16,19 @@ function switchTheme(themeNumber){
     body.className = "theme-" + themeNumber;
 };
 
+/*
+* Listener for theme selection
+*/
 themeToggle.addEventListener("input", function() { 
     switchTheme(themeToggle.value);
 });
 
 
-
+/*
+* Event listeners for numerical keys
+* Updates display as numbers are entered
+* Determines whether input is part of first or second operand
+*/
 document.querySelectorAll(".num").forEach( (element) => {
     element.addEventListener("click", () => {
         if (displayText == "0"){
@@ -71,7 +77,12 @@ function delDigit (){
 */
 document.querySelectorAll(".operator").forEach( (element) => {
     element.addEventListener("click", () => {
-        if (operation == null){ 
+        element.classList.add("selected");
+        element.addEventListener("focusout", () => {
+            element.classList.remove("selected");
+        });
+
+        if (displayText != 0 && operation == null){ 
             operation = element.innerHTML;
 
             if (firstOperand == null){
@@ -96,7 +107,7 @@ document.querySelector(".equals").addEventListener("click", () => {
 
 
 /*
-* Returns calc display to default 0
+* Returns calc display to default of "0"
 */
 function resetDisplay (){
     displayText = "0"
@@ -119,6 +130,7 @@ function resetCalcState (){
 * Takes first and second stored operands and executes computation
 * according to stored operation chosen by user
 * Displays result on calc display
+* Sets display to "ERROR" on divide by 0 attempt
 */
 function compute (){
     firstOperand = parseFloat(firstOperand);
@@ -151,6 +163,7 @@ function compute (){
 
     updateDisplay();
 
+    // Result becomes new first operand for further computation
     firstOperand = displayText;
     secondOperand = null;
     operation = null;
