@@ -19,6 +19,7 @@ $font-stack: 'Spartan', sans-serif;
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -333,17 +334,13 @@ main {
         grid-column: 1 / span 2;
     }
 
-    .reset, .del {
-        
+    .reset, .del {  
         font-size: 1em;
-
     }
 
     .equals {
-        
         font-size: 1em;
         grid-column: 3 / span 2;
-
     }
 
 }
@@ -356,4 +353,28 @@ main {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
+}
+
+@media screen and (min-width: 1201px){
+    body {
+        padding-bottom: 2%;
+    }
+
+    #content-container {
+        width: 40%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+    #keypad {
+        height: auto;
+        gap: 2em;
+
+        button {
+            font-size: 1.8em;
+            border-radius: 10px;
+            padding: .5em 0 .4em 0;
+        }
+    }
 }

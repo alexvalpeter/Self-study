@@ -8,6 +8,7 @@
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -370,4 +371,26 @@ main {
 .attribution a {
   color: #3e52a3;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    padding-bottom: 2%;
+  }
+  #content-container {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #keypad {
+    height: auto;
+    gap: 2em;
+  }
+  #keypad button {
+    font-size: 1.8em;
+    border-radius: 10px;
+    padding: .5em 0 .4em 0;
+  }
 }
