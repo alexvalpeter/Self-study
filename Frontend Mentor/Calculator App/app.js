@@ -100,7 +100,6 @@ document.querySelector(".equals").addEventListener("click", () => {
     
     if (firstOperand !== null && operation !== null && receivedSecondOperand == true){
         secondOperand = displayText;
-        console.log(firstOperand + "  " + operation + "  " + secondOperand);
         compute();
     };
 });
@@ -164,7 +163,7 @@ function compute (){
     updateDisplay();
 
     // Result becomes new first operand for further computation
-    firstOperand = displayText;
+    firstOperand = null;
     secondOperand = null;
     operation = null;
     receivedSecondOperand = false;

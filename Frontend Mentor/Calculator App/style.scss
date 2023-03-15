@@ -81,6 +81,7 @@ body.theme-1 {
     .operator.selected {
         background-color: #fff;
         color: hsl(222, 26%, 31%);
+        transition: background-color 2000ms ease-out;
     }
 
     .attribution a { 
@@ -366,6 +367,10 @@ main {
         left: 50%;
         transform: translateX(-50%);
     } 
+
+    #display-box {
+        font-size: 3em;
+    }
 
     #keypad {
         height: auto;
