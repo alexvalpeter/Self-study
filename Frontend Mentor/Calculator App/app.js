@@ -24,6 +24,15 @@ themeToggle.addEventListener("input", function() {
 });
 
 
+
+document.querySelectorAll(".key").forEach( (element) => {
+    element.addEventListener("click", () => {
+        element.classList.add("highlighted");
+        setTimeout(function() {
+            element.classList.remove("highlighted");
+          }, 100);
+    }) 
+})
 /*
 * Event listeners for numerical keys
 * Updates display as numbers are entered

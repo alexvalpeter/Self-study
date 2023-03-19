@@ -63,6 +63,10 @@ body.theme-1 .key {
           box-shadow: 0 5px #b4a597;
 }
 
+body.theme-1 .key.highlighted {
+  background-color: #fff;
+}
+
 body.theme-1 .reset, body.theme-1 .del {
   color: #fff;
   background-color: #637097;
@@ -80,8 +84,6 @@ body.theme-1 .equals {
 body.theme-1 .operator.selected {
   background-color: #fff;
   color: #3a4764;
-  -webkit-transition: background-color 2000ms ease-out;
-  transition: background-color 2000ms ease-out;
 }
 
 body.theme-1 .attribution a {
@@ -118,6 +120,10 @@ body.theme-2 .key {
   background-color: #e5e4e1;
   -webkit-box-shadow: 0 5px #a69d91;
           box-shadow: 0 5px #a69d91;
+}
+
+body.theme-2 .key.highlighted {
+  background-color: #fff;
 }
 
 body.theme-2 .reset, body.theme-2 .del {
@@ -173,6 +179,10 @@ body.theme-3 .key {
   background-color: #341c4f;
   -webkit-box-shadow: 0 5px #871c9c;
           box-shadow: 0 5px #871c9c;
+}
+
+body.theme-3 .key.highlighted {
+  background-color: #bc15f4;
 }
 
 body.theme-3 .reset, body.theme-3 .del {

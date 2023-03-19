@@ -66,6 +66,10 @@ body.theme-1 {
         box-shadow: 0 5px hsl(28, 16%, 65%);
     } 
 
+    .key.highlighted {
+        background-color: #fff;
+    }
+
     .reset, .del {
         color: #fff;
         background-color: $theme-1-secondary-color;
@@ -81,7 +85,6 @@ body.theme-1 {
     .operator.selected {
         background-color: #fff;
         color: hsl(222, 26%, 31%);
-        transition: background-color 2000ms ease-out;
     }
 
     .attribution a { 
@@ -118,6 +121,10 @@ body.theme-2 {
     .key {
         background-color: hsl(45, 7%, 89%);
         box-shadow: 0 5px hsl(35, 11%, 61%);
+    }
+
+    .key.highlighted {
+        background-color: #fff;
     }
 
     .reset, .del {
@@ -171,6 +178,10 @@ body.theme-3 {
         color: hsl(52, 100%, 62%);
         background-color: hsl(268, 47%, 21%);
         box-shadow: 0 5px hsl(290, 70%, 36%);
+    }
+
+    .key.highlighted {
+        background-color: hsl(285, 91%, 52%);
     }
 
     .reset, .del {
@@ -321,6 +332,8 @@ main {
     &.theme-3 {
         background-color: hsl(268, 71%, 12%);
     }
+
+    
 
     button {
         position: relative;
