@@ -24,7 +24,9 @@ themeToggle.addEventListener("input", function() {
 });
 
 
-
+/*
+* Hightlights clicked key for 100ms
+*/
 document.querySelectorAll(".key").forEach( (element) => {
     element.addEventListener("click", () => {
         element.classList.add("highlighted");
@@ -33,16 +35,18 @@ document.querySelectorAll(".key").forEach( (element) => {
           }, 100);
     }) 
 })
+
+
 /*
-* Event listeners for numerical keys
+* Click event listeners for numerical keys
 * Updates display as numbers are entered
 * Determines whether input is part of first or second operand
 */
 document.querySelectorAll(".num").forEach( (element) => {
     element.addEventListener("click", () => {
-        if (displayText == "0"){
+        if (displayText === "0" && displayText){
             displayText = element.innerHTML;
-        } else if (firstOperand !== null && receivedSecondOperand == false){
+        } else if (firstOperand !== null && receivedSecondOperand == false) {
             displayText = element.innerHTML;
             receivedSecondOperand = true;
         } else {
@@ -52,6 +56,24 @@ document.querySelectorAll(".num").forEach( (element) => {
         updateDisplay();
     });
 }); 
+
+/*
+* Click event listener for decimal key
+* Updates display based on current display and current operands
+* Does not allow for multiple decimals to be added to display/operand
+*/
+document.querySelector(".decimal").addEventListener("click", () => {
+    if (firstOperand !== null && receivedSecondOperand == false){
+        displayText = "0.";
+        receivedSecondOperand = true;
+    } else {
+        appendDigit(".");
+    };
+
+    updateDisplay();
+});
+
+
 
 document.querySelector(".reset").addEventListener("click", () => {
     resetCalcState();
@@ -172,7 +194,7 @@ function compute (){
     updateDisplay();
 
     // Result becomes new first operand for further computation
-    firstOperand = null;
+    firstOperand = displayText;
     secondOperand = null;
     operation = null;
     receivedSecondOperand = false;
