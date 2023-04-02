@@ -11,10 +11,11 @@ let receivedSecondOperand = false;
 
 
 switchTheme(theme);
+themeToggle.value = theme;
 
 /**
  * Changes visual theme and color scheme of page according to user input
- * Stores theme choice in local storage
+ * Stores theme preference in local storage
  * 
  * @param {number} theme Number corresponding to user-chosen theme
  */
