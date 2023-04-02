@@ -1,19 +1,26 @@
 const body = document.querySelector("body");
 const themeToggle = document.querySelector("#theme-toggle");
 const display = document.querySelector("#display-box");
+const theme = localStorage.getItem("theme");
+
 let displayText = "";
 let operation = null;
 let firstOperand = null;
 let secondOperand = null;
 let receivedSecondOperand = false;
 
+
+switchTheme(theme);
+
 /**
  * Changes visual theme and color scheme of page according to user input
- *
+ * Stores theme choice in local storage
+ * 
  * @param {number} theme Number corresponding to user-chosen theme
  */
 function switchTheme(themeNumber){
     body.className = "theme-" + themeNumber;
+    localStorage.setItem("theme", themeNumber);
 };
 
 /*
