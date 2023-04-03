@@ -325,6 +325,7 @@ main {
 #keypad {
   position: relative;
   height: 60vh;
+  max-height: 500px;
   width: 100%;
   display: -ms-grid;
   display: grid;

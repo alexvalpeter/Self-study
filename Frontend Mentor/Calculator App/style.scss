@@ -312,6 +312,7 @@ main {
 #keypad {
     position: relative;
     height: 60vh;
+    max-height: 500px;
     width: 100%;
     display: grid;
     border-radius: 10px;
