@@ -9,7 +9,8 @@ let firstOperand = null;
 let secondOperand = null;
 let receivedSecondOperand = false;
 
-
+// Set theme according to user preference saved in local storage
+// Set toggle to corresponding position
 switchTheme(theme);
 themeToggle.value = theme;
 
@@ -65,24 +66,29 @@ document.querySelectorAll(".num").forEach( (element) => {
     });
 }); 
 
+
 /*
 * Click event listener for decimal key
 * Updates display based on current display and current operands
 * Does not allow for multiple decimals to be added to display/operand
 */
 document.querySelector(".decimal").addEventListener("click", () => {
-    if (firstOperand !== null && receivedSecondOperand == false){
-        displayText = "0.";
-        receivedSecondOperand = true;
-    } else {
-        appendDigit(".");
-    };
+    if (displayText[displayText.length-1] != ".") {
+        if (firstOperand !== null && receivedSecondOperand == false){
+            displayText = "0.";
+            receivedSecondOperand = true;
+        } else {
+            appendDigit(".");
+        };
 
-    updateDisplay();
+        updateDisplay();
+    }    
 });
 
 
-
+/*
+* Resets calculator state and zero out display
+*/
 document.querySelector(".reset").addEventListener("click", () => {
     resetCalcState();
     resetDisplay();
@@ -92,12 +98,15 @@ document.querySelector(".del").addEventListener("click", () => {
     delDigit();
 });
 
+
+/*
+* Adds new digit to end of current display string 
+*/
 function appendDigit(newDigit){
     displayText += newDigit;
 };
 
 function updateDisplay(){
-   // displayText = displayText.concat(newData);
     display.innerHTML = displayText;
 };
 
@@ -134,6 +143,7 @@ document.querySelectorAll(".operator").forEach( (element) => {
         };
     });    
 });
+
 
 document.querySelector(".equals").addEventListener("click", () => {
     
