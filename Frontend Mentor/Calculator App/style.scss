@@ -92,6 +92,7 @@ body.theme-1 {
     }
 }
 
+
 body.theme-2 {
     background-color: hsl(0, 0%, 90%);
     color: hsl(60, 10%, 19%);
@@ -249,7 +250,7 @@ header {
        width: 35%;
    }
     
-
+   // Theme toggle
     input[type=range] {
         display: inline;
         -webkit-appearance: none; 
@@ -371,6 +372,8 @@ main {
     text-decoration: none;
 }
 
+
+// Desktop & large tablet
 @media screen and (min-width: 1201px){
     body {
         padding-bottom: 2%;
