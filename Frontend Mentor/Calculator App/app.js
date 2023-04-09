@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const themeToggle = document.querySelector("#theme-toggle");
 const display = document.querySelector("#display-box");
-const theme = localStorage.getItem("theme");
+const userTheme = localStorage.getItem("theme");
 
 let displayText = "";
 let operation = null;
@@ -9,10 +9,15 @@ let firstOperand = null;
 let secondOperand = null;
 let receivedSecondOperand = false;
 
-// Set theme according to user preference saved in local storage
+
+// Set theme according to user preference if saved in local storage
 // Set toggle to corresponding position
-switchTheme(theme);
-themeToggle.value = theme;
+if (userTheme) {
+ themeToggle.value = userTheme;
+ switchTheme(userTheme);
+} 
+
+//localStorage.clear();
 
 /**
  * Changes visual theme and color scheme of page according to user input
