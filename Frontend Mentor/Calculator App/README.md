@@ -36,5 +36,5 @@ This is my coded solution to the Calculator App Challenge (https://www.frontendm
 
 
 ### Deployed
-calculator-6xwaw5yox-alexvalpeter.vercel.app
+https://calculator-6xwaw5yox-alexvalpeter.vercel.app
 
