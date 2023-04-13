@@ -5,43 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css" />
   
-  <title>Frontend Mentor | Results summary component</title>
+  <title>Frontend Mentor | Results Summary Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div id="card-container">
+    <div id="overall-result">
+      <div class="card-heading">Your Result</div>
+      <div id="overall-score-num">76</div>
+      <div id="total">of 100</div>
 
-  Your Result
-  76
-  of 100
+      <div class="score-desc">Great</div>
+      <div class="percentile-msg">You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
+    
+    <div id="summary">
+      <div class="card-heading">Summary</div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="score-category">
+        <div class="category-name">Reaction</div>
+        <div class="score">80 / 100</div>
+      </div>
 
-  Reaction
-  80 / 100
+      <div class="score-category">
+        <div class="category-name">Memory</div>
+        <div class="score">92 / 100</div>
+      </div>
 
-  Memory
-  92 / 100
+      <div class="score-category">
+        <div class="category-name">Verbal</div>
+        <div class="score">61 / 100</div>
+      </div>
 
-  Verbal
-  61 / 100
+      <div class="score-category">
+        <div class="category-name">Visual</div>
+        <div class="score">72 / 100</div>
+      </div>
 
-  Visual
-  72 / 100
-
-  Continue
+      <button class="continue">Continue</button>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/alexvalpeter">Alex Peterson</a>.
   </div>
+
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
