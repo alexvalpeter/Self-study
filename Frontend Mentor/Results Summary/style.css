@@ -10,30 +10,15 @@ html, body {
   width: 100%;
 }
 
-#card-container, #overall-result, #summary {
-  border-radius: 2em;
-}
-
 #card-container {
   background-color: #fff;
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  width: 50%;
-  height: 50%;
-  -webkit-box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
-          box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
 }
 
 #overall-result {
   background: -webkit-gradient(linear, left top, left bottom, from(#6743ff), to(#2d2af7));
   background: linear-gradient(#6743ff, #2d2af7);
+  border-radius: 0 0 2em 2em;
   padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +35,26 @@ html, body {
           align-items: center;
 }
 
+.total-score {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4f24cb), to(#3c42f1));
+  background: linear-gradient(#4f24cb, #3c42f1);
+  border-radius: 100%;
+  padding: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -57,4 +62,24 @@ html, body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (min-width: 1201px) {
+  #card-container, #overall-result, #summary {
+    border-radius: 2em;
+  }
+  #card-container {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 40%;
+    height: 50%;
+    -webkit-box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
+            box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
+  }
 }

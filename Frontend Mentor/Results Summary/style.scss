@@ -9,31 +9,33 @@ html, body {
     width: 100%;
 }
 
-#card-container, #overall-result, #summary {
-    border-radius: 2em;
-}
+
 
 #card-container {
     background-color: #fff;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    //border: solid #000 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
-    height: 50%;
-    box-shadow: 20px 10px 40px rgba(20, 42, 88, .1);
+    
+    
 }
 
 #overall-result {
     background: linear-gradient(#6743ff, #2d2af7);
+    border-radius: 0 0 2em 2em;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center
+}
+
+.total-score {
+    background: linear-gradient(#4f24cb, #3c42f1);
+    border-radius: 100%;
+    padding: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .attribution { 
@@ -42,5 +44,25 @@ html, body {
     a {
         color: hsl(228, 45%, 44%); 
     }
+}
+
+@media screen and (min-width: 1201px){
+
+    #card-container, #overall-result, #summary {
+        border-radius: 2em;
+    }
+
+    #card-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //border: solid #000 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 40%;
+        height: 50%;
+        box-shadow: 20px 10px 40px rgba(20, 42, 88, .1);
+    }
+    
 }
  
