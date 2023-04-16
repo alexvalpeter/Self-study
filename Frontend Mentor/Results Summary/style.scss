@@ -31,7 +31,7 @@ body {
 }
 
 #overall-result {
-    background: linear-gradient(#6743ff, #2d2af7);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 0 0 2em 2em;
     padding: 2em 2em 3em 2em;
     display: flex;
@@ -46,7 +46,7 @@ body {
 }
 
 .total-score {
-    background: linear-gradient(#4f24cb, #3c42f1);
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 100%;
     padding: 7% 12%;
     display: flex;
@@ -57,7 +57,7 @@ body {
 }
 
 #overall-score-num {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 #total {
@@ -80,16 +80,101 @@ body {
 }
 
 
+#summary {
+    padding: 8%;
 
-
-.attribution { 
-    font-size: 11px; text-align: center; 
-
-    a {
-        color: hsl(228, 45%, 44%); 
+    .card-heading {
+        color: hsl(224, 30%, 27%);
     }
 }
 
+
+.score-category {
+    width: 100%;
+    margin-bottom: 1.2em;
+    border-radius: .6em;
+    padding: 1em 1.2em;
+    //background-color: darkcyan;
+    
+    img {
+        vertical-align:bottom;
+    }
+
+    &.category-1 {
+        background-color: hsla(0, 100%, 67%, .08);
+        color: hsl(0, 100%, 67%);
+    }
+
+    &.category-2 {
+        background-color: hsla(39, 100%, 56%, .08);
+        color: hsl(39, 100%, 56%);
+    }
+
+    &.category-3 {
+        background-color: hsla(166, 100%, 37%, .08);
+        color: hsl(166, 100%, 37%);
+    }
+
+    &.category-4 {
+        background-color: hsla(234, 85%, 45%, .08);
+        color: hsl(234, 85%, 45%);
+    }
+
+}
+
+.category-name {
+    display: inline-block;
+}
+
+.score {
+   position: relative;
+   float:right;
+
+   .numerator {
+       display: inline-block;
+       margin-right: 2px;
+       color: hsl(224, 30%, 27%);
+   }
+
+   .denominator {
+       display: inline-block;
+       color: hsla(224, 30%, 27%, .4);
+   }
+}
+
+
+
+button {
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    padding: .85em 0;
+    margin-top: .7em;
+    border: none;
+    border-radius: 3em; 
+    color: #fff;
+    font-family : inherit;
+    font-size: 1.1em;
+    font-variation-settings: "wght" 600;
+}
+
+
+
+
+
+.attribution { 
+    font-size: .5em; 
+    text-align: center; 
+    padding-bottom: 10px;
+    color: hsla(224, 30%, 27%, .8);
+
+    a {
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none;
+    }
+}
+
+
+// Desktop and large tablet styles
 @media screen and (min-width: 1201px){
 
     #card-container, #overall-result, #summary {
