@@ -114,8 +114,9 @@ body {
   padding: 1em 1.2em;
 }
 
-.score-category img {
+.score-category .icon {
   vertical-align: bottom;
+  margin-right: 6px;
 }
 
 .score-category.category-1 {

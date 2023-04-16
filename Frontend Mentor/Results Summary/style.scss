@@ -96,8 +96,9 @@ body {
     padding: 1em 1.2em;
     //background-color: darkcyan;
     
-    img {
+    .icon {
         vertical-align:bottom;
+        margin-right: 6px;
     }
 
     &.category-1 {
