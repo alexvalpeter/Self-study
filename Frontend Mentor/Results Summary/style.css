@@ -34,20 +34,8 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
   background: linear-gradient(#7857ff, #2e2be9);
   border-radius: 0 0 2em 2em;
-  padding: 2em 2em 3em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2em 3em;
+  text-align: center;
   color: #fff;
 }
 
@@ -60,19 +48,7 @@ body {
   background: linear-gradient(#4e21ca, rgba(36, 33, 202, 0));
   border-radius: 100%;
   padding: 7% 12%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
   margin-bottom: 1.8em;
 }
 
@@ -92,7 +68,7 @@ body {
 }
 
 .percentile-msg {
-  width: 85%;
+  width: 100%;
   opacity: 60%;
   text-align: center;
   font-variation-settings: "wght" 500;
@@ -101,6 +77,7 @@ body {
 
 #summary {
   padding: 8%;
+  background-color: #fff;
 }
 
 #summary .card-heading {
@@ -184,11 +161,12 @@ button {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 720px) {
   #card-container, #overall-result, #summary {
     border-radius: 2em;
   }
   #card-container {
+    background: #fff;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -197,9 +175,36 @@ button {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    width: 40%;
-    height: 50%;
+    width: 650px;
+    height: 468px;
     -webkit-box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
             box-shadow: 20px 10px 40px rgba(20, 42, 88, 0.1);
+  }
+  #overall-result, #summary {
+    height: 100%;
+  }
+  #overall-result {
+    padding: 35px 45px;
+  }
+  #summary {
+    padding: 35px 30px;
+  }
+  .total-score {
+    margin-bottom: 2em;
+  }
+  .score-desc {
+    font-size: 1.8em;
+  }
+  .card-heading {
+    font-size: 1.3em;
+  }
+  .total-score {
+    padding: 14% 20%;
+  }
+  #overall-score-num {
+    font-size: 4em;
+  }
+  .score-category {
+    padding: .8em 1.2em;
   }
 }
