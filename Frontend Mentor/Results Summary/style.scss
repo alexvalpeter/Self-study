@@ -51,9 +51,6 @@ body {
     border-radius: 100%;
     padding: 7% 12%;
     display: inline-block;
-    //flex-direction: column;
-    //justify-content: center;
-   // align-items: center;
     margin-bottom: 1.8em;
 }
 
@@ -96,7 +93,6 @@ body {
     margin-bottom: 1.2em;
     border-radius: .6em;
     padding: 1em 1.2em;
-    //background-color: darkcyan;
     
     .icon {
         vertical-align:bottom;
@@ -149,7 +145,7 @@ body {
 
 button {
     width: 100%;
-    background-color: hsl(224, 30%, 27%);
+    background: hsl(224, 30%, 27%);
     padding: .85em 0;
     margin-top: .7em;
     border: none;
@@ -196,7 +192,6 @@ button {
         box-shadow: 20px 10px 40px rgba(20, 42, 88, .1);
     }
 
-
     #overall-result, #summary {
         height: 100%;
         
@@ -218,8 +213,6 @@ button {
         font-size: 1.8em;
     }
 
- 
-
     .card-heading {
         font-size: 1.3em;
     }    
@@ -234,6 +227,18 @@ button {
 
     .score-category {
         padding: .8em 1.2em;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 

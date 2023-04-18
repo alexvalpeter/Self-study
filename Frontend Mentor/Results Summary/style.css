@@ -138,7 +138,7 @@ body {
 
 button {
   width: 100%;
-  background-color: #303b5a;
+  background: #303b5a;
   padding: .85em 0;
   margin-top: .7em;
   border: none;
@@ -206,5 +206,17 @@ button {
   }
   .score-category {
     padding: .8em 1.2em;
+  }
+  button:hover {
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
+    background: linear-gradient(#7857ff, #2e2be9);
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
