@@ -10,31 +10,52 @@
   <title>Frontend Mentor | Interactive Rating Component</title>
 
 </head>
+
 <body>
 
+  <div id="card-container">
+
   <!-- Rating state start -->
+    <div id="rating-state">
+      <img class="star-icon" src=".img/icon-star.svg" alt="Star Icon">
 
-  How did we do?
+      <div class="card-heading">How did we do?</div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  
 
-  1 2 3 4 5
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+      <div class="ratings-container">
+        <button class="rating">1</button>
+        <button class="rating">2</button>
+        <button class="rating">3</button>
+        <button class="rating">4</button>
+        <button class="rating">5</button>
+      </div>  
 
-  Submit
+
+      <button class="submit-btn">Submit</button>
+    </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+    <div id="thankyou-state">
 
-  Thank you!
+      <img class="thankyou-illustration" src="./img/illustration-thank-you.svg" alt="Thank You Illustration">
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+      <div class="selection-text">You selected <span></span>out of 5</div>
+
+      <div class="card-heading">Thank you!</div>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
 
   <!-- Thank you state end -->
+
+  </div> 
 
   
   <div class="attribution">
