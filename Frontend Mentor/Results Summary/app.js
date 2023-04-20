@@ -2,6 +2,11 @@ const categoryNames = document.querySelectorAll(".category-name");
 const categoryScores = document.querySelectorAll(".numerator");
 const categoryIcons = document.querySelectorAll(".icon");
 
+
+/*
+* Fetch category names, scores, and icons from local JSON file
+* Update HTML with data
+*/
 fetch('./data.json')
     .then((response) => response.json())
     .then(function (data) {
