@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,128 @@
           box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
+body {
+  height: 100vh;
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+}
+
+#card-container {
+  background: radial-gradient(circle at center top, #252d37, rgba(37, 45, 55, 0.4));
+  border-radius: 1em;
+  width: 90%;
+  height: 55%;
+  max-height: 360px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 1.7em;
+}
+
+#card-container p {
+  font-size: .9em;
+  opacity: .4;
+  line-height: 1.5em;
+}
+
+.card-heading {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#rating-state {
+  height: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rating-state .star-icon {
+  display: inline;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: rgba(124, 135, 152, 0.1);
+  padding: .75em;
+  border-radius: 3em;
+}
+
+#rating-state button {
+  border-radius: 3em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rating-state .ratings-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#rating-state .rating-num {
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: 1em 1.3em;
+  opacity: .4;
+  font-weight: 700;
+}
+
+#rating-state .rating-num:hover {
+  opacity: .7;
+}
+
+#rating-state button[type=submit] {
+  background-color: #fb7413;
+  width: 100%;
+  padding: 1em;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+#thankyou-state {
+  display: none;
   text-align: center;
 }
 
+.active {
+  display: block;
+}
+
+.attribution {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+  opacity: .4;
+}
+
 .attribution a {
-  color: #3e52a3;
+  color: #fb7413;
   cursor: pointer;
   text-decoration: none;
 }

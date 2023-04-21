@@ -1,18 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+    color: #fff;
+}
+
+#card-container {
+    background: radial-gradient(circle at center top, hsla(213, 19%, 18%, 1), hsla(213, 19%, 18%, .4));
+    border-radius: 1em;
+    width: 90%;
+    height: 55%;
+    max-height: 360px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.7em;
+
+    p {
+        font-size: .9em;
+        opacity: .4;
+        line-height: 1.5em;
+    }
+}
+
+.card-heading {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+#rating-state {
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+
+    .star-icon {
+        display: inline;
+        align-self: flex-start;
+        background-color: hsla(216, 12%, 54%, .1);
+        padding:.75em;
+        border-radius: 3em;
+    }
+
+    button {
+        border-radius: 3em;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .ratings-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rating-num {
+        background-color: hsla(216, 12%, 54%, .2);
+        padding: 1em 1.3em;
+        opacity: .4;
+        font-weight: 700;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    button[type=submit] {
+        background-color: hsl(25, 97%, 53%);
+        width: 100%;
+        padding: 1em;
+        font-size: .8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+    }
+}
+
+#thankyou-state {
+    display: none;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
 
 
 
 .attribution { 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
     font-size: 11px; 
     text-align: center; 
+    opacity: .4;
+    
 
     a { 
-        color: hsl(228, 45%, 44%); 
+        color: hsl(25, 97%, 53%); 
         cursor: pointer;
         text-decoration: none;
     }
