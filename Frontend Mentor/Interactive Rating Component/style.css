@@ -39,9 +39,11 @@ body {
 }
 
 #rating-state {
-  display: none;
   height: 100%;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -79,6 +81,46 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+#rating-state input[type=radio] {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5em;
+  opacity: .4;
+  border-radius: 3em;
+  border: none;
+  cursor: pointer;
+  /*&:hover {
+            opacity: 1;
+            background-color: hsl(25, 97%, 53%);
+        }*/
+}
+
+#rating-state input[type=radio]:checked {
+  opacity: 1;
+  background-color: #7c8798;
+}
+
+#rating-state input[type=radio]:checked + label {
+  color: white;
+}
+
+#rating-state .rating-option {
+  position: relative;
+}
+
+#rating-state label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #rating-state .rating-num {
@@ -92,7 +134,7 @@ body {
   opacity: .7;
 }
 
-#rating-state button[type=submit] {
+#rating-state input[type=submit] {
   background-color: #fb7413;
   width: 100%;
   padding: 1em;
@@ -100,13 +142,15 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .2em;
+  border-radius: 3em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 #thankyou-state {
+  display: none;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

@@ -38,10 +38,9 @@ body {
 }
 
 #rating-state {
-    display: none;
     height: 100%;
     text-align: left;
-    //display: flex;
+    display: flex;
     flex-direction: column;
     justify-content:  space-between;
 
@@ -65,7 +64,48 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 1em;
     }
+
+    input[type=radio]{  
+        position: relative;
+        appearance: none;
+        background-color: rgba(255, 255, 255, .1);
+        padding: 1.5em;
+        opacity: .4;
+        border-radius: 3em;
+        border: none;
+        cursor: pointer;
+        
+
+        /*&:hover {
+            opacity: 1;
+            background-color: hsl(25, 97%, 53%);
+        }*/
+
+        &:checked {
+            opacity: 1;
+            //color: rgba(255, 255, 255, .4);
+            background-color: hsl(216, 12%, 54%);
+
+            + label {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    .rating-option {
+        position: relative;
+    }
+
+    label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, .3);
+    }
+
 
     .rating-num {
         background-color: hsla(216, 12%, 54%, .2);
@@ -78,7 +118,7 @@ body {
         }
     }
 
-    button[type=submit] {
+    input[type=submit] {
         background-color: hsl(25, 97%, 53%);
         width: 100%;
         padding: 1em;
@@ -86,12 +126,16 @@ body {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: .2em;
+        border-radius: 3em;
+        border: none;
+        color: #fff;
+        cursor: pointer;
     }
 }
 
 #thankyou-state {
+    display: none;
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;    
     text-align: center;
@@ -110,11 +154,6 @@ body {
     opacity: .7;
     background-color: hsla(216, 12%, 54%, .2);
 }
-
-.active {
-    //display: block;
-}
-
 
 
 
