@@ -38,9 +38,10 @@ body {
 }
 
 #rating-state {
+    display: none;
     height: 100%;
     text-align: left;
-    display: flex;
+    //display: flex;
     flex-direction: column;
     justify-content:  space-between;
 
@@ -89,12 +90,29 @@ body {
 }
 
 #thankyou-state {
-    display: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
     text-align: center;
+
+    .thankyou-illustration {
+        align-self: center;
+    }
+}
+
+.selection-text {
+    font-size: 1em;
+    align-self: center;
+    padding: .4em .8em .2em .8em;
+    border-radius: 3em;
+    color: hsl(25, 97%, 53%);
+    opacity: .7;
+    background-color: hsla(216, 12%, 54%, .2);
 }
 
 .active {
-    display: block;
+    //display: block;
 }
 
 
