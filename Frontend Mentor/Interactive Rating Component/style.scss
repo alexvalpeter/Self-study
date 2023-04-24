@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -18,7 +18,8 @@ body {
     border-radius: 1em;
     width: 90%;
     height: 55%;
-    max-height: 360px;
+    max-height: 400px;
+    max-width: 400px;
     position: relative;
     left: 50%;
     top: 50%;
@@ -37,6 +38,8 @@ body {
     font-weight: 700;
 }
 
+/* Rating state styles */
+
 #rating-state {
     height: 100%;
     text-align: left;
@@ -50,13 +53,6 @@ body {
         background-color: hsla(216, 12%, 54%, .1);
         padding:.75em;
         border-radius: 3em;
-    }
-
-    button {
-        border-radius: 3em;
-        border: none;
-        color: #fff;
-        cursor: pointer;
     }
 
     .ratings-container {
@@ -77,11 +73,6 @@ body {
         border: none;
         cursor: pointer;
         
-
-        /*&:hover {
-            opacity: 1;
-            background-color: hsl(25, 97%, 53%);
-        }*/
 
         &:checked {
             opacity: 1;
@@ -106,18 +97,6 @@ body {
         color: rgba(255, 255, 255, .3);
     }
 
-
-    .rating-num {
-        background-color: hsla(216, 12%, 54%, .2);
-        padding: 1em 1.3em;
-        opacity: .4;
-        font-weight: 700;
-
-        &:hover {
-            opacity: .7;
-        }
-    }
-
     input[type=submit] {
         background-color: hsl(25, 97%, 53%);
         width: 100%;
@@ -132,6 +111,8 @@ body {
         cursor: pointer;
     }
 }
+
+/* Thank you state styles */
 
 #thankyou-state {
     display: none;
@@ -173,5 +154,63 @@ body {
         color: hsl(25, 97%, 53%); 
         cursor: pointer;
         text-decoration: none;
+    }        
+    
+}
+
+/* Tablets and desktop */
+@media screen and (min-width: 700px){
+
+    #card-container {
+        padding: 2.2em;
     }
+
+    .card-heading {
+        font-size: 1.8em;
+    }
+
+    #rating-state {
+
+        .star-icon {
+            padding: 1em;
+        }
+
+        .ratings-container {
+            margin-bottom: 1.4em;
+        }
+
+        input[type=radio]{
+            padding: 1.9em;
+
+            &:hover {
+                opacity: 1;
+                background-color: hsl(25, 97%, 53%);
+                cursor: pointer;
+            }
+        }
+
+        input[type=radio]:hover + label {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        input[type=radio]:checked:hover {
+            background-color: hsl(216, 12%, 54%);
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type=submit]{
+            font-size: 1em;
+
+            &:hover {
+                background-color: #fff;
+                color: hsl(25, 97%, 53%);
+            }
+        }
+    }
+
+   
+
 }

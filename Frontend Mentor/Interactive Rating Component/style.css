@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,8 @@ body {
   border-radius: 1em;
   width: 90%;
   height: 55%;
-  max-height: 360px;
+  max-height: 400px;
+  max-width: 400px;
   position: relative;
   left: 50%;
   top: 50%;
@@ -38,6 +39,7 @@ body {
   font-weight: 700;
 }
 
+/* Rating state styles */
 #rating-state {
   height: 100%;
   text-align: left;
@@ -60,13 +62,6 @@ body {
   background-color: rgba(124, 135, 152, 0.1);
   padding: .75em;
   border-radius: 3em;
-}
-
-#rating-state button {
-  border-radius: 3em;
-  border: none;
-  color: #fff;
-  cursor: pointer;
 }
 
 #rating-state .ratings-container {
@@ -95,10 +90,6 @@ body {
   border-radius: 3em;
   border: none;
   cursor: pointer;
-  /*&:hover {
-            opacity: 1;
-            background-color: hsl(25, 97%, 53%);
-        }*/
 }
 
 #rating-state input[type=radio]:checked {
@@ -123,17 +114,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-#rating-state .rating-num {
-  background-color: rgba(124, 135, 152, 0.2);
-  padding: 1em 1.3em;
-  opacity: .4;
-  font-weight: 700;
-}
-
-#rating-state .rating-num:hover {
-  opacity: .7;
-}
-
 #rating-state input[type=submit] {
   background-color: #fb7413;
   width: 100%;
@@ -148,6 +128,7 @@ body {
   cursor: pointer;
 }
 
+/* Thank you state styles */
 #thankyou-state {
   display: none;
   height: 100%;
@@ -196,4 +177,44 @@ body {
   color: #fb7413;
   cursor: pointer;
   text-decoration: none;
+}
+
+/* Tablets and desktop */
+@media screen and (min-width: 700px) {
+  #card-container {
+    padding: 2.2em;
+  }
+  .card-heading {
+    font-size: 1.8em;
+  }
+  #rating-state .star-icon {
+    padding: 1em;
+  }
+  #rating-state .ratings-container {
+    margin-bottom: 1.4em;
+  }
+  #rating-state input[type=radio] {
+    padding: 1.9em;
+  }
+  #rating-state input[type=radio]:hover {
+    opacity: 1;
+    background-color: #fb7413;
+    cursor: pointer;
+  }
+  #rating-state input[type=radio]:hover + label {
+    color: white;
+  }
+  #rating-state input[type=radio]:checked:hover {
+    background-color: #7c8798;
+  }
+  #rating-state label {
+    cursor: pointer;
+  }
+  #rating-state input[type=submit] {
+    font-size: 1em;
+  }
+  #rating-state input[type=submit]:hover {
+    background-color: #fff;
+    color: #fb7413;
+  }
 }
