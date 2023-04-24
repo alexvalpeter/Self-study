@@ -31,7 +31,8 @@ Users should be able to:
 ![Desktop](./Screenshots/Desktop_active.png)
 
 #### Mobile
-![Mobile](./Screenshots/Mobile_rating.png | width=500)   ![Mobile](./Screenshots/Mobile_thankyou.png | width=500) 
+<img src="./Screenshots/Mobile_rating.png" width="500">  <img src="./Screenshots/Mobile_thankyou.png" width="500">  
+
 
 ### Deployed
-https://interactive-rating-66anh4wlv-alexvalpeter.vercel.app/
+interactive-rating-7mozze8nk-alexvalpeter.vercel.app
