@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Intro Component with Sign Up Form</title>
   
@@ -18,29 +19,29 @@
       but understanding how developers think is invaluable.</p>
     </div>
 
-    <div class="cta">Try it free 7 days then $20/mo. thereafter</div>
+    <div class="cta"><span>Try it free 7 days</span> then <br>$20/mo. thereafter</div>
     <div id="signup">
       <form name="signup-form" id="signup-form">
-        <input type="text" id="firstname" name="firstname" placeholder="First Name">
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" class="input-field">
         <label for="firstname">First Name</label>
-        <input type="text" id="lastname" name="lastname" placeholder=" Last Name">
+        <input type="text" id="lastname" name="lastname" placeholder=" Last Name" class="input-field">
         <label for="lastname">Last Name</label>
-        <input type="email" id="email" name="email" placeholder="Email Address">
+        <input type="email" id="email" name="email" placeholder="Email Address" class="input-field">
         <label for="email">Email</label>
-        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="password" id="password" name="password" placeholder="Password" class="input-field">
         <label for="password">Password</label>
 
         <input type="submit" value="Claim your free trial">
       </form>
 
-      <div class="TS-agreement">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></div>
+      <div class="TS-agreement">By clicking the button, you are agreeing to<br> our <a href="#">Terms and Services</a></div>
     </div>
   </main>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/alexvalpeter">Alex Peterson</a>.
     </p>
   </footer>
 </body>
