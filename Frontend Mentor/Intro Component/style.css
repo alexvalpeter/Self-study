@@ -57,16 +57,19 @@ h1 {
   margin-bottom: 2em;
 }
 
-#signup .input-field {
+#signup input:not([type=submit]) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   width: 100%;
   border: solid 1px rgba(185, 182, 211, 0.5);
-  color: #3e3c49;
+  color: rgba(62, 60, 73, 0.7);
   border-radius: .4em;
   padding: 1.4em;
   margin-bottom: 1.2em;
+  caret-color: #3e3c49;
 }
 
-#signup .input-field::-webkit-input-placeholder {
+#signup input:not([type=submit])::-webkit-input-placeholder {
   position: relative;
   color: rgba(62, 60, 73, 0.7);
   font-family: 'Poppins', sans-serif;
@@ -75,7 +78,7 @@ h1 {
   top: 1px;
 }
 
-#signup .input-field:-ms-input-placeholder {
+#signup input:not([type=submit]):-ms-input-placeholder {
   position: relative;
   color: rgba(62, 60, 73, 0.7);
   font-family: 'Poppins', sans-serif;
@@ -84,7 +87,7 @@ h1 {
   top: 1px;
 }
 
-#signup .input-field::-ms-input-placeholder {
+#signup input:not([type=submit])::-ms-input-placeholder {
   position: relative;
   color: rgba(62, 60, 73, 0.7);
   font-family: 'Poppins', sans-serif;
@@ -93,13 +96,27 @@ h1 {
   top: 1px;
 }
 
-#signup .input-field::placeholder {
+#signup input:not([type=submit])::placeholder {
   position: relative;
   color: rgba(62, 60, 73, 0.7);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.1em;
   top: 1px;
+}
+
+#signup input:not([type=submit]):focus {
+  outline: none;
+  border: solid 1px #3e3c49;
+}
+
+#signup input:not([type=submit]).error {
+  background: 95% center no-repeat url(./img/icon-error.svg);
+  border: solid 2px rgba(255, 122, 122, 0.6);
+}
+
+#signup .error {
+  background-image: url(./img/icon-error.svg);
 }
 
 #signup label {

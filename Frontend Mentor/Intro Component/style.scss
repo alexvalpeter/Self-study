@@ -55,13 +55,16 @@ h1 {
     box-shadow: 0 8px 0 rgba(0, 0, 0, .15);
     margin-bottom: 2em;
 
-    .input-field {
+    input:not([type=submit]) {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
         width: 100%;
         border: solid 1px hsla(246, 25%, 77%, .5);
-        color: hsl(249, 10%, 26%);
+        color: hsla(249, 10%, 26%, .7);
         border-radius: .4em;
         padding: 1.4em; 
         margin-bottom: 1.2em;
+        caret-color: hsl(249, 10%, 26%);
 
         &::placeholder {
             position: relative;
@@ -72,7 +75,19 @@ h1 {
             top: 1px;
         }
 
-        
+        &:focus {
+            outline: none;
+            border: solid 1px hsl(249, 10%, 26%);
+        }
+
+        &.error {
+            background: 95% center no-repeat url(./img/icon-error.svg);
+            border: solid 2px hsla(0, 100%, 74%, .6);
+        }
+    }
+
+    .error {
+        background-image: url(./img/icon-error.svg);
     }
 
     label {
@@ -85,6 +100,8 @@ h1 {
         white-space: nowrap !important;
         width: 1px !important;
     }
+
+    
 
     input[type="submit"]{
         width: 100%;
