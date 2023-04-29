@@ -47,6 +47,7 @@ h1 {
     }
 }
 
+
 #signup {
     width: 100%;
     background-color: #fff;
@@ -83,6 +84,10 @@ h1 {
         &.error {
             background: 95% center no-repeat url(./img/icon-error.svg);
             border: solid 2px hsla(0, 100%, 74%, .6);
+        }
+
+        &.error::placeholder {
+            color: hsla(0, 100%, 74%, .7);
         }
     }
 
@@ -121,6 +126,8 @@ h1 {
         color: hsl(246, 25%, 77%);
         font-size: .7em;
         font-weight: 500;
+        padding: 0 1em;
+        line-height: 1.8em;
 
         a {
             text-decoration: none;

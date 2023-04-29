@@ -115,6 +115,22 @@ h1 {
   border: solid 2px rgba(255, 122, 122, 0.6);
 }
 
+#signup input:not([type=submit]).error::-webkit-input-placeholder {
+  color: rgba(255, 122, 122, 0.7);
+}
+
+#signup input:not([type=submit]).error:-ms-input-placeholder {
+  color: rgba(255, 122, 122, 0.7);
+}
+
+#signup input:not([type=submit]).error::-ms-input-placeholder {
+  color: rgba(255, 122, 122, 0.7);
+}
+
+#signup input:not([type=submit]).error::placeholder {
+  color: rgba(255, 122, 122, 0.7);
+}
+
 #signup .error {
   background-image: url(./img/icon-error.svg);
 }
@@ -149,6 +165,8 @@ h1 {
   color: #b9b6d3;
   font-size: .7em;
   font-weight: 500;
+  padding: 0 1em;
+  line-height: 1.8em;
 }
 
 #signup .TS-agreement a {

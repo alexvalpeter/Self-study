@@ -6,6 +6,14 @@ document.querySelectorAll("input:not([type=submit])").forEach((element) => {
         } else {
             element.classList.remove("error");
         }
+
+        if(element.id == "email"){
+            element.placeholder = "example@host.com";
+        }
     })
+
+})
+
+document.querySelector("input[type=submit]").addEventListener("click", function() {
 
 })
