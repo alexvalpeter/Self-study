@@ -12,32 +12,46 @@
 </head>
 <body>
   <main>
-    <div id="hero">
+    <div id="hero" class="column-1">
       <h1>Learn to code by watching others</h1>
 
       <p class="blurb">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
       but understanding how developers think is invaluable.</p>
     </div>
 
-    <div class="cta"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
-    <div id="signup">
-      <form name="signup-form" id="signup-form">
-        <input type="text" id="firstname" name="firstname" placeholder="First Name" required >
-        <label for="firstname">First Name</label>
+    <div class="column-2">
+      <div class="cta"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
+      <div id="signup">
+        <form name="signup-form" id="signup-form">
+          <div class="input-field">
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required >
+            <label for="firstname">First Name</label>
+            <div class="error-msg">First Name cannot be empty</div>
+          </div>  
 
-        <input type="text" id="lastname" name="lastname" placeholder=" Last Name" required >
-        <label for="lastname">Last Name</label>
+          <div class="input-field">
+            <input type="text" id="lastname" name="lastname" placeholder=" Last Name" required >
+            <label for="lastname">Last Name</label>
+            <div class="error-msg">Last Name cannot be empty</div>
+          </div>  
 
-        <input type="email" id="email" name="email" placeholder="Email Address" required >
-        <label for="email">Email</label>
-      
-        <input type="password" id="password" name="password" placeholder="Password" required >
-        <label for="password">Password</label>
+          <div class="input-field">
+            <input type="email" id="email" name="email" placeholder="Email Address" required >
+            <label for="email">Email</label>
+            <div class="error-msg">Looks like this is not an email</div>
+          </div>  
+        
+          <div class="input-field">
+            <input type="password" id="password" name="password" placeholder="Password" required >
+            <label for="password">Password</label>
+            <div class="error-msg">Password cannot be empty</div>
+          </div>  
 
-        <input type="submit" value="Claim your free trial">
-      </form>
+          <input type="submit" value="Claim your free trial">
+        </form>
 
-      <div class="TS-agreement">By clicking the button, you are agreeing to our <a href="#">Terms of Service</a></div>
+        <div class="TS-agreement">By clicking the button, you are agreeing to our <a href="#">Terms of Service</a></div>
+      </div>
     </div>
   </main>
   

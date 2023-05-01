@@ -16,10 +16,6 @@ body {
     color: #fff;
 }
 
-/*#hero {
-    //color: #fff;
-    //padding: 5.8em 1.8em 3em 1.8em;
-}*/
 
 h1 {
     font-weight: 600;
@@ -56,6 +52,10 @@ h1 {
     box-shadow: 0 8px 0 rgba(0, 0, 0, .15);
     margin-bottom: 2em;
 
+    .input-field {
+        margin-bottom: 1.2em;
+    }
+
     input:not([type=submit]) {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -64,7 +64,7 @@ h1 {
         color: hsla(249, 10%, 26%, .7);
         border-radius: .4em;
         padding: 1.4em; 
-        margin-bottom: 1.2em;
+        //margin-bottom: 1.2em;
         caret-color: hsl(249, 10%, 26%);
 
         &::placeholder {
@@ -75,6 +75,8 @@ h1 {
             font-size: 1.1em;
             top: 1px;
         }
+
+
 
         &:focus {
             outline: none;
@@ -93,6 +95,16 @@ h1 {
 
     .error {
         background-image: url(./img/icon-error.svg);
+    }
+
+    .error-msg {
+       display: none;
+       color: hsla(0, 100%, 74%, .7);
+       text-align: right;
+       font-style: italic;
+       font-weight: 500;
+       font-size: .8em;
+       margin-top: .5em;
     }
 
     label {
@@ -156,4 +168,85 @@ h1 {
         color: hsl(228, 45%, 44%); 
         text-decoration: none;
     }
+}
+
+@media screen and (min-width: 1024px){
+
+    /*html, body {
+        height: 100%;
+        width: 100%;
+    }*/
+
+    main {
+        height: 80vh;
+        width: 75vw;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+    }
+
+    h1 {
+        margin-bottom: .6em;
+        font-size: 3.3em;
+        line-height: 1.2em;
+        font-weight: 700;
+    }
+
+    .blurb {
+        font-size: 1.1em;
+    }
+
+    .column-2 {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta {
+        font-size: 1em;
+        padding: 1.5em;
+    }
+
+    #signup {
+        //flex-grow: 1;
+        padding: 2.5em;
+
+        input[type=submit] {
+            //margin-bottom: 3em;
+            font-size: 1.1em;
+
+            &:hover {
+                cursor: pointer;
+                background-color: hsl(154, 74%, 72%);
+            }
+        }
+
+        .TS-agreement {
+            font-size: .8em;
+        }
+    }
+
+    #signup-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 95%;
+    }
+
+   
+ 
+
+
 }
