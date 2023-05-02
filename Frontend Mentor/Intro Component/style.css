@@ -204,15 +204,14 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
-  /*html, body {
-        height: 100%;
-        width: 100%;
-    }*/
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
   main {
     height: 80vh;
     width: 75vw;
     position: relative;
-    top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -284,6 +283,5 @@ h1 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 95%;
   }
 }
