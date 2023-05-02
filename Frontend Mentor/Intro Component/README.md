@@ -7,7 +7,7 @@ This is a solution to the "Intro component with sign up form challenge" on Front
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size using 1440px and 350px for desktop and mobile respectively
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
@@ -17,21 +17,24 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
+
 
 ### Screenshots
 
 #### Desktop
 ![Desktop](./Screenshots/Desktop.png)
 
-#### Desktop Active States
-![Desktop](./Screenshots/Desktop_active.png)
+#### Desktop Error States
+![Desktop](./Screenshots/Desktop_Error.png)
 
 #### Mobile
-![Mobile](./Screenshots/Mobile.png)
+<img src="./Screenshots/Mobile.png" width="500">  <img src="./Screenshots/Mobile_Error.png" width="500">  
+
 
 
 ### Deployed
+https://intro-component-4oklwv3fc-alexvalpeter.vercel.app/
