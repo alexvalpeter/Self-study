@@ -1,6 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #fff url("./img/bg-header-mobile.png") no-repeat border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+  text-align: center;
+  padding: 0 9%;
+}
+
+h1, h2, h3 {
+  color: #4c545d;
+}
+
+h1 {
+  font-size: 1.9em;
+  margin-bottom: .7em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: .6em;
+}
+
+p {
+  color: #9fabb2;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+.download-btn {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  border-radius: 3em;
+  padding: .8em 0;
+  margin-bottom: 1.2em;
+}
+
+.ios {
+  background-color: #26baa4;
+  -webkit-box-shadow: 0 3px 0 #198f7d;
+          box-shadow: 0 3px 0 #198f7d;
+}
+
+.mac {
+  background-color: #6173ff;
+  -webkit-box-shadow: 0 3px 0 #4654be;
+          box-shadow: 0 3px 0 #4654be;
+}
+
+#hero {
+  margin-bottom: 10em;
+}
+
+#hero .logo {
+  margin: 7em 0 4em 0;
+}
+
+.intro {
+  margin-bottom: 4em;
+}
+
+.features {
+  margin-bottom: 10em;
+}
+
+.features img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.devices {
+  margin-bottom: 6em;
+}
+
+.devices img {
+  width: 100%;
+}
+
+.tools {
+  margin-bottom: 8em;
+}
+
+.tools img {
+  margin-bottom: 2em;
+}
+
+.brand-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 4em;
+  margin-bottom: 10em;
+}
+
+.brand-logos img {
+  max-width: 40%;
+}
+
+.download {
+  margin-bottom: 10em;
+}
+
+footer {
+  background-color: rgba(159, 171, 178, 0.2);
+  margin: 0 -11%;
+}
+
+footer .logo {
+  width: 50px;
+  margin: 2.5em 0;
+}
+
+footer #footer-nav {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2em;
+  margin-bottom: 2.5em;
+  font-size: 1.2em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4c545d;
+}
+
+footer .social-media-icons {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+footer .social-media-icons img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .attribution a {
