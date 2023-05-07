@@ -226,6 +226,14 @@ footer .social-media-icons img {
   .download-btn.ios {
     margin-right: .8em;
   }
+  .download-btn.ios:hover {
+    background-color: #51dbc7;
+    cursor: pointer;
+  }
+  .download-btn.mac:hover {
+    background-color: #8794f8;
+    cursor: pointer;
+  }
   .intro {
     padding: 0 27%;
   }
@@ -333,6 +341,10 @@ footer .social-media-icons img {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
   }
+  footer a:hover {
+    cursor: pointer;
+    color: #26baa4;
+  }
   footer .social-media-icons {
     left: 0;
     -webkit-transform: translate(0);
@@ -343,6 +355,11 @@ footer .social-media-icons img {
         -ms-grid-row-align: center;
         align-self: center;
     margin: 0;
+  }
+  footer .social-media-icons img:hover {
+    cursor: pointer;
+    -webkit-filter: invert(63%) sepia(35%) saturate(837%) hue-rotate(122deg) brightness(91%) contrast(88%);
+            filter: invert(63%) sepia(35%) saturate(837%) hue-rotate(122deg) brightness(91%) contrast(88%);
   }
   .attribution {
     width: 100%;
