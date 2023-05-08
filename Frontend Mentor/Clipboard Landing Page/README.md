@@ -18,7 +18,7 @@ Users should be able to:
 ### Built With
 - Semantic HTML5 Markup
 - SASS
-- CSS Grid
+- Flexbox
 - Mobile-first workflow
 
 
@@ -26,9 +26,10 @@ Users should be able to:
 
 #### Desktop
 ![Desktop](./Screenshots/Desktop.png)
-![Desktop](./Screenshots/Desktop-Active.png)
 
 #### Mobile
-![Mobile](./Screenshots/Mobile.png) 
+<img src="./Screenshots/Mobile.png" width="500">
+
 
 ### Deployed
+https://clipboard-landing-page-ffk9qlx29-alexvalpeter.vercel.app/
