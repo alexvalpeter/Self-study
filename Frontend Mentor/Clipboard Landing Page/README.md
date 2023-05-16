@@ -11,7 +11,7 @@ This is a solution to the Clipboard Landing Page Challenge on Frontend Mentor (h
 
 Users should be able to:
 
-- View the optimal layout for the interface depending on their desktop or mobile device's screen size using 1440px and 375px viewport widths respectively
+- View the optimal layout for the interface depending on their desktop or mobile device's screen size (using 1440px and 375px viewport widths respectively)
 - See hover and focus states for all interactive elements on the page
 
 
@@ -29,6 +29,7 @@ Users should be able to:
 
 #### Mobile
 <img src="./Screenshots/Mobile.png" width="500">
+
 
 
 ### Deployed
