@@ -1,8 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding: 5%;
+  position: relative;
+}
+
+#dark-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 26, 0.4);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3% 0 10% 0;
+}
+
+header #logo {
+  height: 2em;
+}
+
+header #mobile-hamburger-icon {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 3.5em;
+  height: 1.5em;
+  background: url(/assets/img/icon-menu.svg) center center/cover;
+  cursor: pointer;
+  z-index: 11;
+}
+
+header #mobile-hamburger-icon:checked {
+  background: url(/assets/img/icon-menu-close.svg) center center/cover;
+  width: 2.6em;
+  height: 2em;
+}
+
+header #mobile-hamburger-icon:checked ~ nav {
+  right: 0;
+  -webkit-transition: right 200ms ease;
+  transition: right 200ms ease;
+}
+
+header #mobile-hamburger-icon:checked + #dark-overlay {
+  display: block;
+}
+
+header nav {
+  position: fixed;
+  background-color: white;
+  width: 70vw;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  -webkit-transition: right 200ms ease;
+  transition: right 200ms ease;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 55%;
+  padding-left: 10%;
+}
+
+header nav li {
+  margin-bottom: 1.6em;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #00001a;
+  font-size: 1.3em;
+}
+
+p {
+  color: #5d5f79;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+#hero {
+  margin-bottom: 4em;
+}
+
+#hero img {
+  width: 100%;
+  margin-bottom: 1.1em;
+}
+
+#hero h1 {
+  color: #00001a;
+  font-size: 2.8em;
+  font-weight: 800;
+  line-height: 1.1em;
+  margin-bottom: .4em;
+}
+
+#hero p {
+  margin-bottom: 2em;
+}
+
+#hero button {
+  background-color: #f15e50;
+  padding: 1.2em 2.5em;
+  border: none;
+  cursor: pointer;
+}
+
+#hero button a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  letter-spacing: .3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#new-articles-list {
+  display: block;
+  width: 100%;
+  padding: 8% 6%;
+  background-color: #00001a;
+  color: white;
+  margin-bottom: 4em;
+}
+
+#new-articles-list h2 {
+  color: #e9ab53;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#new-articles-list .article:not(:last-child) {
+  padding-bottom: 2em;
+}
+
+#new-articles-list .article + .article {
+  border-top: solid #5d5f79 1px;
+  padding-top: 2em;
+}
+
+#new-articles-list .article-title {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: .8em;
+}
+
+#new-articles-list li {
+  list-style: none;
+}
+
+#featured-articles .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9em;
+  margin-bottom: 2.5em;
+}
+
+#featured-articles img {
+  height: 100%;
+  padding-right: 1.2em;
+}
+
+#featured-articles .article-info {
+  padding: .5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+#featured-articles .article-number {
+  color: #c5c6ce;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#featured-articles .article-title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 15px;
 }
 
 .attribution a {
   color: #3e52a3;
+  text-decoration: none;
 }
