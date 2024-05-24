@@ -29,3 +29,5 @@ Users should be able to:
 
 ### Deployed
 
+https://news-homepage-git-main-alex-petersons-projects.vercel.app/
+
