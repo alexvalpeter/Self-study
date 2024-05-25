@@ -12,59 +12,69 @@
 
 <body>
   <main>
-    <form id="form-container" method="POST">
+    <div id="form-container">
       <h1>Contact Us</h1>
 
-      <div class="field">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname" required>
-        <div class="validation-msg">This field is required</div>
-      </div>
+      <form id="contact" method="POST">
+        <div class="multi-field-container">
+          <div class="field">
+            <label class="required" for="firstname">First Name</label>
+            <input class="bordered" type="text" name="firstname" id="firstname" required>
+            <div class="error-msg">This field is required</div>
+          </div>
 
-      <div class="field">
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname" required>
-        <div class="validation-msg">This field is required</div>
-      </div>
-
-      <div class="field">
-        <label for="email">Email Address</label>
-        <input type="text" name="email" id="email" required>
-        <div class="validation-msg">This field is required</div>
-      </div>
-
-      <fieldset>
-        <legend>Query Type</legend>
-        <div class="field">
-          <input type="radio" id="general" name="query-type" value="general">
-          <label for="general">General Enquiry</label>
-          <input type="radio" id="support" name="query-type" value="support">
-          <label for="Support">Support Enquiry</label>
-          <div class="validation-msg">Please select a query type</div>
+          <div class="field">
+            <label class="required" for="lastname">Last Name</label>
+            <input class="bordered" type="text" name="lastname" id="lastname" required>
+            <div class="error-msg">This field is required</div>
+          </div>
         </div>
-      </fieldset>
-    
-      <div class="field">
-        <label for="message">Message</label>
-        <input type="text" name="message" id="message" required>
-        <div class="validation-msg">This field is required</div>
-      </div>
 
-      <div class="field">
-        <input type="checkbox" id="consent" name="consent" value="consent" required>
-        <label for="consent">I consent to being contacted by the team</label>
-        <div class="validation-msg">To submit this form, please consent to being contacted</div>
-      </div>
+        <div class="field">
+          <label for="email" class="required">Email Address</label>
+          <input class="bordered" type="text" name="email" id="email" required>
+          <div class="error-msg">This field is required</div>
+        </div>
 
-      <input type="submit" value="Submit">
+        <fieldset>
+          <legend class="required">Query Type</legend>
+          <div class="multi-field-container">
+            <div class="field bordered input-label-group">
+              <input type="radio" id="general" name="query-type" value="general" required>
+              <label for="general">General Enquiry</label>
+            </div>
+            <div class="field bordered input-label-group">  
+              <input type="radio" id="support" name="query-type" value="support" required>
+              <label for="Support">Support Enquiry</label>
+            </div>  
+          </div>
+          <div class="error-msg">Please select a query type</div>
+        </fieldset>
+      
+        <div class="field">
+          <label class="required" for="message">Message</label>
+          <input class="message bordered" type="text" name="message" id="message" required>
+          <div class="error-msg">This field is required</div>
+        </div>
+
+        <div class="field">
+          <div class="input-label-group">
+            <input type="checkbox" id="consent" name="consent" value="consent" required>
+            <label class="required" for="consent">I consent to being contacted by the team</label>
+          </div>
+          <div class="error-msg">To submit this form, please consent to being contacted</div>
+        </div>
+
+        <input type="submit" value="Submit">
 
 
 
-      <div id="success-msg">
-        Message Sent!
-        Thanks for completing the form. We'll be in touch soon!
-      </div>
-    </form>
+        <div id="success-msg">
+          Message Sent!
+          Thanks for completing the form. We'll be in touch soon!
+        </div>
+      </form>
+    </div>
   </main>
 
   <footer class="attribution">
