@@ -32,7 +32,7 @@
 
         <div class="field">
           <label for="email" class="required">Email Address</label>
-          <input class="bordered" type="text" name="email" id="email" required>
+          <input class="bordered" type="email" name="email" id="email" required>
           <div class="error-msg">This field is required</div>
         </div>
 
@@ -53,11 +53,11 @@
       
         <div class="field">
           <label class="required" for="message">Message</label>
-          <input class="message bordered" type="text" name="message" id="message" required>
+          <textarea class="message bordered" id="message" name="message" rows="18" required></textarea>
           <div class="error-msg">This field is required</div>
         </div>
 
-        <div class="field">
+        <div class="field consent">
           <div class="input-label-group">
             <input type="checkbox" id="consent" name="consent" value="consent" required>
             <label class="required" for="consent">I consent to being contacted by the team</label>
