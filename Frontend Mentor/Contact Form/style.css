@@ -45,7 +45,7 @@ form label {
   border-radius: .5em;
   width: 100%;
   height: 3.5em;
-  padding: .8em;
+  padding: 1em;
   margin-bottom: .8em;
 }
 
@@ -55,6 +55,7 @@ form label {
 }
 
 .multi-field-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,6 +67,7 @@ form label {
 
 .field {
   margin-bottom: .8em;
+  width: 100%;
 }
 
 .input-label-group {
@@ -78,7 +80,7 @@ form label {
 }
 
 .consent {
-  margin: 2em 0 3em 0;
+  margin: 1.2em 0 2.3em 0;
 }
 
 .consent label {
@@ -98,12 +100,26 @@ fieldset legend {
   margin-bottom: .8em;
 }
 
+fieldset .bordered {
+  padding: 0;
+}
+
 fieldset input, fieldset label {
   margin-bottom: 0;
 }
 
 fieldset label {
   margin-left: .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
 }
 
 fieldset .error-msg {
@@ -112,6 +128,11 @@ fieldset .error-msg {
 
 input {
   color: #2b4246;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
 }
 
 input[type=radio] {
@@ -217,6 +238,38 @@ input[type=submit]:hover {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #0c7d69;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 6% 28% 5% 28%;
+    position: relative;
+  }
+  h1 {
+    margin-bottom: 1em;
+  }
+  form {
+    font-size: .9em;
+  }
+  .multi-field-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+  }
+  .message {
+    height: 7.5em;
+    font-size: 1em;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }

@@ -44,7 +44,7 @@ form {
     border-radius: .5em;
     width: 100%;
     height: 3.5em;
-    padding: .8em;
+    padding: 1em;
     margin-bottom: .8em;
 
     &:focus, &:hover {
@@ -55,12 +55,14 @@ form {
 }
 
 .multi-field-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .field {
     margin-bottom: .8em;
+    width: 100%;
 }
 
 .input-label-group {
@@ -69,7 +71,7 @@ form {
 }
 
 .consent  {
-    margin: 2em 0 3em 0;
+    margin: 1.2em 0 2.3em 0;
 
     label {
         margin: 0;
@@ -88,12 +90,24 @@ fieldset {
         margin-bottom: .8em;
     }
 
+    .bordered {
+        padding: 0;
+    }
+
     input, label {
         margin-bottom: 0;
+        //display: block;
     }
 
     label {
         margin-left: .8em;
+        display: flex;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        //vertical-align: middle;
+        //width: 100%;
+        //padding: 1em 0;
     }
 
     .error-msg {
@@ -103,6 +117,11 @@ fieldset {
 
 input {
     color: hsl(187, 24%, 22%);
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
 }
 
 input[type=radio] {
@@ -198,11 +217,47 @@ input[type=submit] {
 
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 
     a { 
-        color: hsl(228, 45%, 44%); 
+        color: hsl(169, 82%, 27%); 
         text-decoration: none;
     }    
 }
+
+
+@media screen and (min-width: 1024px){
+
+    body {
+        padding: 6% 28% 5% 28%;
+        position: relative;
+    }
+
+    h1 {
+        margin-bottom: 1em;
+    }
+
+    form {
+        font-size: .9em;
+    }
+
+    .multi-field-container {
+        flex-direction: row;
+        column-gap: 1em;
+    }
+
+    .message {
+        height: 7.5em;
+        font-size: 1em;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}    
     
