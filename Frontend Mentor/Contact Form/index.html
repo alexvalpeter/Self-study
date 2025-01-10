@@ -19,20 +19,20 @@
         <div class="multi-field-container">
           <div class="field">
             <label class="required" for="firstname">First Name</label>
-            <input class="bordered" type="text" name="firstname" id="firstname" required>
+            <input class="bordered field-area" type="text" name="firstname" id="firstname" required>
             <div class="error-msg">This field is required</div>
           </div>
 
           <div class="field">
             <label class="required" for="lastname">Last Name</label>
-            <input class="bordered" type="text" name="lastname" id="lastname" required>
+            <input class="bordered field-area" type="text" name="lastname" id="lastname" required>
             <div class="error-msg">This field is required</div>
           </div>
         </div>
 
         <div class="field">
           <label for="email" class="required">Email Address</label>
-          <input class="bordered" type="email" name="email" id="email" required>
+          <input class="bordered field-area" type="email" name="email" id="email" required>
           <div class="error-msg">This field is required</div>
         </div>
 
@@ -40,33 +40,34 @@
           <legend class="required">Query Type</legend>
           <div class="multi-field-container">
             <div class="field bordered input-label-group">
-              <input type="radio" id="general" name="query-type" value="general" required>
+              <input class="field-area" type="radio" id="general" name="query-type" value="general" required>
               <label for="general">General Enquiry</label>
             </div>
             <div class="field bordered input-label-group">  
-              <input type="radio" id="support" name="query-type" value="support" required>
+              <input class="field-area" type="radio" id="support" name="query-type" value="support" required>
               <label for="support">Support Enquiry</label>
             </div>  
           </div>
+          
           <div class="error-msg">Please select a query type</div>
+          
         </fieldset>
       
         <div class="field">
           <label class="required" for="message">Message</label>
-          <textarea class="message bordered" id="message" name="message" rows="18" required></textarea>
+          <textarea class="message bordered field-area" id="message" name="message" rows="18" required></textarea>
           <div class="error-msg">This field is required</div>
         </div>
 
         <div class="field consent">
           <div class="input-label-group">
-            <input type="checkbox" id="consent" name="consent" value="consent" required>
+            <input class="field-area" type="checkbox" id="consent" name="consent" value="consent" required>
             <label class="required" for="consent">I consent to being contacted by the team</label>
           </div>
           <div class="error-msg">To submit this form, please consent to being contacted</div>
         </div>
 
         <input type="submit" value="Submit">
-
 
 
         <div id="success-msg">
@@ -81,5 +82,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/alexvalpeter">Alex Peterson</a>.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
